@@ -1,4 +1,4 @@
-# Data Partnership Project Template
+# Project Template
 
 The template creates a project structure inspired by the [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/) with an out-of-box [Jupyter Book](https://jupyterbook.org/intro.html) published automatically on [GitHub Pages](https://pages.github.com).
 
