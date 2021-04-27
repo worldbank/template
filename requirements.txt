@@ -1,5 +1,0 @@
-# local package
--e .
-
-# jupyter book
-jupyter-book
