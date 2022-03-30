@@ -1,15 +1,15 @@
 # Book settings
-title: 
+title:
 author: World Bank
 logo: images/logo.png
 
 repository:
-    url: https://github.com/worldbank/template
-    branch: master  
-  
+    url: https://github.com/datapartnership/template
+    branch: main
+
 html:
     home_page_in_navbar: true
     use_edit_page_button: true
     use_repository_button: true
     use_issues_button: true
-    baseurl: https://github.com/worldbank/template
+    baseurl: https://github.com/datapartnership/template
