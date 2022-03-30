@@ -1,1 +1,10 @@
-file: README
+format: jb-book
+root: README
+
+parts:
+  - caption: Additional Resources
+    chapters:
+      - url: https://datapartnership.org/updates
+        title: Projects & News
+      - url: https://worldbank.org
+        title: World Bank
