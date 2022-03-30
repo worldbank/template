@@ -27,5 +27,5 @@ jobs:
         if: github.ref == 'refs/heads/main' && job.status == 'success'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_build/html
+          publish_dir: ./docs/_build/html
           enable_jekyll: false
