@@ -1,6 +1,6 @@
 # Book settings
 title:
-author: World Bank
+author: Development Data Partnership
 logo: images/logo.png
 
 repository:
@@ -8,7 +8,7 @@ repository:
     branch: main
 
 html:
-    home_page_in_navbar: true
+    home_page_in_navbar: false
     use_edit_page_button: true
     use_repository_button: true
     use_issues_button: true
