@@ -4,10 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Template &#8212; Project Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Project Template</title>
     
-  <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -17,231 +20,430 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-  <link rel="stylesheet"
-    href="_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
-
-    
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.3da636dd464baa7582d2.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://datapartnership.org/README.html" />
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="canonical" href="https://github.com/datapartnership/template/README.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
 
-
-<!-- Opengraph tags -->
-<meta property="og:url"         content="https://datapartnership.org/README.html" />
-<meta property="og:type"        content="article" />
-<meta property="og:title"       content="Project Template" />
-<meta property="og:description" content="Project Template  The template creates a project structure inspired by the Cookiecutter Data Science with an out-of-box Jupyter Book published automatically on " />
-<meta property="og:image"       content="https://datapartnership.org/_static/logo.png" />
-
-<meta name="twitter:card" content="summary" />
-
-
+    <!-- Google Analytics -->
+    
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="index.html">
-  
-  <img src="_static/logo.png" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">Project Template</h1>
-  
-</a>
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
- <li class="toctree-l1 current active">
-  <a class="reference internal" href="#">
-   Project Template
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Project Template
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Additional Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference external" href="https://datapartnership.org/updates">
+   Projects &amp; News
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://worldbank.org">
+   World Bank
   </a>
  </li>
 </ul>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/README.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-        <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/datapartnership/template"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/datapartnership/template/issues/new?title=Issue%20on%20page%20%2FREADME.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/datapartnership/template/edit/master/README.md"><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
-</div>
-
-
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
-
-        <!-- Launch buttons -->
 
     </div>
-
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
         </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/datapartnership/template"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/datapartnership/template/issues/new?title=Issue%20on%20page%20%2FREADME.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/datapartnership/template/edit/main/README.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/README.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#resources">
-   Resources
+  <a class="reference internal nav-link" href="#getting-started">
+   Getting Started
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-s-inside">
+     What’s Inside
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setting-up-the-documentation-with-jupyter-book">
+     Setting up the documentation with Jupyter Book
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#additional-resources">
+   Additional Resources
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#project-checklist">
-   Project Checklist
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#project-organization">
-   Project Organization
+  <a class="reference internal nav-link" href="#license">
+   License
   </a>
  </li>
 </ul>
 
-        </nav>
-        
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Project Template</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-started">
+   Getting Started
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-s-inside">
+     What’s Inside
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setting-up-the-documentation-with-jupyter-book">
+     Setting up the documentation with Jupyter Book
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#additional-resources">
+   Additional Resources
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#license">
+   License
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="section" id="project-template">
-<h1>Project Template<a class="headerlink" href="#project-template" title="Permalink to this headline">¶</a></h1>
-<p>The template creates a project structure inspired by the <a class="reference external" href="https://drivendata.github.io/cookiecutter-data-science/">Cookiecutter Data Science</a> with an out-of-box <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter Book</a> published automatically on <a class="reference external" href="https://pages.github.com">GitHub Pages</a>.</p>
-<p>Here are some of the practices that project template aims to encourage:</p>
-<ul class="simple">
-<li><p>Reproducibility</p></li>
-<li><p>Transparency</p></li>
-<li><p>Credibility</p></li>
-</ul>
-<div class="section" id="resources">
-<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="project-template">
+<h1>Project Template<a class="headerlink" href="#project-template" title="Permalink to this headline">#</a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">template</span></code> creates a <a class="reference external" href="#what-s-inside">project structure</a> with an out-of-the-box documentation with <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter Book</a> that can be published automatically on <a class="reference external" href="https://pages.github.com">GitHub Pages</a>. In addition, the <code class="docutils literal notranslate"><span class="pre">template</span></code> configures <a class="reference external" href="https://github.com/datapartnership/template/issues/new/choose">issue templates</a> (e.g., <strong>Bug report</strong> and <strong>Feature request</strong>) on your new repository to encourage collaboration.</p>
+<blockquote>
+<div><p><strong>See a <a class="reference external" href="https://datapartnership.github.io/template/">live demo</a>.</strong></p>
+</div></blockquote>
+<section id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">#</a></h2>
+<p>This repository is a <a class="reference external" href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template">GitHub template</a>. Thus, <a class="reference external" href="https://github.com/worldbank/template/generate">use this template</a> to recreate the same directory structure and files for your project.</p>
+<section id="what-s-inside">
+<h3>What’s Inside<a class="headerlink" href="#what-s-inside" title="Permalink to this headline">#</a></h3>
+<p>Following is a suggested project structure inspired by a simplified <a class="reference external" href="https://drivendata.github.io/cookiecutter-data-science/">Cookiecutter Data Science</a>.</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>    ├── README.md          &lt;- The top-level README for developers using this project.
+    ├── data               &lt;  Placehodlder. IMPORTANT: Data must not be commited to GitHub
+    ├── docs               &lt;- Jupyter Book
+        ├── __config.yml   &lt;- Jupyter Book configuration
+    │   └── _toc.yml       &lt;- Jupyter Book table of contents
+    ├── notebooks          &lt;- Jupyter notebooks
+        ├── 00-data.ipynb  &lt;- Jupyter notebook example
+        ├── 01-eda.ipynb   &lt;- Jupyter notebook example
+        └── 02-train.ipynb &lt;- Jupyter notebook example
+    ├── Makefile           &lt;- Makefile with commands like <span class="sb">`make docs`</span> or <span class="sb">`make data`</span>
+    ├── requirements.txt   &lt;- Python requirements
+    └── LICENSE
+</pre></div>
+</div>
+</section>
+<section id="setting-up-the-documentation-with-jupyter-book">
+<h3>Setting up the documentation with Jupyter Book<a class="headerlink" href="#setting-up-the-documentation-with-jupyter-book" title="Permalink to this headline">#</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">template</span></code> offers a boilerplate of a <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter Book</a>. When ready to publish, all you need to do is edit the <code class="docutils literal notranslate"><span class="pre">docs/_toc.yml</span></code> that controls the table of contents for your book. Make sure to <a class="reference external" href="https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site">configure the publishing source</a> as <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>.</p>
+<p>Voilà! On every commit to the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch, your book will be automatically published to <a class="reference external" href="https://pages.github.com">GitHub Pages</a>. Please consult the <a class="reference external" href="https://jupyterbook.org/customize/toc.html">Jupyter Book documentation</a> for more options and parameters.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Your project’s Jupyter Book will be publicly available <strong>DO NOT</strong> include any portion and remember to comply to your organization’s data privacy policy.</p>
+</div>
+</section>
+</section>
+<section id="additional-resources">
+<h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this headline">#</a></h2>
 <ul>
-<li><p><a class="reference external" href="https://docs.datapartnership.org">Development Data Partnership</a></p>
-<blockquote>
-<div><p>A partnership between international organizations and companies, created to facilitate the use of third-party data in research and international development.</p>
-</div></blockquote>
-</li>
-<li><p><a class="reference external" href="https://datapartnership.github.io/awesome-datapartnership/">Awesome Data Partnership</a></p>
-<blockquote>
-<div><p>A curated list of projects, data goods and derivative works associated with the Development Data Partnership</p>
-</div></blockquote>
-</li>
-<li><p><a class="reference external" href="https://dimewiki.worldbank.org/wiki/Main_Page">The DIME Wiki</a></p>
-<blockquote>
-<div><p>The DIME Wiki is a public good developed and maintained by DIME Analytics, a team which creates tools that improve the quality of impact evaluation research at DIME. The DIME Wiki is targeted to all researchers and M&amp;E specialists at the World Bank, clients who are managing data collection efforts in the field, donor institutions, universities, NGOs, and governments. While there are many existing impact evaluation resources, none meet the specific gap the DIME Wiki aims to fulfill: a resource focused on practical implementation guidelines rather than theory, open to the public, easily searchable, suitable for users of varying levels of expertise, up-to-date with the latest technological advances in electronic data collection, with a vibrant network of editors who are experts in this field.</p>
-</div></blockquote>
-</li>
-<li><p><a class="reference external" href="https://worldbank.github.io/dime-data-handbook/">The DIME Analytics Data Handbook</a></p>
+<li><p><a class="reference external" href="https://worldbank.github.io/dime-data-handbook/">DIME Analytics Data Handbook</a></p>
 <blockquote>
 <div><p>This book is intended to serve as an introduction to the primary tasks required in development research, from experimental design to data collection to data analysis to publication. It serves as a companion to the DIME Wiki and is produced by DIME Analytics.</p>
 </div></blockquote>
@@ -257,64 +459,14 @@
 </div></blockquote>
 </li>
 </ul>
+</section>
+<section id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">#</a></h2>
+<p>Remember to include a <span class="xref myst">license</span>. If open source, <a class="reference external" href="https://choosealicense.com">choose an open source license</a>.</p>
+</section>
+<div class="toctree-wrapper compound">
 </div>
-<div class="section" id="project-checklist">
-<h2>Project Checklist<a class="headerlink" href="#project-checklist" title="Permalink to this headline">¶</a></h2>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Coming Soon</p>
-</div>
-</div>
-<div class="section" id="project-organization">
-<h2>Project Organization<a class="headerlink" href="#project-organization" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>    ├── LICENSE
-    ├── Makefile           &lt;- Makefile with commands like `make data` or `make train`
-    ├── README.md          &lt;- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       &lt;- Data from third party sources.
-    │   ├── interim        &lt;- Intermediate data that has been transformed.
-    │   ├── processed      &lt;- The final, canonical data sets for modeling.
-    │   └── raw            &lt;- The original, immutable data dump.
-    │
-    ├── models             &lt;- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          &lt;- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator&#39;s initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         &lt;- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            &lt;- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        &lt;- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   &lt;- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze &gt; requirements.txt`
-    │
-    ├── setup.py           &lt;- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                &lt;- Source code for use in this project.
-    │   ├── __init__.py    &lt;- Makes src a Python module
-    │   │
-    │   ├── data           &lt;- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       &lt;- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         &lt;- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  &lt;- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            &lt;- tox file with settings for running tox; see tox.readthedocs.io
-</pre></div>
-</div>
-<hr class="docutils" />
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
-</div>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -338,34 +490,34 @@
 
               </div>
               
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
         </div>
     </div>
-    
-    
-    <div class='prev-next-bottom'>
-        
-
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By World Bank<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
     </div>
-    <footer class="footer mt-5 mt-md-0">
-    <div class="container">
-      <p>
-        
-          By Development Data Partnership<br/>
-        
-            &copy; Copyright 2020.<br/>
-      </p>
-    </div>
-  </footer>
-</main>
+    
+</div>
 
 
       </div>
     </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
-    
-  <script src="_static/js/index.3da636dd464baa7582d2.js"></script>
 
-
-    
   </body>
 </html>
