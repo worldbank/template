@@ -2,9 +2,15 @@ format: jb-book
 root: README
 
 parts:
+  - caption: Documentation
+    numbered: True
+    chapters:
+    - file: notebooks/world-bank-api.ipynb
   - caption: Additional Resources
     chapters:
-      - url: https://datapartnership.org/updates
-        title: Projects & News
-      - url: https://worldbank.org
-        title: World Bank
+      - url: https://datapartnership.org
+        title: Development Data Partnership
+      - url: https://www.worldbank.org/en/about/unit/unit-dec
+        title: World Bank DEC
+      - url: https://www.worldbank.org/en/research/dime
+        title: World Bank DIME

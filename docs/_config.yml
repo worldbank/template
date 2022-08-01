@@ -1,7 +1,7 @@
 # Book settings
 title:
-author: Development Data Partnership
-logo: images/logo.png
+author: World Bank Development Data Group
+logo: docs/images/logo.png
 
 repository:
     url: https://github.com/datapartnership/template
@@ -12,4 +12,6 @@ html:
     use_edit_page_button: true
     use_repository_button: true
     use_issues_button: true
-    baseurl: https://github.com/datapartnership/template
+    baseurl: https://datapartnership.org/template
+
+only_build_toc_files: true
