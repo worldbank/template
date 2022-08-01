@@ -15,17 +15,19 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: "3.9"
-          architecture: "x64"
-      - name: Install dependencies
+      - name: Install docs dependencies
         run: |
           if [ -f docs/requirements.txt ]; then pip install -r docs/requirements.txt; fi
+      - name: Install dependencies
+        run: |
+          $CONDA/bin/conda env update --file environment.yml --name base
       - name: Build
         run: |
-          jupyter-book build docs
+          jupyter-book build . --config docs/_config.yml --toc docs/_toc.yml
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main' && job.status == 'success'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/_build/html
+          publish_dir: ./_build/html
           enable_jekyll: false
