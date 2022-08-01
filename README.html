@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Project Template</title>
+    <title>🚀 Project Template</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,9 +50,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://github.com/datapartnership/template/README.html" />
+    <link rel="canonical" href="https://datapartnership.org/template/README.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1. World Bank API" href="notebooks/world-bank-api.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -102,28 +103,37 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
-                    Project Template
-                </a>
-            </li>
-        </ul>
         <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Documentation
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks/world-bank-api.html">
+   1. World Bank API
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Additional Resources
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference external" href="https://datapartnership.org/updates">
-   Projects &amp; News
+  <a class="reference external" href="https://datapartnership.org">
+   Development Data Partnership
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference external" href="https://worldbank.org">
-   World Bank
+  <a class="reference external" href="https://www.worldbank.org/en/about/unit/unit-dec">
+   World Bank DEC
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://www.worldbank.org/en/research/dime">
+   World Bank DIME
   </a>
  </li>
 </ul>
@@ -326,13 +336,30 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#what-s-inside">
-     What’s Inside
+    <a class="reference internal nav-link" href="#usage">
+     Usage
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#setting-up-the-documentation-with-jupyter-book">
-     Setting up the documentation with Jupyter Book
+    <a class="reference internal nav-link" href="#adding-content">
+     Adding Content
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#table-of-contents">
+       Table of Contents
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#jupyter-notebooks">
+       Jupyter Notebooks
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-s-inside">
+     What’s Inside
     </a>
    </li>
   </ul>
@@ -356,7 +383,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Project Template</h1>
+                <h1>🚀 Project Template</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -372,13 +399,30 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#what-s-inside">
-     What’s Inside
+    <a class="reference internal nav-link" href="#usage">
+     Usage
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#setting-up-the-documentation-with-jupyter-book">
-     Setting up the documentation with Jupyter Book
+    <a class="reference internal nav-link" href="#adding-content">
+     Adding Content
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#table-of-contents">
+       Table of Contents
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#jupyter-notebooks">
+       Jupyter Notebooks
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-s-inside">
+     What’s Inside
     </a>
    </li>
   </ul>
@@ -404,39 +448,167 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="project-template">
-<h1>Project Template<a class="headerlink" href="#project-template" title="Permalink to this headline">#</a></h1>
-<p>The <code class="docutils literal notranslate"><span class="pre">template</span></code> creates a <a class="reference external" href="#what-s-inside">project structure</a> with an out-of-the-box documentation with <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter Book</a> that can be published automatically on <a class="reference external" href="https://pages.github.com">GitHub Pages</a>. In addition, the <code class="docutils literal notranslate"><span class="pre">template</span></code> configures <a class="reference external" href="https://github.com/datapartnership/template/issues/new/choose">issue templates</a> (e.g., <strong>Bug report</strong> and <strong>Feature request</strong>) on your new repository to encourage collaboration.</p>
+<h1>🚀 Project Template<a class="headerlink" href="#project-template" title="Permalink to this headline">#</a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">template</span></code> is a standardized, but flexible <em>project</em> and <em>documentation</em> structure of folders and files for sharing your data science work.</p>
+<p>Inspired by <a class="reference external" href="http://www.literateprogramming.com">literate programming</a> and <a class="reference external" href="https://drivendata.github.io/cookiecutter-data-science/">Cookiecutter Data Science</a> and built as <a class="reference external" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template">GitHub template repository</a>, the <code class="docutils literal notranslate"><span class="pre">template</span></code> contains:</p>
+<ul>
+<li><p><strong>README</strong>, <strong>CODE_OF_CONDUCT</strong>, <strong>CONTRIBUTING</strong>, <strong>LICENSE</strong></p>
 <blockquote>
-<div><p><strong>See a <a class="reference external" href="https://datapartnership.github.io/template/">live demo</a>.</strong></p>
+<div><p>README files are important and often neglected. The files should provide anyone with information about the first steps to use, learn and contribute to your project. Please <strong>repurpose</strong> as required.</p>
 </div></blockquote>
-<section id="getting-started">
-<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">#</a></h2>
-<p>This repository is a <a class="reference external" href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template">GitHub template</a>. Thus, <a class="reference external" href="https://github.com/worldbank/template/generate">use this template</a> to recreate the same directory structure and files for your project.</p>
-<section id="what-s-inside">
-<h3>What’s Inside<a class="headerlink" href="#what-s-inside" title="Permalink to this headline">#</a></h3>
-<p>Following is a suggested project structure inspired by a simplified <a class="reference external" href="https://drivendata.github.io/cookiecutter-data-science/">Cookiecutter Data Science</a>.</p>
-<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>    ├── README.md          &lt;- The top-level README for developers using this project.
-    ├── data               &lt;  Placehodlder. IMPORTANT: Data must not be commited to GitHub
-    ├── docs               &lt;- Jupyter Book
-        ├── __config.yml   &lt;- Jupyter Book configuration
-    │   └── _toc.yml       &lt;- Jupyter Book table of contents
-    ├── notebooks          &lt;- Jupyter notebooks
-        ├── 00-data.ipynb  &lt;- Jupyter notebook example
-        ├── 01-eda.ipynb   &lt;- Jupyter notebook example
-        └── 02-train.ipynb &lt;- Jupyter notebook example
-    ├── Makefile           &lt;- Makefile with commands like <span class="sb">`make docs`</span> or <span class="sb">`make data`</span>
-    ├── requirements.txt   &lt;- Python requirements
-    └── LICENSE
-</pre></div>
-</div>
-</section>
-<section id="setting-up-the-documentation-with-jupyter-book">
-<h3>Setting up the documentation with Jupyter Book<a class="headerlink" href="#setting-up-the-documentation-with-jupyter-book" title="Permalink to this headline">#</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">template</span></code> offers a boilerplate of a <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter Book</a>. When ready to publish, all you need to do is edit the <code class="docutils literal notranslate"><span class="pre">docs/_toc.yml</span></code> that controls the table of contents for your book. Make sure to <a class="reference external" href="https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site">configure the publishing source</a> as <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>.</p>
-<p>Voilà! On every commit to the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch, your book will be automatically published to <a class="reference external" href="https://pages.github.com">GitHub Pages</a>. Please consult the <a class="reference external" href="https://jupyterbook.org/customize/toc.html">Jupyter Book documentation</a> for more options and parameters.</p>
+</li>
+<li><p>GitHub <a class="reference external" href="https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository">Issues and Pull Requests templates</a></p>
+<blockquote>
+<div><p>GitHub allows to customize how issues and pull requests are presented to the public. Custom templates encourage collaboration and maintainability.</p>
+</div></blockquote>
+</li>
+<li><p>docs</p>
+<blockquote>
+<div><p>Documentation is often never priotized until last minute. The <code class="docutils literal notranslate"><span class="pre">template</span></code> aims to revert the malpractice by setting up the documentation as an integral part of the code repository. With the power of <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a>, data practioners have a way to share beautifully rendered <a class="reference external" href="https://jupyter.org">Jupyter notebooks</a> using <a class="reference external" href="https://pages.github.com">GitHub Pages</a> in a standardized and effortless way.</p>
+</div></blockquote>
+</li>
+<li><p>data</p>
+<blockquote>
+<div><p>Placeholder folder for data. Data is immutable. By default, the data folder is present but ignored from version control, in order to prevent files of being mistakenly versioned in the code repository.</p>
+</div></blockquote>
+</li>
+<li><p>notebooks</p>
+<blockquote>
+<div><p>Placeholder folder for <a class="reference external" href="https://jupyter.org">Jupyter notebooks</a>. Markdown files and Jupyter notebooks can be added to <code class="docutils literal notranslate"><span class="pre">docs/_toc.yml</span></code> (Table of Contents) to compose the the <em>documentation</em>.</p>
+</div></blockquote>
+</li>
+</ul>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Your project’s Jupyter Book will be publicly available <strong>DO NOT</strong> include any portion and remember to comply to your organization’s data privacy policy.</p>
+<p>Admittedly, even the best of the templates would never be perfect; the <code class="docutils literal notranslate"><span class="pre">template</span></code> aims to encourage teams to start thinking and assimilate <strong>best practices</strong>, <strong>collaborative coding</strong>, <strong>documentation</strong>​, <strong>reproducibility​</strong> as an integral part of the project. <em>In a standardized way</em>.</p>
+<p>In this spirit, please <a class="reference external" href="https://github.com/worldbank/DECAT_Data_Science_Template/issues">open an issue</a> or <a class="reference external" href="https://github.com/worldbank/DECAT_Data_Science_Template/pulls">submit a pull request</a> to share your ideas and suggestions. See <span class="xref myst">CONTRIBUTING</span>.</p>
+</div>
+<section id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">#</a></h2>
+<section id="usage">
+<h3>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">#</a></h3>
+<aside class="margin sidebar">
+<p class="sidebar-title">✨ Can’t see the repository?</p>
+<p>Please ensure you are logged in on <a class="reference external" href="https://github.com">GitHub</a> and have permissions to create a repository.</p>
+</aside>
+<ol>
+<li><p><strong>Create new repository from template</strong></p>
+<p>The <code class="docutils literal notranslate"><span class="pre">template</span></code> is <a class="reference external" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template">GitHub template repository</a>; in other words, you can generate a new repository with the same files and folders to use as the starting point for your project with a click of a button.</p>
+<blockquote>
+<div><p>🌟 <a class="reference external" href="https://github.com/datapartnership/template/generate">Create new repository from <strong>template</strong></a></p>
+</div></blockquote>
+<figure class="align-default">
+<img alt="_images/github-template.png" src="_images/github-template.png" />
+</figure>
+<p>Now, give your repository a name, choose the <strong>visibility</strong> (Public or Private) and click <strong>Create repository from template</strong>.</p>
+<figure class="align-default">
+<img alt="_images/github-template-create.png" src="_images/github-template-create.png" />
+</figure>
+<p>Voilà! The repository has been created with the same files and folders of the <code class="docutils literal notranslate"><span class="pre">template</span></code>.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>For additional information, see the <a class="reference external" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template">GitHub documentation</a></p>
+</div>
+</li>
+<li><p><strong>Enable and Publish via <a class="reference external" href="https://pages.github.com">GitHub Pages</a></strong></p>
+<p>After creating the repository from the <code class="docutils literal notranslate"><span class="pre">template</span></code>, the <em>documentation</em> will be automatically built as a <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> via <a class="reference external" href="https://github.com/features/actions">GitHub Actions</a> from the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch and deployed to the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch on every commit.</p>
+<figure class="align-default">
+<img alt="_images/github-template-action.png" src="_images/github-template-action.png" />
+</figure>
+<p>To publish the <em>documentation</em>, please enable <a class="reference external" href="https://pages.github.com">GitHub Pages</a> by going to the repository’s settings (<code class="docutils literal notranslate"><span class="pre">Settings</span> <span class="pre">&gt;</span> <span class="pre">Pages</span></code>), and selecting to deploy the from <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch.</p>
+<figure class="align-default">
+<img alt="_images/github-template-pages.png" src="_images/github-template-pages.png" />
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The <em>documentation</em> can be published from either <em>public</em> and <em>private</em> repositories. If publishing private content, please remember to abide by your organization’s Data Privacy Policy.</p>
+</div>
+</li>
+<li><p><strong>Replace or repurpose README and community files</strong></p>
+<p>The <code class="docutils literal notranslate"><span class="pre">template</span></code> comes with README and community files, including <a class="reference internal" href="#"><span class="doc std std-doc">this <strong>README</strong></span></a>, to ensure the repository can be legally shared (otherwise, if a repository has no license, all rights are reserved) and to encourage collaboration.</p>
+<ul class="simple">
+<li><p><strong>CODE_OF_CONDUCT</strong></p></li>
+<li><p><strong>CONTRIBUTING</strong></p></li>
+<li><p><strong>LICENSE</strong></p></li>
+<li><p><strong>README</strong></p></li>
+<li><p>GitHub Issues and Pull Requests templates</p></li>
+</ul>
+<p>Please <strong>replace</strong> or <strong>repurpose</strong> the files with information about your project.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>For additional information and examples, we recommend <a class="reference external" href="https://github.com/matiassingers/awesome-readme">Awesome README</a></p>
+</div>
+</li>
+</ol>
+<p>Congratulations! You just created a beautiful home for your project. To access (and share) your project page, use the link as it shows below.</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">https://github-username.github.io/project-name</span></code></p>
+</div></blockquote>
+<p>For example, see the live demo below.</p>
+<blockquote>
+<div><p>🌟 <a class="reference external" href="https://datapartnership.org/template">Live Demo</a></p>
+</div></blockquote>
+</section>
+<section id="adding-content">
+<h3>Adding Content<a class="headerlink" href="#adding-content" title="Permalink to this headline">#</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">template</span></code> is created as a <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter Book</a> - an open-source project to build beautiful, publication-quality books and documents from computational content.</p>
+<p>Let’s see below how to add and publish new content for your project.</p>
+<section id="table-of-contents">
+<h4>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">#</a></h4>
+<p>When ready to publish the <em>documentation</em>, all you need to do is to add content and edit the file <code class="docutils literal notranslate"><span class="pre">docs/_toc.yml</span></code> that controls the <a class="reference external" href="#table-of-contents">table of contents</a> for your book. <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> supports <a class="reference external" href="https://daringfireball.net/projects/markdown/">Markdown</a>, <a class="reference external" href="https://jupyter.org">Jupyter</a> notebooks and <a class="reference external" href="https://docutils.sourceforge.io/rst.html">reStructuredText</a> files. The <code class="docutils literal notranslate"><span class="pre">template</span></code> comes with a boilerplate <a class="reference external" href="#table-of-contents">table of contents</a>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">format</span><span class="p">:</span> <span class="n">jb</span><span class="o">-</span><span class="n">book</span>
+<span class="n">root</span><span class="p">:</span> <span class="n">README</span>
+
+<span class="n">parts</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">caption</span><span class="p">:</span> <span class="n">Documentation</span>
+    <span class="n">numbered</span><span class="p">:</span> <span class="kc">True</span>
+    <span class="n">chapters</span><span class="p">:</span>
+    <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">notebooks</span><span class="o">/</span><span class="n">world</span><span class="o">-</span><span class="n">bank</span><span class="o">-</span><span class="n">api</span><span class="o">.</span><span class="n">ipynb</span>
+  <span class="o">-</span> <span class="n">caption</span><span class="p">:</span> <span class="n">Additional</span> <span class="n">Resources</span>
+    <span class="n">chapters</span><span class="p">:</span>
+      <span class="o">-</span> <span class="n">url</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">datapartnership</span><span class="o">.</span><span class="n">org</span>
+        <span class="n">title</span><span class="p">:</span> <span class="n">Development</span> <span class="n">Data</span> <span class="n">Partnership</span>
+      <span class="o">-</span> <span class="n">url</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">worldbank</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">en</span><span class="o">/</span><span class="n">about</span><span class="o">/</span><span class="n">unit</span><span class="o">/</span><span class="n">unit</span><span class="o">-</span><span class="n">dec</span>
+        <span class="n">title</span><span class="p">:</span> <span class="n">World</span> <span class="n">Bank</span> <span class="n">DEC</span>
+      <span class="o">-</span> <span class="n">url</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">worldbank</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">en</span><span class="o">/</span><span class="n">research</span><span class="o">/</span><span class="n">dime</span>
+        <span class="n">title</span><span class="p">:</span> <span class="n">World</span> <span class="n">Bank</span> <span class="n">DIME</span>
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference external" href="https://jupyterbook.org/en/stable/basics/organize.html">Jupyter Book Structure and organize content</a></p>
+</div>
+</section>
+<section id="jupyter-notebooks">
+<h4>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this headline">#</a></h4>
+<p>The <code class="docutils literal notranslate"><span class="pre">template</span></code> comes with an example of Jupyter notebook - <code class="docutils literal notranslate"><span class="pre">notebooks/world-bank-api.ipynb</span></code>.</p>
+<p><a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> will execute notebooks during the build and display <strong>code outputs</strong> and <strong>interactive visualizations</strong> as part of the <em>documentation</em>. By default, the <code class="docutils literal notranslate"><span class="pre">template</span></code> will execute any content files that have a notebook structure listed on the <a class="reference external" href="#table-of-contents">table of contents</a>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Note that <strong>all</strong> Jupyter notebooks will be executed by GitHub Actions during build. In case you would like to ignore any files, you can <a class="reference external" href="https://jupyterbook.org/en/stable/content/execute.html#exclude-files-from-execution">exclude files from execution</a>.</p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference external" href="https://jupyterbook.org/en/stable/content/executable/index.html">Jupyter Book Write executable content</a></p>
+</div>
+</section>
+</section>
+<section id="what-s-inside">
+<h3>What’s Inside<a class="headerlink" href="#what-s-inside" title="Permalink to this headline">#</a></h3>
+<p>The following is the <code class="docutils literal notranslate"><span class="pre">template</span></code>’s suggested <em>project</em> and <em>documentation</em> structure inspired by the <a class="reference external" href="https://drivendata.github.io/cookiecutter-data-science/">Cookiecutter Data Science</a>.</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>    ├── README.md                 &lt;- The top-level README to get started using this project.
+    ├── data                      &lt;- Placehodlder. IMPORTANT: Data must not be commited to GitHub
+    ├── docs                      &lt;- Documentation create with Jupyter Book
+        ├── _config.yml           &lt;- Jupyter Book configuration
+    │   └── _toc.yml              &lt;- Jupyter Book table of contents
+    ├── notebooks                 &lt;- Jupyter notebooks
+        └── world-bank-api.ipynb  &lt;- Jupyter notebook example
+    ├── Makefile                  &lt;- Makefile with commands like <span class="sb">`make docs`</span> or <span class="sb">`make data`</span>
+    ├── requirements.txt          &lt;- Python requirements
+    ├── CODE_OF_CONDUCT           &lt;- The top-level CODE_OF_CONDUCT
+    ├── CONTRIBUTING              &lt;- The top-level CONTRIBUTING
+    └── LICENSE                   &lt;- The project license
+</pre></div>
 </div>
 </section>
 </section>
@@ -448,22 +620,14 @@ title="Print to PDF"
 <div><p>This book is intended to serve as an introduction to the primary tasks required in development research, from experimental design to data collection to data analysis to publication. It serves as a companion to the DIME Wiki and is produced by DIME Analytics.</p>
 </div></blockquote>
 </li>
-<li><p><a class="reference external" href="https://guides.github.com/features/pages/">GitHub Pages</a></p>
-<blockquote>
-<div><p>GitHub Pages are public webpages hosted and easily published through GitHub.</p>
-</div></blockquote>
-</li>
-<li><p><a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter Book</a></p>
-<blockquote>
-<div><p>Jupyter Book is an open source project for building beautiful, publication-quality books and documents from computational material.</p>
-</div></blockquote>
-</li>
 </ul>
 </section>
 <section id="license">
 <h2>License<a class="headerlink" href="#license" title="Permalink to this headline">#</a></h2>
-<p>Remember to include a <span class="xref myst">license</span>. If open source, <a class="reference external" href="https://choosealicense.com">choose an open source license</a>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">template</span></code> is licensed under <a class="reference external" href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>. <strong>Remember</strong> to replace the <span class="xref myst">license</span> as needed. If open-source, <a class="reference external" href="https://choosealicense.com">choose an open source license</a>.</p>
 </section>
+<div class="toctree-wrapper compound">
+</div>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -495,6 +659,13 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='right-next' id="next-link" href="notebooks/world-bank-api.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>World Bank API</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>
@@ -502,7 +673,7 @@ title="Print to PDF"
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By World Bank<br/>
+    By World Bank Development Data Group<br/>
   
       &copy; Copyright 2022.<br/>
 </p>
