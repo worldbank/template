@@ -9,25 +9,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: "3.9"
-      - name: Install docs dependencies
-        run: |
-          if [ -f docs/requirements.txt ]; then pip install -r docs/requirements.txt; fi
-      - name: Install dependencies
-        run: |
-          $CONDA/bin/conda env update --file environment.yml --name base
-      - name: Build
-        run: |
-          jupyter-book build . --config docs/_config.yml --toc docs/_toc.yml
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main' && job.status == 'success'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_build/html
-          enable_jekyll: false
+        - uses: actions/checkout@v2
+        - uses: conda-incubator/setup-miniconda@v2
+          with:
+            environment-file: environment.yml
+            python-version: 3.9
+            auto-activate-base: false
+        - name: Build
+          shell: bash -l {0}
+          run: |
+            jupyter-book build . --config docs/_config.yml --toc docs/_toc.yml
+        - name: Deploy
+          uses: peaceiris/actions-gh-pages@v3
+          if: github.ref == 'refs/heads/main' && job.status == 'success'
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./_build/html
+            enable_jekyll: false
