@@ -73,7 +73,7 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
     ---
     ```
 
-    To publish the *documentation*, please enable [GitHub Pages](https://pages.github.com) by going to the repository's settings (`Settings > Pages`), and selecting to deploy the from `gh-pages` branch.
+    To publish the *documentation*, please enable [GitHub Pages](https://pages.github.com) by going to the repository's settings (`Settings > Pages`), and selecting to deploy from the `gh-pages` branch.
 
     ```{figure} docs/images/github-template-pages.png
     ---
@@ -84,9 +84,9 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
     The *documentation* can be published from either *public* and *private* repositories. If publishing private content, please remember to carefully the content to be made public and to abide by your organization's Data Privacy Policy.
     ```
 
-3. **Update configuration**
+3. **Update configurations**
 
-    The <span style="color:#3EACAD">template</span> comes with a default `docs/_config.yml` with default configurations. Remember to update it with your project repository and additional customizations.
+    The <span style="color:#3EACAD">template</span> comes with a default `docs/_config.yml` configuration file. Remember to update it with your project repository and additional customizations.
 
       ```
       repository:
@@ -94,8 +94,12 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
       branch: main
       ```
 
+    In case your project makes use of Python source code, tt is strongly recommended to distribute and maintain it as a Python package. The <span style="color:#3EACAD">template</span> contains an example and. Remember of update the `setup.cfg`.
+
    ```{seealso}
     [Jupyter Book Configuration Reference](https://jupyterbook.org/en/stable/customize/config.html)
+
+    [Python Packaging User Guide](https://packaging.python.org/)
     ```
 
 4. **Review and update README files**
@@ -121,7 +125,7 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
 
 <hr>
 
-**Congratulations!** You just created a beautiful home for your project. To access (and share) your project page, use (and share) the link as it shows below.
+**Congratulations!** You just created a beautiful home for your project. To access your project page, use (and share) the link as it shows below.
 
 > 🌟 `https://<your-github-username>.github.io/<your-project-name>`
 
@@ -169,7 +173,7 @@ dependencies and requirements. The <span style="color:#3EACAD">template</span> u
 
 The `environment.yml` file is where you specify any packages available on the [Anaconda repository](https://anaconda.org) as well as from the Anaconda Cloud (including [conda-forge](https://conda-forge.org)).
 
-When using a package, make sure to include the pinned version of packages required by your project (including Jupyter notebooks) as shown below.
+When using dependencies, make sure to include the pinned version of packages required by your project (including by Jupyter notebooks) as shown below.
 
 ```
 channels:

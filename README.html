@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="canonical" href="https://datapartnership.org/template/README.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="1. World Bank API" href="notebooks/world-bank-api.html" />
+    <link rel="next" title="1. Indicators Example" href="notebooks/world-bank-api.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -105,13 +105,18 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Documentation
+  Examples
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks/world-bank-api.html">
-   1. World Bank API
+   1. Indicators Example
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks/world-bank-package.html">
+   2. Package Example
   </a>
  </li>
 </ul>
@@ -526,7 +531,7 @@ title="Print to PDF"
 <figure class="align-default">
 <img alt="_images/github-template-action.png" src="_images/github-template-action.png" />
 </figure>
-<p>To publish the <em>documentation</em>, please enable <a class="reference external" href="https://pages.github.com">GitHub Pages</a> by going to the repository’s settings (<code class="docutils literal notranslate"><span class="pre">Settings</span> <span class="pre">&gt;</span> <span class="pre">Pages</span></code>), and selecting to deploy the from <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch.</p>
+<p>To publish the <em>documentation</em>, please enable <a class="reference external" href="https://pages.github.com">GitHub Pages</a> by going to the repository’s settings (<code class="docutils literal notranslate"><span class="pre">Settings</span> <span class="pre">&gt;</span> <span class="pre">Pages</span></code>), and selecting to deploy from the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch.</p>
 <figure class="align-default">
 <img alt="_images/github-template-pages.png" src="_images/github-template-pages.png" />
 </figure>
@@ -535,16 +540,18 @@ title="Print to PDF"
 <p>The <em>documentation</em> can be published from either <em>public</em> and <em>private</em> repositories. If publishing private content, please remember to carefully the content to be made public and to abide by your organization’s Data Privacy Policy.</p>
 </div>
 </li>
-<li><p><strong>Update configuration</strong></p>
-<p>The <span style="color:#3EACAD">template</span> comes with a default <code class="docutils literal notranslate"><span class="pre">docs/_config.yml</span></code> with default configurations. Remember to update it with your project repository and additional customizations.</p>
+<li><p><strong>Update configurations</strong></p>
+<p>The <span style="color:#3EACAD">template</span> comes with a default <code class="docutils literal notranslate"><span class="pre">docs/_config.yml</span></code> configuration file. Remember to update it with your project repository and additional customizations.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">repository</span><span class="p">:</span>
 <span class="n">url</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">datapartnership</span><span class="o">/</span><span class="n">template</span>
 <span class="n">branch</span><span class="p">:</span> <span class="n">main</span>
 </pre></div>
 </div>
+<p>In case your project makes use of Python source code, tt is strongly recommended to distribute and maintain it as a Python package. The <span style="color:#3EACAD">template</span> contains an example and. Remember of update the <code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code>.</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p><a class="reference external" href="https://jupyterbook.org/en/stable/customize/config.html">Jupyter Book Configuration Reference</a></p>
+<p><a class="reference external" href="https://packaging.python.org/">Python Packaging User Guide</a></p>
 </div>
 </li>
 <li><p><strong>Review and update README files</strong></p>
@@ -571,7 +578,7 @@ title="Print to PDF"
 </li>
 </ol>
 <hr>
-<p><strong>Congratulations!</strong> You just created a beautiful home for your project. To access (and share) your project page, use (and share) the link as it shows below.</p>
+<p><strong>Congratulations!</strong> You just created a beautiful home for your project. To access your project page, use (and share) the link as it shows below.</p>
 <blockquote>
 <div><p>🌟 <code class="docutils literal notranslate"><span class="pre">https://&lt;your-github-username&gt;.github.io/&lt;your-project-name&gt;</span></code></p>
 </div></blockquote>
@@ -615,7 +622,7 @@ title="Print to PDF"
 <p>The first step to ensure your code and project are realiable, reproducible and maintainable is to include
 dependencies and requirements. The <span style="color:#3EACAD">template</span> uses <a class="reference external" href="https://docs.conda.io/">conda</a> as environment manager and, as <a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">conventional</a>, the environment is controlled by the <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file is where you specify any packages available on the <a class="reference external" href="https://anaconda.org">Anaconda repository</a> as well as from the Anaconda Cloud (including <a class="reference external" href="https://conda-forge.org">conda-forge</a>).</p>
-<p>When using a package, make sure to include the pinned version of packages required by your project (including Jupyter notebooks) as shown below.</p>
+<p>When using dependencies, make sure to include the pinned version of packages required by your project (including by Jupyter notebooks) as shown below.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">channels</span><span class="p">:</span>
   <span class="o">-</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
   <span class="o">-</span> <span class="n">defaults</span>
@@ -698,7 +705,7 @@ dependencies and requirements. The <span style="color:#3EACAD">template</span> u
     <a class='right-next' id="next-link" href="notebooks/world-bank-api.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">1. </span>World Bank API</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Indicators Example</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
