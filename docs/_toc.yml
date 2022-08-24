@@ -10,6 +10,8 @@ parts:
     chapters:
       - url: https://datapartnership.org
         title: Development Data Partnership
+      - url: https://wbdatalab.org
+        title: World Bank Data Lab
       - url: https://www.worldbank.org/en/about/unit/unit-dec
         title: World Bank DEC
       - url: https://www.worldbank.org/en/research/dime

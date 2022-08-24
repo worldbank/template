@@ -4,11 +4,12 @@ author: World Bank Development Data Group
 logo: docs/images/logo.png
 
 repository:
-    url: https://github.com/datapartnership/template
+    url: https://github.com/worldbank/DECAT_Data_Science_Template
     branch: main
 
 html:
     home_page_in_navbar: false
+    extra_navbar: ""
     use_edit_page_button: true
     use_repository_button: true
     use_issues_button: true
