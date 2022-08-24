@@ -15,6 +15,11 @@ jobs:
             environment-file: environment.yml
             python-version: 3.9
             auto-activate-base: false
+        - name: Dependencies
+          shell: bash -l {0}
+          run: |
+            conda install pip
+            if [ -f docs/requirements.txt ]; then pip install -r docs/requirements.txt; fi
         - name: Build
           shell: bash -l {0}
           run: |
