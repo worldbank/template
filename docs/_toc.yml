@@ -2,10 +2,11 @@ format: jb-book
 root: README
 
 parts:
-  - caption: Documentation
+  - caption: Examples
     numbered: True
     chapters:
     - file: notebooks/world-bank-api.ipynb
+    - file: notebooks/world-bank-package.ipynb
   - caption: Additional Resources
     chapters:
       - url: https://datapartnership.org
