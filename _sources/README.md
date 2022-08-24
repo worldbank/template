@@ -94,7 +94,11 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
       branch: main
       ```
 
-    In case your project makes use of Python source code, tt is strongly recommended to distribute and maintain it as a Python package. The <span style="color:#3EACAD">template</span> contains an example and. Remember of update the `setup.cfg`.
+    In case your project makes use of Python source code, it is *strongly* recommended distributing and maintaining it as a Python package.
+
+    ```{tip}
+    The <span style="color:#3EACAD">template</span> contains an example - the [datalab](https://github.com/datapartnership/template/tree/main/src/datalab) Python package - and will automatically find and install any packages under `src` as long as `setup.cfg` is kept up-to-date.
+    ```
 
    ```{seealso}
     [Jupyter Book Configuration Reference](https://jupyterbook.org/en/stable/customize/config.html)
