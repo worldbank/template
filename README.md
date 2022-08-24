@@ -180,7 +180,7 @@ dependencies:
   - bokeh=2.4.3
   - pandas=1.4.3
   - pip:
-    - requests=2.28.1
+    - requests==2.28.1
 ```
 
 By default, the <span style="color:#3EACAD">template</span> runs on [Python 3.9](https://www.python.org).
