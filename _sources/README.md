@@ -36,13 +36,13 @@ In this spirit, in case you have feedback, please [open an issue](https://github
 
 ### Getting Started
 
-```{margin} ✨ Can't see the repository?
+```{margin} ✨ Can't see the <span style="color:#3EACAD">template</span> ?
 Please ensure you are logged in on [GitHub](https://github.com) and have permissions to create a repository.
 ```
 
 1. **Create new repository from template**
 
-    The <span style="color:#3EACAD">template</span> is [GitHub template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template); in other words, you can generate a new GitHub repository with the same files and folders to use as the starting point for your project with a click of a button.
+    The <span style="color:#3EACAD">template</span> is a [GitHub template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template); in other words, you can generate a new GitHub repository with the same files and folders to use as the starting point for your project.
 
     > 🌟 [Create new repository from **template**](https://github.com/datapartnership/template/generate)
 
@@ -81,12 +81,12 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
     ```
 
     ```{tip}
-    The *documentation* can be published from either *public* and *private* repositories. If publishing private content, please remember to carefully the content to be made public and to abide by your organization's Data Privacy Policy.
+    The *documentation* can be published from either *public* and *private* repositories. If publishing private content, please remember to carefully select the content to be made public and to abide by your organization's Data Privacy Policy.
     ```
 
 3. **Update configurations**
 
-    The <span style="color:#3EACAD">template</span> comes with a default `docs/_config.yml` configuration file. Remember to update it with your project repository and additional customizations.
+    The <span style="color:#3EACAD">template</span> comes with a default `docs/_config.yml` Jupyter Book configuration file. Remember to update it to reflect your project's name and additional information.
 
       ```
       repository:
@@ -94,10 +94,10 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
       branch: main
       ```
 
-    In case your project makes use of Python source code, it is *strongly* recommended distributing and maintaining it as a Python package.
+    In case your project makes use of Python source code, it is *strongly* recommended distributing and maintaining it as a [Python package](https://packaging.python.org/).
 
     ```{tip}
-    The <span style="color:#3EACAD">template</span> contains an example - the [datalab](https://github.com/datapartnership/template/tree/main/src/datalab) Python package - and will automatically find and install any packages under `src` as long as `setup.cfg` is kept up-to-date.
+    The <span style="color:#3EACAD">template</span> contains an packaging example - the [datalab](https://github.com/datapartnership/template/tree/main/src/datalab) Python package - and will automatically find and install any packages as long as `setup.cfg` is kept up-to-date.
     ```
 
    ```{seealso}
@@ -121,7 +121,7 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
 
 5. **Choose a license**
 
-    A LICENSE is the document that guarantees the repository can be shared, modified and receive contributions. Otherwise, if no license is present, all rights would be reserved. The <span style="color:#3EACAD">template</span> is licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0); if necessary, choose a different license for your project.
+    A LICENSE is the document that guarantees the repository can be shared, modified and receive contributions. Otherwise, if no license is present, all rights are reserved. The <span style="color:#3EACAD">template</span> is licensed under the [**World Bank Master Community License Agreement**](LICENSE); if necessary, choose a different license for your project.
 
     ```{seealso}
     [Choose an Open Source License](https://choosealicense.com)
@@ -129,11 +129,11 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
 
 <hr>
 
-**Congratulations!** You just created a beautiful home for your project. To access your project page, use (and share) the link as it shows below.
+**Congratulations!** You just created a beautiful home for your project. To access your project page, use (and share) the link as shown below.
 
 > 🌟 `https://<your-github-username>.github.io/<your-project-name>`
 
-For example, see this <span style="color:#3EACAD">template</span> as a live demo below.
+For example, see this <span style="color:#3EACAD">template</span> as a live demo.
 
 > 🌟 [datapartnership.github.io](https://datapartnership.org/template) (Live Demo)
 
@@ -218,4 +218,4 @@ The <span style="color:#3EACAD">template</span> comes with an example of Jupyter
 
 ## License
 
-The <span style="color:#3EACAD">template</span> is licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0). **Remember** to replace the [license](LICENSE) as needed. If open source, [choose an open source license](https://choosealicense.com).
+The <span style="color:#3EACAD">template</span> is licensed under the [**World Bank Master Community License Agreement**](LICENSE). Remember to replace the [license](LICENSE) if necessary. If open source, [choose an open source license](https://choosealicense.com).
