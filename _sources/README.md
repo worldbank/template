@@ -29,7 +29,7 @@ Inspired by [literate programming](http://www.literateprogramming.com) and the [
 ```{important}
 Admittedly, even the best of the templates would never be perfect; the <span style="color:#3EACAD">template</span> aims to encourage teams to start thinking and assimilate **best practices**, **collaborative coding**, **documentation**​, **reproducibility​** as an integral part of the project. *In a standardized way*.
 
-In this spirit, in case you have feedback, please [open an issue](https://github.com/worldbank/DECAT_Data_Science_Template/issues) or [submit a pull request](https://github.com/worldbank/DECAT_Data_Science_Template/pulls) to share your ideas and suggestions. See [CONTRIBUTING](CONTRIBUTING).
+In this spirit, in case you have feedback, please [open an issue](https://github.com/worldbank/template/issues) or [submit a pull request](https://github.com/worldbank/template/pulls) to share your ideas and suggestions.
 ```
 
 ## Usage
@@ -44,7 +44,7 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
 
     The <span style="color:#3EACAD">template</span> is a [GitHub template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template); in other words, you can generate a new GitHub repository with the same files and folders to use as the starting point for your project.
 
-    > 🌟 [Create new repository from **template**](https://github.com/datapartnership/template/generate)
+    > 🌟 [Create new repository from **template**](https://github.com/worldbank/template/generate)
 
     ```{figure} docs/images/github-template.png
     ---
@@ -90,14 +90,14 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
 
       ```
       repository:
-      url: https://github.com/datapartnership/template
+      url: https://github.com/worldbank/template
       branch: main
       ```
 
     In case your project makes use of Python source code, it is *strongly* recommended distributing and maintaining it as a [Python package](https://packaging.python.org/).
 
     ```{tip}
-    The <span style="color:#3EACAD">template</span> contains an example - the [datalab](https://github.com/worldbank/DECAT_Data_Science_Template/tree/main/src/datalab) Python package - and will automatically find and install any `src` packages as long as `setup.cfg` is kept up-to-date.
+    The <span style="color:#3EACAD">template</span> contains an example - the [datalab](https://github.com/worldbank/template/tree/main/src/datalab) Python package - and will automatically find and install any `src` packages as long as `setup.cfg` is kept up-to-date.
     ```
 
    ```{seealso}
@@ -135,7 +135,7 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
 
 For example, see this <span style="color:#3EACAD">template</span> as a live demo.
 
-> 🌟 [datapartnership.github.io](https://datapartnership.org/template) (Live Demo)
+> 🌟 [worldbank.github.io/template](http://worldbank.github.io/template) (Live Demo)
 
 ### Adding Content
 
@@ -175,9 +175,9 @@ parts:
 The next step is ensure your code is maintainable, realiable and reproducible by including
 any dependencies and requirements, such as packages, configurations, secrets and addtional instructions.
 
-The <span style="color:#3EACAD">template</span> uses [conda](https://docs.conda.io/) as environment manager and, as [conventional](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html), the environment is controlled by the `environment.yml` file. The `environment.yml` file is where you specify any packages available on the [Anaconda repository](https://anaconda.org) as well as from the Anaconda Cloud (including [conda-forge](https://conda-forge.org)).
+The <span style="color:#3EACAD">template</span> uses [conda](https://docs.conda.io/) as environment manager and, as [conventional](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html), the environment is controlled by the `environment.yml` file.
 
-When using dependencies, make sure to include the pinned version of packages required by your project (including by Jupyter notebooks) as shown below. This will guarantee whoever tries to use your code has the necessary packages (and correct versions).
+The `environment.yml` file is where you specify any packages available on the [Anaconda repository](https://anaconda.org) as well as from the Anaconda Cloud (including [conda-forge](https://conda-forge.org)) to install for your project. Ensure to include the pinned version of packages required by your project (including by Jupyter notebooks).
 
 ```
 channels:
@@ -191,7 +191,11 @@ dependencies:
     - requests==2.28.1
 ```
 
-By default, the <span style="color:#3EACAD">template</span> runs on [Python 3.9](https://www.python.org).
+To (re)create the environment on your installation of [conda](https://conda.io) via [anaconda](https://docs.anaconda.com/anaconda/install/), [miniconda](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/) or preferably [miniforge](https://github.com/conda-forge/miniforge), you only need to pass the `enviroment.yml` file, which will install requirements and guarantee that whoever uses your code has the necessary packages (and correct versions). By default, the <span style="color:#3EACAD">template</span> uses [Python 3.9](https://www.python.org).
+
+```
+conda env create -n <your-environment-name> -f environment.yml
+```
 
 ```{seealso}
 [Conda Managing Environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
