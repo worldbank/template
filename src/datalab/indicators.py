@@ -9,7 +9,7 @@ class WorldBankIndicatorsAPI:
 
     def _get_country_code(self, country):
         """
-        Using `pycountry`, return the ISO 3166 alpha 3 country code for corresponding query term.
+        Using `pycountry`, return the ISO 3166-1 alpha-3 country code for corresponding query term.
 
         See also:
             https://github.com/flyingcircusio/pycountry
@@ -21,7 +21,7 @@ class WorldBankIndicatorsAPI:
         Returns
         -------
         str
-             ISO 3166 alpha 3 country code for corresponding query term.
+            ISO 3166-1 alpha-3 country code for corresponding query term.
 
         Raises
         ------
@@ -62,8 +62,11 @@ class WorldBankIndicatorsAPI:
         Parameters
         ----------
         indicator : str
+            World Bank API Indicator.
         country : list, optional
+            List of countries. The country name is converted to ISO 3166-1 alpha-3 country code.
         params : dict, optional
+             World Bank API Indicator Query Strings.
 
         Returns
         -------
