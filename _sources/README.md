@@ -97,7 +97,7 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
     In case your project makes use of Python source code, it is *strongly* recommended distributing and maintaining it as a [Python package](https://packaging.python.org/).
 
     ```{tip}
-    The <span style="color:#3EACAD">template</span> contains an packaging example - the [datalab](https://github.com/datapartnership/template/tree/main/src/datalab) Python package - and will automatically find and install any packages as long as `setup.cfg` is kept up-to-date.
+    The <span style="color:#3EACAD">template</span> contains an packaging example - the [datalab](https://github.com/worldbank/DECAT_Data_Science_Template/tree/main/src/datalab) Python package - and will automatically find and install any packages as long as `setup.cfg` is kept up-to-date.
     ```
 
    ```{seealso}
