@@ -475,7 +475,7 @@ title="Print to PDF"
 </li>
 <li><p><strong>docs/</strong></p>
 <blockquote>
-<div><p>Documentation is often never priotized until last minute. The <span style="color:#3EACAD">template</span> aims to revert the malpractice by setting up the documentation as an integral part of the code repository. With the power of <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a>, data practioners have a way to share beautifully rendered <a class="reference external" href="https://jupyter.org">Jupyter notebooks</a> using <a class="reference external" href="https://pages.github.com">GitHub Pages</a> in a standardized and effortless way.</p>
+<div><p>Documentation is often never priotized until last minute. The <span style="color:#3EACAD">template</span> aims to revert the malpractice by setting up the documentation as an integral part of the code repository. With the power of <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a>, data practioners have a way to share <a class="reference external" href="https://jupyter.org">Jupyter notebooks</a> on <a class="reference external" href="https://pages.github.com">GitHub Pages</a> in a standardized and effortless way.</p>
 </div></blockquote>
 </li>
 <li><p><strong>data/</strong></p>
@@ -485,7 +485,7 @@ title="Print to PDF"
 </li>
 <li><p><strong>src/</strong></p>
 <blockquote>
-<div><p>Placeholder folder for the source code of the project. If Python, it is recommended the package is made pip-installable.</p>
+<div><p>Placeholder folder for source code. If Python, it is recommended the package is made pip-installable.</p>
 </div></blockquote>
 </li>
 <li><p><strong>notebooks/</strong></p>
@@ -550,7 +550,7 @@ title="Print to PDF"
 <p>In case your project makes use of Python source code, it is <em>strongly</em> recommended distributing and maintaining it as a <a class="reference external" href="https://packaging.python.org/">Python package</a>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>The <span style="color:#3EACAD">template</span> contains an packaging example - the <a class="reference external" href="https://github.com/worldbank/DECAT_Data_Science_Template/tree/main/src/datalab">datalab</a> Python package - and will automatically find and install any packages as long as <code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code> is kept up-to-date.</p>
+<p>The <span style="color:#3EACAD">template</span> contains an example - the <a class="reference external" href="https://github.com/worldbank/DECAT_Data_Science_Template/tree/main/src/datalab">datalab</a> Python package - and will automatically find and install any <code class="docutils literal notranslate"><span class="pre">src</span></code> packages as long as <code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code> is kept up-to-date.</p>
 </div>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
@@ -596,8 +596,8 @@ title="Print to PDF"
 <p>The <span style="color:#3EACAD">template</span> is created as a <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter Book</a> - an open-source project to build beautiful, publication-quality books and documents from computational content. Let’s see below how to add, execute and publish new content for your project.</p>
 <section id="table-of-contents">
 <h4>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">#</a></h4>
-<p>When ready to publish the <em>documentation</em> on <a class="reference external" href="https://pages.github.com/">GitHub Pages</a>, all you need to do is to add and/or update content you would like to display and edit the <a class="reference external" href="#table-of-contents">table of contents</a>.<a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> supports content written as <a class="reference external" href="https://daringfireball.net/projects/markdown/">Markdown</a>, <a class="reference external" href="https://jupyter.org">Jupyter</a> notebooks and <a class="reference external" href="https://docutils.sourceforge.io/rst.html">reStructuredText</a> files and <code class="docutils literal notranslate"><span class="pre">docs/_toc.yml</span></code> controls the <a class="reference external" href="#table-of-contents">table of contents</a> of your book.</p>
-<p>The <span style="color:#3EACAD">template</span> comes with a boilerplate <a class="reference external" href="#table-of-contents">table of contents</a> as shown below.</p>
+<p>When ready to publish the <em>documentation</em> on <a class="reference external" href="https://pages.github.com/">GitHub Pages</a>, all you need to do is to add and/or update content you would like to display and edit the <a class="reference external" href="#table-of-contents">table of contents</a>. <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> supports content written as <a class="reference external" href="https://daringfireball.net/projects/markdown/">Markdown</a>, <a class="reference external" href="https://jupyter.org">Jupyter</a> notebooks and <a class="reference external" href="https://docutils.sourceforge.io/rst.html">reStructuredText</a> files and the <code class="docutils literal notranslate"><span class="pre">docs/_toc.yml</span></code> file controls the <a class="reference external" href="#table-of-contents">table of contents</a> of your book.</p>
+<p>The <span style="color:#3EACAD">template</span> comes with the <a class="reference external" href="#table-of-contents">table of contents</a> below as an example.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">format</span><span class="p">:</span> <span class="n">jb</span><span class="o">-</span><span class="n">book</span>
 <span class="n">root</span><span class="p">:</span> <span class="n">README</span>
 
@@ -623,10 +623,10 @@ title="Print to PDF"
 </section>
 <section id="dependencies">
 <h4>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">#</a></h4>
-<p>The first step to ensure your code and project are realiable, reproducible and maintainable is to include
-dependencies and requirements. The <span style="color:#3EACAD">template</span> uses <a class="reference external" href="https://docs.conda.io/">conda</a> as environment manager and, as <a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">conventional</a>, the environment is controlled by the <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file.</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file is where you specify any packages available on the <a class="reference external" href="https://anaconda.org">Anaconda repository</a> as well as from the Anaconda Cloud (including <a class="reference external" href="https://conda-forge.org">conda-forge</a>).</p>
-<p>When using dependencies, make sure to include the pinned version of packages required by your project (including by Jupyter notebooks) as shown below.</p>
+<p>The next step is ensure your code is maintainable, realiable and reproducible by including
+any dependencies and requirements, such as packages, configurations, secrets and addtional instructions.</p>
+<p>The <span style="color:#3EACAD">template</span> uses <a class="reference external" href="https://docs.conda.io/">conda</a> as environment manager and, as <a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">conventional</a>, the environment is controlled by the <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file. The <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file is where you specify any packages available on the <a class="reference external" href="https://anaconda.org">Anaconda repository</a> as well as from the Anaconda Cloud (including <a class="reference external" href="https://conda-forge.org">conda-forge</a>).</p>
+<p>When using dependencies, make sure to include the pinned version of packages required by your project (including by Jupyter notebooks) as shown below. This will guarantee whoever tries to use your code has the necessary packages (and correct versions).</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">channels</span><span class="p">:</span>
   <span class="o">-</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
   <span class="o">-</span> <span class="n">defaults</span>
@@ -646,8 +646,8 @@ dependencies and requirements. The <span style="color:#3EACAD">template</span> u
 </section>
 <section id="jupyter-notebooks">
 <h4>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this headline">#</a></h4>
-<p><a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> will execute notebooks during the build and display <strong>code outputs</strong> and <strong>interactive visualizations</strong> as part of the <em>documentation</em>. By default, the <span style="color:#3EACAD">template</span> will execute any files listed on the <a class="reference external" href="#table-of-contents">table of contents</a> that have a notebook structure.</p>
-<p>The <span style="color:#3EACAD">template</span> comes with an example of Jupyter notebook, <code class="docutils literal notranslate"><span class="pre">notebooks/world-bank-api.ipynb</span></code>, to illustrate</p>
+<p><a class="reference external" href="https://jupyter.org">Jupyter Notebooks</a> can be beautifully rendered and downloaded from your book. <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> will execute notebooks during the build (on GitHub) and display <strong>code outputs</strong> and <strong>interactive visualizations</strong> as part of the <em>documentation</em> on the fly. By default, the <span style="color:#3EACAD">template</span> will execute any files listed on the <a class="reference external" href="#table-of-contents">table of contents</a> that have a notebook structure.</p>
+<p>The <span style="color:#3EACAD">template</span> comes with a Jupyter notebook example, <code class="docutils literal notranslate"><span class="pre">notebooks/world-bank-api.ipynb</span></code>, to illustrate.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>All</strong> Jupyter notebooks will be executed by <a class="reference external" href="https://github.com/features/actions">GitHub Actions</a> during build on each commit to the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch. Thus, it is important to include all <a class="reference external" href="#dependencies">requirements and dependencies</a> in the repository. In case you would like to ignore a notebook, you can <a class="reference external" href="https://jupyterbook.org/en/stable/content/execute.html#exclude-files-from-execution">exclude files from execution</a>.</p>

@@ -15,13 +15,13 @@ Inspired by [literate programming](http://www.literateprogramming.com) and the [
 
 - **docs/**
 
-    > Documentation is often never priotized until last minute. The <span style="color:#3EACAD">template</span> aims to revert the malpractice by setting up the documentation as an integral part of the code repository. With the power of [Jupyter Book](https://jupyterbook.org), data practioners have a way to share beautifully rendered [Jupyter notebooks](https://jupyter.org) using [GitHub Pages](https://pages.github.com) in a standardized and effortless way.
+    > Documentation is often never priotized until last minute. The <span style="color:#3EACAD">template</span> aims to revert the malpractice by setting up the documentation as an integral part of the code repository. With the power of [Jupyter Book](https://jupyterbook.org), data practioners have a way to share [Jupyter notebooks](https://jupyter.org) on [GitHub Pages](https://pages.github.com) in a standardized and effortless way.
 
 - **data/**
     > Placeholder folder for data. Data is immutable. By default, the data folder is present but ignored from version control, in order to prevent files of being mistakenly versioned in the code repository.
 
 - **src/**
-    > Placeholder folder for the source code of the project. If Python, it is recommended the package is made pip-installable.
+    > Placeholder folder for source code. If Python, it is recommended the package is made pip-installable.
 
 - **notebooks/**
     > Placeholder folder for [Jupyter notebooks](https://jupyter.org). Markdown files and Jupyter notebooks can be added to `docs/_toc.yml` (Table of Contents) to compose the *documentation*.
@@ -97,7 +97,7 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
     In case your project makes use of Python source code, it is *strongly* recommended distributing and maintaining it as a [Python package](https://packaging.python.org/).
 
     ```{tip}
-    The <span style="color:#3EACAD">template</span> contains an packaging example - the [datalab](https://github.com/worldbank/DECAT_Data_Science_Template/tree/main/src/datalab) Python package - and will automatically find and install any packages as long as `setup.cfg` is kept up-to-date.
+    The <span style="color:#3EACAD">template</span> contains an example - the [datalab](https://github.com/worldbank/DECAT_Data_Science_Template/tree/main/src/datalab) Python package - and will automatically find and install any `src` packages as long as `setup.cfg` is kept up-to-date.
     ```
 
    ```{seealso}
@@ -143,9 +143,9 @@ The <span style="color:#3EACAD">template</span> is created as a [Jupyter Book](h
 
 #### Table of Contents
 
-When ready to publish the *documentation* on [GitHub Pages](https://pages.github.com/), all you need to do is to add and/or update content you would like to display and edit the [table of contents](#table-of-contents).[Jupyter Book](https://jupyterbook.org) supports content written as [Markdown](https://daringfireball.net/projects/markdown/), [Jupyter](https://jupyter.org) notebooks and [reStructuredText](https://docutils.sourceforge.io/rst.html) files and `docs/_toc.yml` controls the [table of contents](#table-of-contents) of your book.
+When ready to publish the *documentation* on [GitHub Pages](https://pages.github.com/), all you need to do is to add and/or update content you would like to display and edit the [table of contents](#table-of-contents). [Jupyter Book](https://jupyterbook.org) supports content written as [Markdown](https://daringfireball.net/projects/markdown/), [Jupyter](https://jupyter.org) notebooks and [reStructuredText](https://docutils.sourceforge.io/rst.html) files and the `docs/_toc.yml` file controls the [table of contents](#table-of-contents) of your book.
 
-The <span style="color:#3EACAD">template</span> comes with a boilerplate [table of contents](#table-of-contents) as shown below.
+The <span style="color:#3EACAD">template</span> comes with the [table of contents](#table-of-contents) below as an example.
 
 ```
 format: jb-book
@@ -172,12 +172,12 @@ parts:
 
 #### Dependencies
 
-The first step to ensure your code and project are realiable, reproducible and maintainable is to include
-dependencies and requirements. The <span style="color:#3EACAD">template</span> uses [conda](https://docs.conda.io/) as environment manager and, as [conventional](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html), the environment is controlled by the `environment.yml` file.
+The next step is ensure your code is maintainable, realiable and reproducible by including
+any dependencies and requirements, such as packages, configurations, secrets and addtional instructions.
 
-The `environment.yml` file is where you specify any packages available on the [Anaconda repository](https://anaconda.org) as well as from the Anaconda Cloud (including [conda-forge](https://conda-forge.org)).
+The <span style="color:#3EACAD">template</span> uses [conda](https://docs.conda.io/) as environment manager and, as [conventional](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html), the environment is controlled by the `environment.yml` file. The `environment.yml` file is where you specify any packages available on the [Anaconda repository](https://anaconda.org) as well as from the Anaconda Cloud (including [conda-forge](https://conda-forge.org)).
 
-When using dependencies, make sure to include the pinned version of packages required by your project (including by Jupyter notebooks) as shown below.
+When using dependencies, make sure to include the pinned version of packages required by your project (including by Jupyter notebooks) as shown below. This will guarantee whoever tries to use your code has the necessary packages (and correct versions).
 
 ```
 channels:
@@ -199,9 +199,9 @@ By default, the <span style="color:#3EACAD">template</span> runs on [Python 3.9]
 
 #### Jupyter Notebooks
 
-[Jupyter Book](https://jupyterbook.org) will execute notebooks during the build and display **code outputs** and **interactive visualizations** as part of the *documentation*. By default, the <span style="color:#3EACAD">template</span> will execute any files listed on the [table of contents](#table-of-contents) that have a notebook structure.
+[Jupyter Notebooks](https://jupyter.org) can be beautifully rendered and downloaded from your book. [Jupyter Book](https://jupyterbook.org) will execute notebooks during the build (on GitHub) and display **code outputs** and **interactive visualizations** as part of the *documentation* on the fly. By default, the <span style="color:#3EACAD">template</span> will execute any files listed on the [table of contents](#table-of-contents) that have a notebook structure.
 
-The <span style="color:#3EACAD">template</span> comes with an example of Jupyter notebook, `notebooks/world-bank-api.ipynb`, to illustrate
+The <span style="color:#3EACAD">template</span> comes with a Jupyter notebook example, `notebooks/world-bank-api.ipynb`, to illustrate.
 
 ```{important}
 **All** Jupyter notebooks will be executed by [GitHub Actions](https://github.com/features/actions) during build on each commit to the `main` branch. Thus, it is important to include all [requirements and dependencies](#dependencies) in the repository. In case you would like to ignore a notebook, you can [exclude files from execution](https://jupyterbook.org/en/stable/content/execute.html#exclude-files-from-execution).
