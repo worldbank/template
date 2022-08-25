@@ -4,7 +4,7 @@ author: World Bank Development Data Group
 logo: docs/images/logo.png
 
 repository:
-    url: https://github.com/worldbank/DECAT_Data_Science_Template
+    url: https://github.com/worldbank/template
     branch: main
 
 html:
@@ -13,6 +13,6 @@ html:
     use_edit_page_button: true
     use_repository_button: true
     use_issues_button: true
-    baseurl: https://datapartnership.org/template
+    baseurl: https://worldbank.github.io/template
 
 only_build_toc_files: true
