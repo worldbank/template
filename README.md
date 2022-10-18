@@ -2,10 +2,10 @@
 
 The <span style="color:#3EACAD">template</span> is a standardized, but flexible *project* and *documentation* structure of folders and files for sharing your data science work.
 
-Inspired by [literate programming](http://www.literateprogramming.com) and the [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/), maintained by the [World Bank Data Lab](https://wbdatalab.org) and built as [GitHub template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template), the <span style="color:#3EACAD">template</span> contains:
+Inspired by [literate programming](http://literateprogramming.com) and [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/), maintained by the [World Bank Development Data Group](https://www.worldbank.org/en/about/unit/unit-dec#2) and built as [GitHub template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template), the <span style="color:#3EACAD">template</span> contains:
 
 - **README**, **CODE_OF_CONDUCT**, **CONTRIBUTING**
-    > README files are important and often neglected. The files should provide anyone with information about the first steps to use, learn and contribute to your project.
+    > README files are important and often neglected. The files should inform anyone about about the first steps to use, learn and contribute to your project.
 
 - **LICENSE**
   > The LICENSE is a document that  determines what others can and cannot do with contents of the repository. If no license is present, no one has permission to use and/or modify your code.
@@ -66,7 +66,7 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
 
 2. **Enable and Publish via [GitHub Pages](https://pages.github.com)**
 
-    After creating the repository from the <span style="color:#3EACAD">template</span>, the *documentation* will be automatically built as a [Jupyter Book](https://jupyterbook.org) from the `main` branch and deployed to the `gh-pages` branch via [GitHub Actions](https://github.com/features/actions).
+    After creating the repository from the <span style="color:#3EACAD">template</span>, a [Jupyter Book](https://jupyterbook.org) will be automatically built from the `main` branch and deployed to the `gh-pages` branch via [GitHub Actions](https://github.com/features/actions).
 
     ```{figure} docs/images/github-template-action.png
     ---
@@ -86,7 +86,7 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
 
 3. **Update configurations**
 
-    The <span style="color:#3EACAD">template</span> comes with a default `docs/_config.yml` Jupyter Book configuration file. Remember to update it to reflect your project's name and additional information.
+    The <span style="color:#3EACAD">template</span> comes with a default `docs/_config.yml` Jupyter Book configuration file. Remember to update it to reflect your project's name and details.
 
       ```
       repository:
@@ -94,7 +94,7 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
       branch: main
       ```
 
-    In case your project makes use of Python source code, it is *strongly* recommended distributing and maintaining it as a [Python package](https://packaging.python.org/).
+    In case your project uses Python, it is *strongly* recommended distributing it as a [package](https://packaging.python.org/).
 
     ```{tip}
     The <span style="color:#3EACAD">template</span> contains an example - the [datalab](https://github.com/worldbank/template/tree/main/src/datalab) Python package - and will automatically find and install any `src` packages as long as `setup.cfg` is kept up-to-date.
@@ -143,7 +143,7 @@ The <span style="color:#3EACAD">template</span> is created as a [Jupyter Book](h
 
 #### Table of Contents
 
-When ready to publish the *documentation* on [GitHub Pages](https://pages.github.com/), all you need to do is to add and/or update content you would like to display and edit the [table of contents](#table-of-contents). [Jupyter Book](https://jupyterbook.org) supports content written as [Markdown](https://daringfireball.net/projects/markdown/), [Jupyter](https://jupyter.org) notebooks and [reStructuredText](https://docutils.sourceforge.io/rst.html) files and the `docs/_toc.yml` file controls the [table of contents](#table-of-contents) of your book.
+When ready to publish the *documentation* on [GitHub Pages](https://pages.github.com/), all you need to do is edit the [table of contents](#table-of-contents) and add and/or update content you would like to display. [Jupyter Book](https://jupyterbook.org) supports content written as [Markdown](https://daringfireball.net/projects/markdown/), [Jupyter](https://jupyter.org) notebooks and [reStructuredText](https://docutils.sourceforge.io/rst.html) files and the `docs/_toc.yml` file controls the [table of contents](#table-of-contents) of your book.
 
 The <span style="color:#3EACAD">template</span> comes with the [table of contents](#table-of-contents) below as an example.
 
@@ -173,7 +173,7 @@ parts:
 #### Dependencies
 
 The next step is ensure your code is maintainable, realiable and reproducible by including
-any dependencies and requirements, such as packages, configurations, secrets and addtional instructions.
+any dependencies and requirements, such as packages, configurations, secrets (template) and addtional instructions.
 
 The <span style="color:#3EACAD">template</span> uses [conda](https://docs.conda.io/) as environment manager and, as [conventional](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html), the environment is controlled by the `environment.yml` file.
 
@@ -191,7 +191,7 @@ dependencies:
     - requests==2.28.1
 ```
 
-To (re)create the environment on your installation of [conda](https://conda.io) via [anaconda](https://docs.anaconda.com/anaconda/install/), [miniconda](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/) or preferably [miniforge](https://github.com/conda-forge/miniforge), you only need to pass the `enviroment.yml` file, which will install requirements and guarantee that whoever uses your code has the necessary packages (and correct versions). By default, the <span style="color:#3EACAD">template</span> uses [Python 3.9](https://www.python.org).
+To (re)create the environment on your installation of [conda](https://conda.io) via [anaconda](https://docs.anaconda.com/anaconda/install/), [miniconda](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/) or preferably [miniforge](https://github.com/conda-forge/miniforge), you only need to pass the `environment.yml` file, which will install requirements and guarantee that whoever uses your code has the necessary packages (and correct versions). By default, the <span style="color:#3EACAD">template</span> uses [Python 3.9](https://www.python.org).
 
 ```
 conda env create -n <your-environment-name> -f environment.yml
@@ -215,11 +215,6 @@ The <span style="color:#3EACAD">template</span> comes with a Jupyter notebook ex
 [Jupyter Book Write executable content](https://jupyterbook.org/en/stable/content/executable/index.html)
 ```
 
-## Additional Resources
-
-- [DIME Analytics Data Handbook](https://worldbank.github.io/dime-data-handbook/)
-    > This book is intended to serve as an introduction to the primary tasks required in development research, from experimental design to data collection to data analysis to publication. It serves as a companion to the DIME Wiki and is produced by DIME Analytics.
-
 ## License
 
-The <span style="color:#3EACAD">template</span> is licensed under the [**World Bank Master Community License Agreement**](LICENSE). Remember to replace the [license](LICENSE) if necessary. If open source, [choose an open source license](https://choosealicense.com).
+The <span style="color:#3EACAD">template</span> is licensed under the [**World Bank Master Community License Agreement**](LICENSE.md). Remember to replace the [license](LICENSE.md) if necessary. If open source, [choose an open source license](https://choosealicense.com).
