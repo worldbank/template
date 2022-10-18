@@ -371,11 +371,6 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#additional-resources">
-   Additional Resources
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#license">
    License
   </a>
@@ -434,11 +429,6 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#additional-resources">
-   Additional Resources
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#license">
    License
   </a>
@@ -456,11 +446,11 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="project-template">
 <h1>🚀 Project Template<a class="headerlink" href="#project-template" title="Permalink to this headline">#</a></h1>
 <p>The <span style="color:#3EACAD">template</span> is a standardized, but flexible <em>project</em> and <em>documentation</em> structure of folders and files for sharing your data science work.</p>
-<p>Inspired by <a class="reference external" href="http://www.literateprogramming.com">literate programming</a> and the <a class="reference external" href="https://drivendata.github.io/cookiecutter-data-science/">Cookiecutter Data Science</a>, maintained by the <a class="reference external" href="https://wbdatalab.org">World Bank Data Lab</a> and built as <a class="reference external" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template">GitHub template repository</a>, the <span style="color:#3EACAD">template</span> contains:</p>
+<p>Inspired by <a class="reference external" href="http://literateprogramming.com">literate programming</a> and <a class="reference external" href="https://drivendata.github.io/cookiecutter-data-science/">Cookiecutter Data Science</a>, maintained by the <a class="reference external" href="https://www.worldbank.org/en/about/unit/unit-dec#2">World Bank Development Data Group</a> and built as <a class="reference external" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template">GitHub template repository</a>, the <span style="color:#3EACAD">template</span> contains:</p>
 <ul>
 <li><p><strong>README</strong>, <strong>CODE_OF_CONDUCT</strong>, <strong>CONTRIBUTING</strong></p>
 <blockquote>
-<div><p>README files are important and often neglected. The files should provide anyone with information about the first steps to use, learn and contribute to your project.</p>
+<div><p>README files are important and often neglected. The files should inform anyone about about the first steps to use, learn and contribute to your project.</p>
 </div></blockquote>
 </li>
 <li><p><strong>LICENSE</strong></p>
@@ -527,7 +517,7 @@ title="Print to PDF"
 </div>
 </li>
 <li><p><strong>Enable and Publish via <a class="reference external" href="https://pages.github.com">GitHub Pages</a></strong></p>
-<p>After creating the repository from the <span style="color:#3EACAD">template</span>, the <em>documentation</em> will be automatically built as a <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> from the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch and deployed to the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch via <a class="reference external" href="https://github.com/features/actions">GitHub Actions</a>.</p>
+<p>After creating the repository from the <span style="color:#3EACAD">template</span>, a <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> will be automatically built from the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch and deployed to the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch via <a class="reference external" href="https://github.com/features/actions">GitHub Actions</a>.</p>
 <figure class="align-default">
 <img alt="_images/github-template-action.png" src="_images/github-template-action.png" />
 </figure>
@@ -541,13 +531,13 @@ title="Print to PDF"
 </div>
 </li>
 <li><p><strong>Update configurations</strong></p>
-<p>The <span style="color:#3EACAD">template</span> comes with a default <code class="docutils literal notranslate"><span class="pre">docs/_config.yml</span></code> Jupyter Book configuration file. Remember to update it to reflect your project’s name and additional information.</p>
+<p>The <span style="color:#3EACAD">template</span> comes with a default <code class="docutils literal notranslate"><span class="pre">docs/_config.yml</span></code> Jupyter Book configuration file. Remember to update it to reflect your project’s name and details.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">repository</span><span class="p">:</span>
 <span class="n">url</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">worldbank</span><span class="o">/</span><span class="n">template</span>
 <span class="n">branch</span><span class="p">:</span> <span class="n">main</span>
 </pre></div>
 </div>
-<p>In case your project makes use of Python source code, it is <em>strongly</em> recommended distributing and maintaining it as a <a class="reference external" href="https://packaging.python.org/">Python package</a>.</p>
+<p>In case your project uses Python, it is <em>strongly</em> recommended distributing it as a <a class="reference external" href="https://packaging.python.org/">package</a>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>The <span style="color:#3EACAD">template</span> contains an example - the <a class="reference external" href="https://github.com/worldbank/template/tree/main/src/datalab">datalab</a> Python package - and will automatically find and install any <code class="docutils literal notranslate"><span class="pre">src</span></code> packages as long as <code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code> is kept up-to-date.</p>
@@ -596,7 +586,7 @@ title="Print to PDF"
 <p>The <span style="color:#3EACAD">template</span> is created as a <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter Book</a> - an open-source project to build beautiful, publication-quality books and documents from computational content. Let’s see below how to add, execute and publish new content for your project.</p>
 <section id="table-of-contents">
 <h4>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">#</a></h4>
-<p>When ready to publish the <em>documentation</em> on <a class="reference external" href="https://pages.github.com/">GitHub Pages</a>, all you need to do is to add and/or update content you would like to display and edit the <a class="reference external" href="#table-of-contents">table of contents</a>. <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> supports content written as <a class="reference external" href="https://daringfireball.net/projects/markdown/">Markdown</a>, <a class="reference external" href="https://jupyter.org">Jupyter</a> notebooks and <a class="reference external" href="https://docutils.sourceforge.io/rst.html">reStructuredText</a> files and the <code class="docutils literal notranslate"><span class="pre">docs/_toc.yml</span></code> file controls the <a class="reference external" href="#table-of-contents">table of contents</a> of your book.</p>
+<p>When ready to publish the <em>documentation</em> on <a class="reference external" href="https://pages.github.com/">GitHub Pages</a>, all you need to do is edit the <a class="reference external" href="#table-of-contents">table of contents</a> and add and/or update content you would like to display. <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> supports content written as <a class="reference external" href="https://daringfireball.net/projects/markdown/">Markdown</a>, <a class="reference external" href="https://jupyter.org">Jupyter</a> notebooks and <a class="reference external" href="https://docutils.sourceforge.io/rst.html">reStructuredText</a> files and the <code class="docutils literal notranslate"><span class="pre">docs/_toc.yml</span></code> file controls the <a class="reference external" href="#table-of-contents">table of contents</a> of your book.</p>
 <p>The <span style="color:#3EACAD">template</span> comes with the <a class="reference external" href="#table-of-contents">table of contents</a> below as an example.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">format</span><span class="p">:</span> <span class="n">jb</span><span class="o">-</span><span class="n">book</span>
 <span class="n">root</span><span class="p">:</span> <span class="n">README</span>
@@ -624,7 +614,7 @@ title="Print to PDF"
 <section id="dependencies">
 <h4>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">#</a></h4>
 <p>The next step is ensure your code is maintainable, realiable and reproducible by including
-any dependencies and requirements, such as packages, configurations, secrets and addtional instructions.</p>
+any dependencies and requirements, such as packages, configurations, secrets (template) and addtional instructions.</p>
 <p>The <span style="color:#3EACAD">template</span> uses <a class="reference external" href="https://docs.conda.io/">conda</a> as environment manager and, as <a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">conventional</a>, the environment is controlled by the <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file is where you specify any packages available on the <a class="reference external" href="https://anaconda.org">Anaconda repository</a> as well as from the Anaconda Cloud (including <a class="reference external" href="https://conda-forge.org">conda-forge</a>) to install for your project. Ensure to include the pinned version of packages required by your project (including by Jupyter notebooks).</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">channels</span><span class="p">:</span>
@@ -638,7 +628,7 @@ any dependencies and requirements, such as packages, configurations, secrets and
     <span class="o">-</span> <span class="n">requests</span><span class="o">==</span><span class="mf">2.28.1</span>
 </pre></div>
 </div>
-<p>To (re)create the environment on your installation of <a class="reference external" href="https://conda.io">conda</a> via <a class="reference external" href="https://docs.anaconda.com/anaconda/install/">anaconda</a>, <a class="reference external" href="https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/">miniconda</a> or preferably <a class="reference external" href="https://github.com/conda-forge/miniforge">miniforge</a>, you only need to pass the <code class="docutils literal notranslate"><span class="pre">enviroment.yml</span></code> file, which will install requirements and guarantee that whoever uses your code has the necessary packages (and correct versions). By default, the <span style="color:#3EACAD">template</span> uses <a class="reference external" href="https://www.python.org">Python 3.9</a>.</p>
+<p>To (re)create the environment on your installation of <a class="reference external" href="https://conda.io">conda</a> via <a class="reference external" href="https://docs.anaconda.com/anaconda/install/">anaconda</a>, <a class="reference external" href="https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/">miniconda</a> or preferably <a class="reference external" href="https://github.com/conda-forge/miniforge">miniforge</a>, you only need to pass the <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file, which will install requirements and guarantee that whoever uses your code has the necessary packages (and correct versions). By default, the <span style="color:#3EACAD">template</span> uses <a class="reference external" href="https://www.python.org">Python 3.9</a>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="o">&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">environment</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">f</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
 </pre></div>
 </div>
@@ -661,16 +651,6 @@ any dependencies and requirements, such as packages, configurations, secrets and
 </div>
 </section>
 </section>
-</section>
-<section id="additional-resources">
-<h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this headline">#</a></h2>
-<ul>
-<li><p><a class="reference external" href="https://worldbank.github.io/dime-data-handbook/">DIME Analytics Data Handbook</a></p>
-<blockquote>
-<div><p>This book is intended to serve as an introduction to the primary tasks required in development research, from experimental design to data collection to data analysis to publication. It serves as a companion to the DIME Wiki and is produced by DIME Analytics.</p>
-</div></blockquote>
-</li>
-</ul>
 </section>
 <section id="license">
 <h2>License<a class="headerlink" href="#license" title="Permalink to this headline">#</a></h2>
