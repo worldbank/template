@@ -87,3 +87,6 @@ target/
 
 # Jupyter Book
 _build/
+
+# python-dotenv
+.env
