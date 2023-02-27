@@ -5,8 +5,9 @@ parts:
   - caption: Examples
     numbered: True
     chapters:
-    - file: notebooks/world-bank-api.ipynb
-    - file: notebooks/world-bank-package.ipynb
+      - file: notebooks/world-bank-api.ipynb
+      - file: notebooks/world-bank-package.ipynb
+      - file: notebooks/nasa-apod.ipynb
   - caption: Additional Resources
     chapters:
       - url: https://datapartnership.org
