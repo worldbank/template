@@ -25,3 +25,9 @@ execute:
   allow_errors: true
   exclude_patterns:
     - notebooks/nasa-apod.ipynb
+
+#######################################################################################
+# Sphinx settings
+sphinx:
+  config:
+    html_last_updated_fmt: "%b %d, %Y"
