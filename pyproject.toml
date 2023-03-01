@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "datalab"
-version = "0.1.0"
+dynamic = ["version"]
 description = "An Python exampe package from the World Bank Data Lab"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = {file = "LICENSE.md", content-type = "text/markdown"}
@@ -39,3 +39,6 @@ notebook = ["notebook>=6.5.2"]
 "Homepage" = "https://github.com/worldbank/template"
 "Bug Reports" = "https://github.com/worldbank/template/issues"
 "Source" = "https://github.com/worldbank/template"
+
+[tool.setuptools.dynamic]
+version = {attr = "datalab.__version__"}
