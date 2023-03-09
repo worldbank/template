@@ -10,17 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: conda-incubator/setup-miniconda@v2
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          environment-file: environment.yml
-          auto-activate-base: false
+          cache: "pip"
       - name: Dependencies
-        shell: bash -l {0}
         run: |
-          conda install pip
           if [ -f docs/requirements.txt ]; then pip install -r docs/requirements.txt; fi
-      - name: Build
-        shell: bash -l {0}
+      - name: Build Jupyter Book
         run: |
           jupyter-book build . --config docs/_config.yml --toc docs/_toc.yml
       - name: Deploy
