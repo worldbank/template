@@ -7,7 +7,7 @@ name = "datalab"
 dynamic = ["version"]
 description = "An Python exampe package from the World Bank Data Lab"
 readme = {file = "README.md", content-type = "text/markdown"}
-license = {file = "LICENSE.md", content-type = "text/markdown"}
+license = {file = "LICENSE"}
 keywords = ["world bank", "template", "reproducible research"]
 authors = [
   {name="World Bank Development Data Group", email="datalab@worldbank.org"},
