@@ -21,10 +21,7 @@ html:
 #######################################################################################
 # Execution settings
 execute:
-  execute_notebooks: force
-  allow_errors: true
-  exclude_patterns:
-    - notebooks/nasa-apod.ipynb
+  execute_notebooks: "off"
 
 #######################################################################################
 # Sphinx settings
