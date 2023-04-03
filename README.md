@@ -64,23 +64,32 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
     For additional information, see the [GitHub documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
     ```
 
-2. **Enable and Publish via [GitHub Pages](https://pages.github.com)**
+2. **Enable [GitHub Actions](https://github.com/features/actions) and [GitHub Pages](https://pages.github.com)**
 
-    After creating the repository from the <span style="color:#3EACAD">template</span>, a [Jupyter Book](https://jupyterbook.org) will be automatically built from the `main` branch and deployed to the `gh-pages` branch via [GitHub Actions](https://github.com/features/actions).
+    After creating the repository from the <span style="color:#3EACAD">template</span>, you will have to enable [GitHub Actions](https://github.com/features/actions) and [GitHub Pages](https://pages.github.com) to allow the [Jupyter Book](https://jupyterbook.org) to be built and published.
 
-    ```{figure} docs/images/github-template-action.png
-    ---
-    ---
+    To activate the workflow, please enable [GitHub Actions](https://github.com/features/actions) by going to the repository's settings (`Settings > Actions > General`), and selecting **read and write permissions** as shown below.
+
+    ```{figure} docs/images/github-template-action-enable.png
+      ---
+      ---
     ```
 
-    To publish the *documentation*, please enable [GitHub Pages](https://pages.github.com) by going to the repository's settings (`Settings > Pages`), and selecting to deploy from the `gh-pages` branch.
+    To publish, please enable [GitHub Pages](https://pages.github.com) by going to the repository's settings (`Settings > Pages`), and selecting to deploy from the `gh-pages` branch.
 
     ```{figure} docs/images/github-template-pages.png
     ---
     ---
     ```
 
-    ```{tip}
+    On the next push to `main`, the [Jupyter Book](https://jupyterbook.org) will be automatically built and published. You can check the progress on the  `Actions` tab.
+
+    ```{figure} docs/images/github-template-action.png
+    ---
+    ---
+    ```
+
+    ```{caution}
     The *documentation* can be published from either *public* and *private* repositories. If publishing private content, please remember to carefully select the content to be made public and to abide by your organization's Data Privacy Policy.
     ```
 
@@ -94,16 +103,8 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
       branch: main
       ```
 
-    In case your project uses Python, it is *strongly* recommended distributing it as a [package](https://packaging.python.org/).
-
-    ```{tip}
-    The <span style="color:#3EACAD">template</span> contains an example - the [datalab](https://github.com/worldbank/template/tree/main/src/datalab) Python package - and will automatically find and install any `src` packages as long as `setup.cfg` is kept up-to-date.
-    ```
-
    ```{seealso}
     [Jupyter Book Configuration Reference](https://jupyterbook.org/en/stable/customize/config.html)
-
-    [Python Packaging User Guide](https://packaging.python.org/)
     ```
 
 4. **Review and update README files**
@@ -121,11 +122,7 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
 
 5. **Choose a license**
 
-    A LICENSE is the document that guarantees the repository can be shared, modified and receive contributions. Otherwise, if no license is present, all rights are reserved. The <span style="color:#3EACAD">template</span> is licensed under the [**World Bank Master Community License Agreement**](LICENSE); if necessary, choose a different license for your project.
-
-    ```{seealso}
-    [Choose an Open Source License](https://choosealicense.com)
-    ```
+    The <span style="color:#3EACAD">template</span> is licensed under the [**World Bank Master Community License Agreement**](LICENSE). A LICENSE is the document that guarantees the repository can be shared, modified and receive contributions. Otherwise, if no license is present, all rights are reserved.
 
 <hr>
 
@@ -148,22 +145,25 @@ When ready to publish the *documentation* on [GitHub Pages](https://pages.github
 The <span style="color:#3EACAD">template</span> comes with the [table of contents](#table-of-contents) below as an example.
 
 ```
+
 format: jb-book
 root: README
 
 parts:
-  - caption: Documentation
+
+- caption: Documentation
     numbered: True
     chapters:
-    - file: notebooks/world-bank-api.ipynb
-  - caption: Additional Resources
+  - file: notebooks/world-bank-api.ipynb
+- caption: Additional Resources
     chapters:
-      - url: https://datapartnership.org
+  - url: <https://datapartnership.org>
         title: Development Data Partnership
-      - url: https://www.worldbank.org/en/about/unit/unit-dec
+  - url: <https://www.worldbank.org/en/about/unit/unit-dec>
         title: World Bank DEC
-      - url: https://www.worldbank.org/en/research/dime
+  - url: <https://www.worldbank.org/en/research/dime>
         title: World Bank DIME
+
 ```
 
 ```{seealso}
@@ -175,7 +175,7 @@ parts:
 The next step is ensure your code is maintainable, realiable and reproducible by including
 any dependencies and requirements, such as packages, configurations, secrets (template) and addtional instructions.
 
-The <span style="color:#3EACAD">template</span> uses [conda](https://docs.conda.io/) as environment manager and, as [conventional](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html), the environment is controlled by the `environment.yml` file.
+The <span style="color:#3EACAD">template</span> suggests to use [conda](https://docs.conda.io/) (or [mamba](https://mamba.readthedocs.io/en/latest/)) as environment manager and, as [conventional](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html), the environment is controlled by the `environment.yml` file.
 
 The `environment.yml` file is where you specify any packages available on the [Anaconda repository](https://anaconda.org) as well as from the Anaconda Cloud (including [conda-forge](https://conda-forge.org)) to install for your project. Ensure to include the pinned version of packages required by your project (including by Jupyter notebooks).
 
@@ -197,18 +197,22 @@ To (re)create the environment on your installation of [conda](https://conda.io) 
 conda env create -n <your-environment-name> -f environment.yml
 ```
 
+In case your project uses Python, it is *strongly* recommended to distribute it as a [package](https://packaging.python.org/).
+
+```{important}
+The <span style="color:#3EACAD">template</span> contains an example - the [datalab](https://github.com/worldbank/template/tree/main/src/datalab) Python package - and will automatically find and install any `src` packages as long as `pyproject.yml` is kept up-to-date.
+```
+
 ```{seealso}
 [Conda Managing Environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 ```
 
 #### Jupyter Notebooks
 
-[Jupyter Notebooks](https://jupyter.org) can be beautifully rendered and downloaded from your book. [Jupyter Book](https://jupyterbook.org) will execute notebooks during the build (on GitHub) and display **code outputs** and **interactive visualizations** as part of the *documentation* on the fly. By default, the <span style="color:#3EACAD">template</span> will execute any files listed on the [table of contents](#table-of-contents) that have a notebook structure.
-
-The <span style="color:#3EACAD">template</span> comes with a Jupyter notebook example, `notebooks/world-bank-api.ipynb`, to illustrate.
+[Jupyter Notebooks](https://jupyter.org) can be beautifully rendered and downloaded from your book. By default, the <span style="color:#3EACAD">template</span> will render any files listed on the [table of contents](#table-of-contents) that have a notebook structure. The <span style="color:#3EACAD">template</span> comes with a Jupyter notebook example, `notebooks/world-bank-api.ipynb`, to illustrate.
 
 ```{important}
-**All** Jupyter notebooks will be executed by [GitHub Actions](https://github.com/features/actions) during build on each commit to the `main` branch. Thus, it is important to include all [requirements and dependencies](#dependencies) in the repository. In case you would like to ignore a notebook, you can [exclude files from execution](https://jupyterbook.org/en/stable/content/execute.html#exclude-files-from-execution).
+Optionally, [Jupyter Book](https://jupyterbook.org) can execute notebooks during the build (on GitHub) and display **code outputs** and **interactive visualizations** as part of the *documentation* on the fly. In this case, Jupyter notebooks will be executed by [GitHub Actions](https://github.com/features/actions) during build on each commit to the `main` branch. Thus, it is important to include all [requirements and dependencies](#dependencies) in the repository. In case you would like to ignore a notebook, you can [exclude files from execution](https://jupyterbook.org/en/stable/content/execute.html#exclude-files-from-execution).
 ```
 
 ```{seealso}
@@ -217,4 +221,4 @@ The <span style="color:#3EACAD">template</span> comes with a Jupyter notebook ex
 
 ## License
 
-The <span style="color:#3EACAD">template</span> is licensed under the [**World Bank Master Community License Agreement**](LICENSE.md). Remember to replace the [license](LICENSE.md) if necessary. If open source, [choose an open source license](https://choosealicense.com).
+The <span style="color:#3EACAD">template</span> is licensed under the [**World Bank Master Community License Agreement**](LICENSE). Remember to replace the [license](LICENSE.md) if necessary. If open source, [choose an open source license](https://choosealicense.com).
