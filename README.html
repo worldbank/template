@@ -679,17 +679,22 @@ title="Print to PDF"
 <p>For additional information, see the <a class="reference external" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template">GitHub documentation</a></p>
 </div>
 </li>
-<li><p><strong>Enable and Publish via <a class="reference external" href="https://pages.github.com">GitHub Pages</a></strong></p>
-<p>After creating the repository from the <span style="color:#3EACAD">template</span>, a <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> will be automatically built from the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch and deployed to the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch via <a class="reference external" href="https://github.com/features/actions">GitHub Actions</a>.</p>
+<li><p><strong>Enable <a class="reference external" href="https://github.com/features/actions">GitHub Actions</a> and <a class="reference external" href="https://pages.github.com">GitHub Pages</a></strong></p>
+<p>After creating the repository from the <span style="color:#3EACAD">template</span>, you will have to enable <a class="reference external" href="https://github.com/features/actions">GitHub Actions</a> and <a class="reference external" href="https://pages.github.com">GitHub Pages</a> to allow the <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> to be built and published.</p>
+<p>To activate the workflow, please enable <a class="reference external" href="https://github.com/features/actions">GitHub Actions</a> by going to the repository’s settings (<code class="docutils literal notranslate"><span class="pre">Settings</span> <span class="pre">&gt;</span> <span class="pre">Actions</span> <span class="pre">&gt;</span> <span class="pre">General</span></code>), and selecting <strong>read and write permissions</strong> as shown below.</p>
 <figure class="align-default">
-<img alt="_images/github-template-action.png" src="_images/github-template-action.png" />
+<img alt="docs/images/github-template-action-enable.png" src="docs/images/github-template-action-enable.png" />
 </figure>
-<p>To publish the <em>documentation</em>, please enable <a class="reference external" href="https://pages.github.com">GitHub Pages</a> by going to the repository’s settings (<code class="docutils literal notranslate"><span class="pre">Settings</span> <span class="pre">&gt;</span> <span class="pre">Pages</span></code>), and selecting to deploy from the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch.</p>
+<p>To publish, please enable <a class="reference external" href="https://pages.github.com">GitHub Pages</a> by going to the repository’s settings (<code class="docutils literal notranslate"><span class="pre">Settings</span> <span class="pre">&gt;</span> <span class="pre">Pages</span></code>), and selecting to deploy from the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch.</p>
 <figure class="align-default">
 <img alt="_images/github-template-pages.png" src="_images/github-template-pages.png" />
 </figure>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
+<p>On the next push to <code class="docutils literal notranslate"><span class="pre">main</span></code>, the <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> will be automatically built and published. You can check the progress on the  <code class="docutils literal notranslate"><span class="pre">Actions</span></code> tab.</p>
+<figure class="align-default">
+<img alt="_images/github-template-action.png" src="_images/github-template-action.png" />
+</figure>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
 <p>The <em>documentation</em> can be published from either <em>public</em> and <em>private</em> repositories. If publishing private content, please remember to carefully select the content to be made public and to abide by your organization’s Data Privacy Policy.</p>
 </div>
 </li>
@@ -700,15 +705,9 @@ title="Print to PDF"
 <span class="n">branch</span><span class="p">:</span> <span class="n">main</span>
 </pre></div>
 </div>
-<p>In case your project uses Python, it is <em>strongly</em> recommended distributing it as a <a class="reference external" href="https://packaging.python.org/">package</a>.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>The <span style="color:#3EACAD">template</span> contains an example - the <a class="reference external" href="https://github.com/worldbank/template/tree/main/src/datalab">datalab</a> Python package - and will automatically find and install any <code class="docutils literal notranslate"><span class="pre">src</span></code> packages as long as <code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code> is kept up-to-date.</p>
-</div>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p><a class="reference external" href="https://jupyterbook.org/en/stable/customize/config.html">Jupyter Book Configuration Reference</a></p>
-<p><a class="reference external" href="https://packaging.python.org/">Python Packaging User Guide</a></p>
 </div>
 </li>
 <li><p><strong>Review and update README files</strong></p>
@@ -727,11 +726,7 @@ title="Print to PDF"
 </div>
 </li>
 <li><p><strong>Choose a license</strong></p>
-<p>A LICENSE is the document that guarantees the repository can be shared, modified and receive contributions. Otherwise, if no license is present, all rights are reserved. The <span style="color:#3EACAD">template</span> is licensed under the <a class="reference download internal" download="" href="_downloads/9879d6db96fd29134fc802214163b95a/LICENSE"><span class="xref download myst"><strong>World Bank Master Community License Agreement</strong></span></a>; if necessary, choose a different license for your project.</p>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p><a class="reference external" href="https://choosealicense.com">Choose an Open Source License</a></p>
-</div>
+<p>The <span style="color:#3EACAD">template</span> is licensed under the <a class="reference download internal" download="" href="_downloads/9879d6db96fd29134fc802214163b95a/LICENSE"><span class="xref download myst"><strong>World Bank Master Community License Agreement</strong></span></a>. A LICENSE is the document that guarantees the repository can be shared, modified and receive contributions. Otherwise, if no license is present, all rights are reserved.</p>
 </li>
 </ol>
 <hr>
@@ -751,22 +746,25 @@ title="Print to PDF"
 <h4>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this heading">#</a></h4>
 <p>When ready to publish the <em>documentation</em> on <a class="reference external" href="https://pages.github.com/">GitHub Pages</a>, all you need to do is edit the <span class="xref myst">table of contents</span> and add and/or update content you would like to display. <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> supports content written as <a class="reference external" href="https://daringfireball.net/projects/markdown/">Markdown</a>, <a class="reference external" href="https://jupyter.org">Jupyter</a> notebooks and <a class="reference external" href="https://docutils.sourceforge.io/rst.html">reStructuredText</a> files and the <code class="docutils literal notranslate"><span class="pre">docs/_toc.yml</span></code> file controls the <span class="xref myst">table of contents</span> of your book.</p>
 <p>The <span style="color:#3EACAD">template</span> comes with the <span class="xref myst">table of contents</span> below as an example.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">format</span><span class="p">:</span> <span class="n">jb</span><span class="o">-</span><span class="n">book</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+<span class="nb">format</span><span class="p">:</span> <span class="n">jb</span><span class="o">-</span><span class="n">book</span>
 <span class="n">root</span><span class="p">:</span> <span class="n">README</span>
 
 <span class="n">parts</span><span class="p">:</span>
-  <span class="o">-</span> <span class="n">caption</span><span class="p">:</span> <span class="n">Documentation</span>
+
+<span class="o">-</span> <span class="n">caption</span><span class="p">:</span> <span class="n">Documentation</span>
     <span class="n">numbered</span><span class="p">:</span> <span class="kc">True</span>
     <span class="n">chapters</span><span class="p">:</span>
-    <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">notebooks</span><span class="o">/</span><span class="n">world</span><span class="o">-</span><span class="n">bank</span><span class="o">-</span><span class="n">api</span><span class="o">.</span><span class="n">ipynb</span>
-  <span class="o">-</span> <span class="n">caption</span><span class="p">:</span> <span class="n">Additional</span> <span class="n">Resources</span>
+  <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">notebooks</span><span class="o">/</span><span class="n">world</span><span class="o">-</span><span class="n">bank</span><span class="o">-</span><span class="n">api</span><span class="o">.</span><span class="n">ipynb</span>
+<span class="o">-</span> <span class="n">caption</span><span class="p">:</span> <span class="n">Additional</span> <span class="n">Resources</span>
     <span class="n">chapters</span><span class="p">:</span>
-      <span class="o">-</span> <span class="n">url</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">datapartnership</span><span class="o">.</span><span class="n">org</span>
+  <span class="o">-</span> <span class="n">url</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">datapartnership</span><span class="o">.</span><span class="n">org</span><span class="o">&gt;</span>
         <span class="n">title</span><span class="p">:</span> <span class="n">Development</span> <span class="n">Data</span> <span class="n">Partnership</span>
-      <span class="o">-</span> <span class="n">url</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">worldbank</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">en</span><span class="o">/</span><span class="n">about</span><span class="o">/</span><span class="n">unit</span><span class="o">/</span><span class="n">unit</span><span class="o">-</span><span class="n">dec</span>
+  <span class="o">-</span> <span class="n">url</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">worldbank</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">en</span><span class="o">/</span><span class="n">about</span><span class="o">/</span><span class="n">unit</span><span class="o">/</span><span class="n">unit</span><span class="o">-</span><span class="n">dec</span><span class="o">&gt;</span>
         <span class="n">title</span><span class="p">:</span> <span class="n">World</span> <span class="n">Bank</span> <span class="n">DEC</span>
-      <span class="o">-</span> <span class="n">url</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">worldbank</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">en</span><span class="o">/</span><span class="n">research</span><span class="o">/</span><span class="n">dime</span>
+  <span class="o">-</span> <span class="n">url</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">worldbank</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">en</span><span class="o">/</span><span class="n">research</span><span class="o">/</span><span class="n">dime</span><span class="o">&gt;</span>
         <span class="n">title</span><span class="p">:</span> <span class="n">World</span> <span class="n">Bank</span> <span class="n">DIME</span>
+
 </pre></div>
 </div>
 <div class="admonition seealso">
@@ -778,7 +776,7 @@ title="Print to PDF"
 <h4>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this heading">#</a></h4>
 <p>The next step is ensure your code is maintainable, realiable and reproducible by including
 any dependencies and requirements, such as packages, configurations, secrets (template) and addtional instructions.</p>
-<p>The <span style="color:#3EACAD">template</span> uses <a class="reference external" href="https://docs.conda.io/">conda</a> as environment manager and, as <a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">conventional</a>, the environment is controlled by the <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file.</p>
+<p>The <span style="color:#3EACAD">template</span> suggests to use <a class="reference external" href="https://docs.conda.io/">conda</a> (or <a class="reference external" href="https://mamba.readthedocs.io/en/latest/">mamba</a>) as environment manager and, as <a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">conventional</a>, the environment is controlled by the <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file is where you specify any packages available on the <a class="reference external" href="https://anaconda.org">Anaconda repository</a> as well as from the Anaconda Cloud (including <a class="reference external" href="https://conda-forge.org">conda-forge</a>) to install for your project. Ensure to include the pinned version of packages required by your project (including by Jupyter notebooks).</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">channels</span><span class="p">:</span>
   <span class="o">-</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
@@ -795,6 +793,11 @@ any dependencies and requirements, such as packages, configurations, secrets (te
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="o">&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">environment</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">f</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
 </pre></div>
 </div>
+<p>In case your project uses Python, it is <em>strongly</em> recommended to distribute it as a <a class="reference external" href="https://packaging.python.org/">package</a>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The <span style="color:#3EACAD">template</span> contains an example - the <a class="reference external" href="https://github.com/worldbank/template/tree/main/src/datalab">datalab</a> Python package - and will automatically find and install any <code class="docutils literal notranslate"><span class="pre">src</span></code> packages as long as <code class="docutils literal notranslate"><span class="pre">pyproject.yml</span></code> is kept up-to-date.</p>
+</div>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p><a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">Conda Managing Environments</a></p>
@@ -802,11 +805,10 @@ any dependencies and requirements, such as packages, configurations, secrets (te
 </section>
 <section id="jupyter-notebooks">
 <h4>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this heading">#</a></h4>
-<p><a class="reference external" href="https://jupyter.org">Jupyter Notebooks</a> can be beautifully rendered and downloaded from your book. <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> will execute notebooks during the build (on GitHub) and display <strong>code outputs</strong> and <strong>interactive visualizations</strong> as part of the <em>documentation</em> on the fly. By default, the <span style="color:#3EACAD">template</span> will execute any files listed on the <span class="xref myst">table of contents</span> that have a notebook structure.</p>
-<p>The <span style="color:#3EACAD">template</span> comes with a Jupyter notebook example, <code class="docutils literal notranslate"><span class="pre">notebooks/world-bank-api.ipynb</span></code>, to illustrate.</p>
+<p><a class="reference external" href="https://jupyter.org">Jupyter Notebooks</a> can be beautifully rendered and downloaded from your book. By default, the <span style="color:#3EACAD">template</span> will render any files listed on the <span class="xref myst">table of contents</span> that have a notebook structure. The <span style="color:#3EACAD">template</span> comes with a Jupyter notebook example, <code class="docutils literal notranslate"><span class="pre">notebooks/world-bank-api.ipynb</span></code>, to illustrate.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>All</strong> Jupyter notebooks will be executed by <a class="reference external" href="https://github.com/features/actions">GitHub Actions</a> during build on each commit to the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch. Thus, it is important to include all <span class="xref myst">requirements and dependencies</span> in the repository. In case you would like to ignore a notebook, you can <a class="reference external" href="https://jupyterbook.org/en/stable/content/execute.html#exclude-files-from-execution">exclude files from execution</a>.</p>
+<p>Optionally, <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> can execute notebooks during the build (on GitHub) and display <strong>code outputs</strong> and <strong>interactive visualizations</strong> as part of the <em>documentation</em> on the fly. In this case, Jupyter notebooks will be executed by <a class="reference external" href="https://github.com/features/actions">GitHub Actions</a> during build on each commit to the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch. Thus, it is important to include all <span class="xref myst">requirements and dependencies</span> in the repository. In case you would like to ignore a notebook, you can <a class="reference external" href="https://jupyterbook.org/en/stable/content/execute.html#exclude-files-from-execution">exclude files from execution</a>.</p>
 </div>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
@@ -817,7 +819,7 @@ any dependencies and requirements, such as packages, configurations, secrets (te
 </section>
 <section id="license">
 <h2>License<a class="headerlink" href="#license" title="Permalink to this heading">#</a></h2>
-<p>The <span style="color:#3EACAD">template</span> is licensed under the <span class="xref myst"><strong>World Bank Master Community License Agreement</strong></span>. Remember to replace the <span class="xref myst">license</span> if necessary. If open source, <a class="reference external" href="https://choosealicense.com">choose an open source license</a>.</p>
+<p>The <span style="color:#3EACAD">template</span> is licensed under the <a class="reference download internal" download="" href="_downloads/9879d6db96fd29134fc802214163b95a/LICENSE"><span class="xref download myst"><strong>World Bank Master Community License Agreement</strong></span></a>. Remember to replace the <span class="xref myst">license</span> if necessary. If open source, <a class="reference external" href="https://choosealicense.com">choose an open source license</a>.</p>
 </section>
 <div class="toctree-wrapper compound">
 </div>
@@ -943,7 +945,7 @@ By World Bank
   
   <div class="footer-item">
     <p class="last-updated">
-Last updated on Mar 30, 2023.<br>
+Last updated on Apr 03, 2023.<br>
 </p>
   </div>
   
