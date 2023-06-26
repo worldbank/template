@@ -28,6 +28,11 @@ execute:
   execute_notebooks: "off"
 
 #######################################################################################
+# Bibliography settings
+bibtex_bibfiles:
+    - docs/bibliography.bib
+
+#######################################################################################
 # Sphinx settings
 sphinx:
   config:

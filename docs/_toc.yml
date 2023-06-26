@@ -8,6 +8,7 @@ parts:
       - file: notebooks/world-bank-api.ipynb
       - file: notebooks/world-bank-package.ipynb
       - file: notebooks/nasa-apod.ipynb
+      - file: notebooks/bibliography.ipynb
   - caption: Additional Resources
     chapters:
       - url: https://datapartnership.org
