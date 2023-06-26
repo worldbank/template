@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>3. Securely Using API Keys</title>
+    <title>4. Including Bibliography</title>
   
   
   
@@ -61,12 +61,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/nasa-apod';</script>
-    <link rel="canonical" href="https://worldbank.github.io/template/notebooks/nasa-apod.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/bibliography';</script>
+    <link rel="canonical" href="https://worldbank.github.io/template/notebooks/bibliography.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="4. Including Bibliography" href="bibliography.html" />
-    <link rel="prev" title="2. Package Example" href="world-bank-package.html" />
+    <link rel="prev" title="3. Securely Using API Keys" href="nasa-apod.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -153,8 +152,8 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="world-bank-api.html">1. Indicators Example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="world-bank-package.html">2. Package Example</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Securely Using API Keys</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bibliography.html">4. Including Bibliography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nasa-apod.html">3. Securely Using API Keys</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Including Bibliography</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -233,7 +232,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/worldbank/template/edit/main/notebooks/nasa-apod.ipynb" target="_blank"
+      <li><a href="https://github.com/worldbank/template/edit/main/notebooks/bibliography.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -250,7 +249,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/worldbank/template/issues/new?title=Issue%20on%20page%20%2Fnotebooks/nasa-apod.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/worldbank/template/issues/new?title=Issue%20on%20page%20%2Fnotebooks/bibliography.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -280,7 +279,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/notebooks/nasa-apod.ipynb" target="_blank"
+      <li><a href="../_sources/notebooks/bibliography.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -362,7 +361,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Securely Using API Keys</h1>
+    <h1>Including Bibliography</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -372,8 +371,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environment-variables">3.1. Environment Variables</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#astronomy-picture-of-the-day">3.2. Astronomy Picture of the Day</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">4.1. Usage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliography-styles">4.2. Bibliography Styles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alpha">4.2.1. <code class="docutils literal notranslate"><span class="pre">alpha</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plain">4.2.2. <code class="docutils literal notranslate"><span class="pre">plain</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unsrt">4.2.3. <code class="docutils literal notranslate"><span class="pre">unsrt</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unsrtalpha">4.2.4. <code class="docutils literal notranslate"><span class="pre">unsrtalpha</span></code></a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -385,100 +390,76 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="securely-using-api-keys">
-<h1><span class="section-number">3. </span>Securely Using API Keys<a class="headerlink" href="#securely-using-api-keys" title="Permalink to this heading">#</a></h1>
-<blockquote>
-<div><p>The following are (opinionated) best practices to store and use API keys in your source code. If you disagree, please consider <a class="reference external" href="https://github.com/worldbank/template/issues/new/choose">contributing</a>.</p>
-</div></blockquote>
-<section id="environment-variables">
-<h2><span class="section-number">3.1. </span>Environment Variables<a class="headerlink" href="#environment-variables" title="Permalink to this heading">#</a></h2>
-<p>An <a class="reference external" href="https://en.wikipedia.org/wiki/Environment_variable">environment variable</a> is a dynamic-named value that can be used to store information on a computer. For instance, an environment variable can be used to store settings and/or privileged information (e.g. API keys) on your local computer or server.</p>
-<p>To set a environment variable to a new value, in <strong>Unix-like</strong> systems, you must pass a <code class="docutils literal notranslate"><span class="pre">name</span></code> and a <code class="docutils literal notranslate"><span class="pre">value</span></code> pair as shown below in the terminal.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">SECRET_API_KEY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>&lt;MY-SECRET_API_KEY&gt;
+  <section class="tex2jax_ignore mathjax_ignore" id="including-bibliography">
+<span id="bibliography"></span><h1><span class="section-number">4. </span>Including Bibliography<a class="headerlink" href="#including-bibliography" title="Permalink to this heading">#</a></h1>
+<p>Including a bibliography is of utmost importance in any academic or research work. A bibliography serves as a comprehensive list of all the sources consulted and referenced during the creation of a paper, essay, or any scholarly project. It not only adds credibility to the work but also demonstrates the depth of research conducted by the author. By providing a bibliography, the author acknowledges the contributions of other scholars and researchers, thereby showing respect for intellectual property and avoiding plagiarism.</p>
+<p>Furthermore, a bibliography allows readers to delve deeper into the subject matter, explore related sources, and verify the accuracy and reliability of the information presented. In essence, the inclusion of a well-constructed bibliography is an essential aspect of scholarly writing that promotes transparency, authenticity, and the advancement of knowledge.</p>
+<section id="usage">
+<h2><span class="section-number">4.1. </span>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">#</a></h2>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference external" href="https://jupyterbook.org/en/stable/content/citations.html">Jupyter Book: Citations and bibliographies</a></p>
+</div>
+<p>The <span style="color:#3EACAD">template</span> includes <span class="xref myst"><code class="docutils literal notranslate"><span class="pre">docs/bibliography.bib</span></code></span> as example, containing an entry to the World Bank flagship publication <a class="reference external" href="https://www.worldbank.org/en/publication/wdr2021">World Development Report 2021</a> in <a class="reference external" href="http://www.bibtex.org/Format">BibTeX Format</a>.</p>
+<p>To include a <strong>citation</strong>, we use the syntax as shown below.</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>{cite}`WorldBank2021WorldDevelopmentReport`
 </pre></div>
 </div>
-<p>The <code class="docutils literal notranslate"><span class="pre">value</span></code> is acessible by the <code class="docutils literal notranslate"><span class="pre">name</span></code> without being exposed throughout the sytem. In particular, in <a class="reference external" href="https://python.org">Python</a>, the value can be retrieve as follows.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">secret_api_key</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;SECRET_API_KEY&quot;</span><span class="p">)</span>
+<p>Additionally, we can use different citation styles.</p>
+<ul class="simple">
+<li><p><strong>{cite:t}</strong>: <a href="#id1"><span class="problematic" id="id2">WorldBank2021WorldDevelopmentReport</span></a></p></li>
+<li><p><strong>{cite:p}</strong>: <a href="#id3"><span class="problematic" id="id4">WorldBank2021WorldDevelopmentReport</span></a></p></li>
+</ul>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>For a more complete list of in-line citation styles, check out the <a class="reference external" href="https://sphinxcontrib-bibtex.readthedocs.io/en/latest/usage.html#roles-and-directives">sphinxcontrib-bibtex</a>.</p>
+</div>
+<p>To include the <strong>bibliography</strong>, we use the syntax as shown below. Note that this will include all citations throughout the book.</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{bibliography}
+```
 </pre></div>
 </div>
-<p>Alternatively, it is customary to use a <code class="docutils literal notranslate"><span class="pre">.env</span></code> file to organize and load environments variables as needed. Packages such as <a class="reference external" href="https://www.npmjs.com/package/dotenv">dotenv</a> and <a class="reference external" href="https://pypi.org/project/python-dotenv/">python-dotenv</a> will automatically  load environments variables for you from the <code class="docutils literal notranslate"><span class="pre">.env</span></code> file.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>.env
+<p>To include only the <strong>local bibliography</strong>, we use hte syntax as shown below.</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{bibliography}
+:filter: docname in docnames
+```
 </pre></div>
-</div>
-<p>With <a class="reference external" href="https://python.org">Python</a>,</p>
-<div class="cell tag_remove_output docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>
-
-<span class="n">load_dotenv</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>With <a class="reference external" href="https://jupyter.org">Jupyter</a>,</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> dotenv
-<span class="o">%</span><span class="k">dotenv</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>The <span style="color:#3EACAD">template</span>  includes <code class="docutils literal notranslate"><span class="pre">.env.example</span></code> as an example; to use, simply rename it to <code class="docutils literal notranslate"><span class="pre">.env</span></code> and add your settings and secrets to it. Please note that <code class="docutils literal notranslate"><span class="pre">.env</span></code> <strong>must</strong> never be commited/versioned (for example, to GitHub) and <strong>should</strong> ignored on <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code>.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>While environments variables are a convenient way to minimize the security risk, it is important to emphasize secrets are still stored in plaintext in your computer. It is strongly recommended to use instead a secret manager, such as <a class="reference external" href="https://aws.amazon.com/secrets-manager/">AWS Secrets Manager</a> or <a class="reference external" href="https://developer.1password.com/docs/cli/secret-references">1Password</a>.</p>
 </div>
 </section>
-<section id="astronomy-picture-of-the-day">
-<h2><span class="section-number">3.2. </span>Astronomy Picture of the Day<a class="headerlink" href="#astronomy-picture-of-the-day" title="Permalink to this heading">#</a></h2>
-<p>One of the most popular APIs is NASA’s <a class="reference external" href="https://apod.nasa.gov/apod/astropix.html">Astronomy Picture of the Day</a>. Let’s see in the following example how to use the NASA API with a secret API key.</p>
-<div class="cell tag_hide-cell docutils container">
-<details class="hide above-input">
-<summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell content</span>
-<span class="expanded">Hide code cell content</span>
-</summary>
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
-
-<span class="kn">import</span> <span class="nn">httpx</span>
-<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+<section id="bibliography-styles">
+<h2><span class="section-number">4.2. </span>Bibliography Styles<a class="headerlink" href="#bibliography-styles" title="Permalink to this heading">#</a></h2>
+<section id="alpha">
+<h3><span class="section-number">4.2.1. </span><code class="docutils literal notranslate"><span class="pre">alpha</span></code><a class="headerlink" href="#alpha" title="Permalink to this heading">#</a></h3>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{bibliography}
+:style: alpha
+```
 </pre></div>
 </div>
-</div>
-</details>
-</div>
-<p>First, you will have to <a class="reference external" href="https://api.nasa.gov">generate your API key</a> and set up the environment variable <code class="docutils literal notranslate"><span class="pre">NASA_API_KEY</span></code> with its value. Now you are ready to use it in your code. For instance, in this example, we assign it to <code class="docutils literal notranslate"><span class="pre">api_key</span></code>. Please note that the value is never exposed and the notebook can be securely shared with anyone.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">api_key</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;NASA_API_KEY&quot;</span><span class="p">)</span>
+</section>
+<section id="plain">
+<h3><span class="section-number">4.2.2. </span><code class="docutils literal notranslate"><span class="pre">plain</span></code><a class="headerlink" href="#plain" title="Permalink to this heading">#</a></h3>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{bibliography}
+:style: plain
+```
 </pre></div>
 </div>
-</div>
-</div>
-<p>Now, we are ready to make the request to the NASA API. According to the <a class="reference external" href="https://github.com/nasa/apod-api#docs">documentation</a>, the <code class="docutils literal notranslate"><span class="pre">api_key</span></code> is passed a parameter to the GET request.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">async</span> <span class="k">with</span> <span class="n">httpx</span><span class="o">.</span><span class="n">AsyncClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
-    <span class="n">r</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
-        <span class="s2">&quot;https://api.nasa.gov/planetary/apod&quot;</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;api_key&quot;</span><span class="p">:</span> <span class="n">api_key</span><span class="p">}</span>
-    <span class="p">)</span>
+</section>
+<section id="unsrt">
+<h3><span class="section-number">4.2.3. </span><code class="docutils literal notranslate"><span class="pre">unsrt</span></code><a class="headerlink" href="#unsrt" title="Permalink to this heading">#</a></h3>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{bibliography}
+:style: unsrt
+```
 </pre></div>
 </div>
-</div>
-</div>
-<p>Voilà!</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&quot;hdurl&quot;</span><span class="p">])</span>
+</section>
+<section id="unsrtalpha">
+<h3><span class="section-number">4.2.4. </span><code class="docutils literal notranslate"><span class="pre">unsrtalpha</span></code><a class="headerlink" href="#unsrtalpha" title="Permalink to this heading">#</a></h3>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{bibliography}
+:style: unsrtalpha
+```
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><img src="https://apod.nasa.gov/apod/image/2302/jonesemberson1.jpg"/></div></div>
-</div>
+</section>
 </section>
 </section>
 
@@ -514,22 +495,13 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="world-bank-package.html"
+       href="nasa-apod.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>Package Example</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Securely Using API Keys</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="bibliography.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4. </span>Including Bibliography</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
@@ -549,8 +521,14 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environment-variables">3.1. Environment Variables</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#astronomy-picture-of-the-day">3.2. Astronomy Picture of the Day</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">4.1. Usage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliography-styles">4.2. Bibliography Styles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alpha">4.2.1. <code class="docutils literal notranslate"><span class="pre">alpha</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plain">4.2.2. <code class="docutils literal notranslate"><span class="pre">plain</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unsrt">4.2.3. <code class="docutils literal notranslate"><span class="pre">unsrt</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unsrtalpha">4.2.4. <code class="docutils literal notranslate"><span class="pre">unsrtalpha</span></code></a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

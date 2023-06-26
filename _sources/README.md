@@ -17,6 +17,9 @@ Inspired by [literate programming](http://literateprogramming.com) and [Cookiecu
 
     > Documentation is often never priotized until last minute. The <span style="color:#3EACAD">template</span> aims to revert the malpractice by setting up the documentation as an integral part of the code repository. With the power of [Jupyter Book](https://jupyterbook.org), data practioners have a way to share [Jupyter notebooks](https://jupyter.org) on [GitHub Pages](https://pages.github.com) in a standardized and effortless way.
 
+- **docs/bibliography.bib**
+    > A `bibliography` using the [BibTeX](https://www.bibtex.org/Format/) format.
+
 - **data/**
     > Placeholder folder for data. Data is immutable. By default, the data folder is present but ignored from version control, in order to prevent files of being mistakenly versioned in the code repository.
 
