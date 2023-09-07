@@ -393,7 +393,7 @@ document.write(`
 <section id="usage">
 <h2><span class="section-number">2.1. </span>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">#</a></h2>
 <p>Unlike the <a class="reference external" href="https://worldbank.github.io/template/notebooks/world-bank-api.html">previous example</a>, where the source code was contained on the Jupyter notebok itself, we (re)use a Python package - the <a class="reference external" href="https://github.com/worldbank/template/tree/main/src/datalab">datalab</a> Python package - which will let us (re)use any attributes and methods in the following example.</p>
-<p>Let’s start by importing <code class="docutils literal notranslate"><span class="pre">WorldBankIndicatorsAPI</span></code>, a Pyhton API wrapper class created to faciliate the usage of the <a class="reference external" href="https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation">World Bank Indicators API</a>.</p>
+<p>Let’s start by importing <code class="docutils literal notranslate"><span class="pre">WorldBankIndicatorsAPI</span></code>, a Python API wrapper class created to facilitate the usage of the <a class="reference external" href="https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation">World Bank Indicators API</a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datalab.indicators</span> <span class="kn">import</span> <span class="n">WorldBankIndicatorsAPI</span>
@@ -443,7 +443,7 @@ query(indicator, country: list = &#39;all&#39;, params: dict = {}) method of dat
 </div>
 </div>
 </div>
-<p>The <code class="docutils literal notranslate"><span class="pre">query</span></code> method allows us to select an <strong>indicator</strong> (e.g, <a class="reference external" href="https://datatopics.worldbank.org/world-development-indicators">World Development Indicators</a>), a list of countries and <a class="reference external" href="https://datahelpdesk.worldbank.org/knowledgebase/articles/898581#query-strings">query parameters</a>. Note that contrary to the <a class="reference external" href="https://worldbank.github.io/template/notebooks/world-bank-api.html">previous example</a>, the method expets a list of country names and converts them to <a class="reference external" href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166-1 alpha-3</a> automatically.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">query</span></code> method allows us to select an <strong>indicator</strong> (e.g, <a class="reference external" href="https://datatopics.worldbank.org/world-development-indicators">World Development Indicators</a>), a list of countries and <a class="reference external" href="https://datahelpdesk.worldbank.org/knowledgebase/articles/898581#query-strings">query parameters</a>. Note that contrary to the <a class="reference external" href="https://worldbank.github.io/template/notebooks/world-bank-api.html">previous example</a>, the method expects a list of country names and converts them to <a class="reference external" href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166-1 alpha-3</a> automatically.</p>
 <p>Let’s invoke the <code class="docutils literal notranslate"><span class="pre">query</span></code> method and retrieve the results for <code class="docutils literal notranslate"><span class="pre">SP.POP.TOTL</span></code> for the <a class="reference external" href="https://infobrics.org">BRICS</a> (as before).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1064,7 +1064,7 @@ By World Bank
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Jul 19, 2023.
+  Last updated on Sep 07, 2023.
   <br/>
 </p>
   </div>
