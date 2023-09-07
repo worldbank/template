@@ -4,18 +4,15 @@ The <span style="color:#3EACAD">template</span> is a standardized, but flexible 
 
 Inspired by [literate programming](http://literateprogramming.com) and [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/), maintained by the [World Bank Development Data Group](https://www.worldbank.org/en/about/unit/unit-dec#2) and built as [GitHub template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template), the <span style="color:#3EACAD">template</span> contains:
 
-- **README**, **CODE_OF_CONDUCT**, **CONTRIBUTING**
-    > README files are important and often neglected. The files should inform anyone about about the first steps to use, learn and contribute to your project.
+- **README**, **CODE_OF_CONDUCT**, **CONTRIBUTING** templates
+    > README files are important and often neglected. The files should inform anyone about the first steps to use, learn and contribute to your project.
 
 - **LICENSE**
-  > The LICENSE is a document that  determines what others can and cannot do with contents of the repository. If no license is present, no one has permission to use and/or modify your code.
-
-- [Issues and Pull Requests GitHub templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository)
-    > GitHub allows to customize how issues and pull requests are presented to the public. Custom templates encourage collaboration and maintainability.
+  > The LICENSE is a document that  determines what others can and cannot do with contents of the repository. If no license is present, no one has permission to use and/or modify your code. The <span style="color:#3EACAD">template</span> is licensed under the [**World Bank Master Community License Agreement**](LICENSE). And so will projects generated from it.
 
 - **docs/**
 
-    > Documentation is often never priotized until last minute. The <span style="color:#3EACAD">template</span> aims to revert the malpractice by setting up the documentation as an integral part of the code repository. With the power of [Jupyter Book](https://jupyterbook.org), data practioners have a way to share [Jupyter notebooks](https://jupyter.org) on [GitHub Pages](https://pages.github.com) in a standardized and effortless way.
+    > Documentation is often never priotized until last minute. The <span style="color:#3EACAD">template</span> aims to revert the malpractice by setting up the documentation as an integral part, inspired by [literate programming](http://literateprogramming.com). With the power of [Jupyter Book](https://jupyterbook.org), data practioners have a way to share [Jupyter notebooks](https://jupyter.org) on [GitHub Pages](https://pages.github.com) in a standardized and effortless way.
 
 - **docs/bibliography.bib**
     > A `bibliography` using the [BibTeX](https://www.bibtex.org/Format/) format.
@@ -29,11 +26,16 @@ Inspired by [literate programming](http://literateprogramming.com) and [Cookiecu
 - **notebooks/**
     > Placeholder folder for [Jupyter notebooks](https://jupyter.org). Markdown files and Jupyter notebooks can be added to `docs/_toc.yml` (Table of Contents) to compose the *documentation*.
 
-```{important}
-Admittedly, even the best of the templates would never be perfect; the <span style="color:#3EACAD">template</span> aims to encourage teams to start thinking and assimilate **best practices**, **collaborative coding**, **documentation**​, **reproducibility​** as an integral part of the project. *In a standardized way*.
+- [Issues and Pull Requests GitHub templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository)
+    > GitHub allows to customize how issues and pull requests are presented to the public. Custom templates encourage collaboration and maintainability.
 
-In this spirit, in case you have feedback, please [open an issue](https://github.com/worldbank/template/issues) or [submit a pull request](https://github.com/worldbank/template/pulls) to share your ideas and suggestions.
+```{important}
+With flexibility comes responsibility. Even the best of the templates would never be perfect for universe of cases out there.
+
+In this spirit, if the <span style="color:#3EACAD">template</span> is not for you or in case you have feedback, your contributed would be appreciated. Please consider [opening an issue](https://github.com/worldbank/template/issues) or [submitting a pull request](https://github.com/worldbank/template/pulls) to share your ideas and suggestions.
 ```
+
+All in all, the <span style="color:#3EACAD">template</span> aims to encourage teams to start thinking and assimilate **best practices**, **collaborative coding**, **documentation**​, **enginerring** and  **reproducibility​** as an integral part of the project. *In a standardized way*.
 
 ## Usage
 
