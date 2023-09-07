@@ -30,12 +30,10 @@ Inspired by [literate programming](http://literateprogramming.com) and [Cookiecu
     > GitHub allows to customize how issues and pull requests are presented to the public. Custom templates encourage collaboration and maintainability.
 
 ```{important}
-With flexibility comes responsibility. Even the best of the templates would never be perfect for universe of cases out there.
+*With flexibility comes great responsibility*. The <span style="color:#3EACAD">template</span> makes a few opiniated choices for the structure and code/documentation management of a project for what we envision to be most cases. However, even the best of the templates would never be perfect for the universe of cases out there. All in all, the <span style="color:#3EACAD">template</span> aims to encourage teams to start thinking and assimilate **collaborative coding**, **documentation**​, **enginerring**, **reproducibility​** and **best practices** as an integral part of the project. *In a standardized way*.
 
-In this spirit, if the <span style="color:#3EACAD">template</span> is not for you or in case you have feedback, your contributed would be appreciated. Please consider [opening an issue](https://github.com/worldbank/template/issues) or [submitting a pull request](https://github.com/worldbank/template/pulls) to share your ideas and suggestions.
+In this spirit, if the <span style="color:#3EACAD">template</span> is not for you or in case you have feedback, please consider [opening an issue](https://github.com/worldbank/template/issues) or [submitting a pull request](https://github.com/worldbank/template/pulls) to share your ideas and suggestions. Your contributions would be appreciated immensely.
 ```
-
-All in all, the <span style="color:#3EACAD">template</span> aims to encourage teams to start thinking and assimilate **best practices**, **collaborative coding**, **documentation**​, **enginerring** and  **reproducibility​** as an integral part of the project. *In a standardized way*.
 
 ## Usage
 
