@@ -2,9 +2,9 @@
 
 The <span style="color:#3EACAD">template</span> is a standardized, but flexible *project* and *documentation* structure of folders and files for sharing your data science work.
 
-Inspired by [literate programming](http://literateprogramming.com) and [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/), maintained by the [World Bank Development Data Group](https://www.worldbank.org/en/about/unit/unit-dec#2) and built as [GitHub template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template), the <span style="color:#3EACAD">template</span> contains:
+Inspired by [literate programming](http://literateprogramming.com), maintained by the [Development Data Group](https://www.worldbank.org/en/about/unit/unit-dec/dev) and built as [GitHub template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template), the <span style="color:#3EACAD">template</span> contains:
 
-- **README**, **CODE_OF_CONDUCT**, **CONTRIBUTING** templates
+- [**README**](README), [**CODE_OF_CONDUCT**](docs/CODE_OF_CONDUCT.md), [**CONTRIBUTING**](CONTRIBUTING.md) templates
     > README files are important and often neglected. The files should inform anyone about the first steps to use, learn and contribute to your project.
 
 - **LICENSE**
