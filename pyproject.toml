@@ -6,17 +6,15 @@ build-backend = "setuptools.build_meta"
 name = "datalab"
 dynamic = ["version"]
 description = "An Python exampe package from the World Bank Data Lab"
-readme = {file = "README.md", content-type = "text/markdown"}
-license = {file = "LICENSE"}
-keywords = ["world bank", "template", "reproducible research"]
-authors = [
-  {name="World Bank Development Data Group", email="datalab@worldbank.org"},
-]
+readme = { file = "README.md", content-type = "text/markdown" }
+license = { file = "LICENSE" }
+keywords = ["template", "reproducible research"]
+authors = [{ name = "Development Data Group", email = "datalab@worldbank.org" }]
 maintainers = [
-  {name="Gabriel Stefanini Vicente", email="gvicente@worldbank.org"},
+	{ name = "Gabriel Stefanini Vicente", email = "gvicente@worldbank.org" },
 ]
 classifiers = [
-    "Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3",
 	"Programming Language :: Python :: 3.7",
 	"Programming Language :: Python :: 3.8",
 	"Programming Language :: Python :: 3.9",
@@ -28,10 +26,7 @@ classifiers = [
 	"Operating System :: OS Independent",
 ]
 requires-python = ">=3.7"
-dependencies = [
-	"requests>=2.28.1",
-    "pycountry>=22.3.5",
-]
+dependencies = ["requests>=2.28.1", "pycountry>=22.3.5"]
 [project.optional-dependencies]
 notebook = ["notebook>=6.5.2"]
 
@@ -41,4 +36,4 @@ notebook = ["notebook>=6.5.2"]
 "Source" = "https://github.com/worldbank/template"
 
 [tool.setuptools.dynamic]
-version = {attr = "datalab.__version__"}
+version = { attr = "datalab.__version__" }
