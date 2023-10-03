@@ -1,6 +1,6 @@
 # Book settings
 title:
-author: World Bank
+author: Development Data Group
 logo: docs/images/logo.png
 only_build_toc_files: true
 
@@ -30,7 +30,7 @@ execute:
 #######################################################################################
 # Bibliography settings
 bibtex_bibfiles:
-    - docs/bibliography.bib
+  - docs/bibliography.bib
 
 #######################################################################################
 # Sphinx settings
