@@ -21,6 +21,7 @@ html:
     <div>
         <b>All content (unless otherwise specified) is subject to the <a href="https://raw.githubusercontent.com/worldbank/template/main/LICENSE">World Bank Master Community License Agreement.</a></b>
     </div>
+  favicon: docs/images/favicon.ico
 
 #######################################################################################
 # Execution settings
