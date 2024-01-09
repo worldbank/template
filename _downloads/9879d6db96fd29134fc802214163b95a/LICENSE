@@ -1,541 +1,385 @@
-World Bank Master Community License Agreement
-
-THIS WORLD BANK COMMUNITY LICENSE AGREEMENT ("Agreement") is entered
-between the International Bank for Reconstruction and
-Development/International Development Association ("<ins>World Bank</ins>")
-and the party identified as licensee on the signature page of this
-Agreement ("Licensee"). Licensee and the World Bank are each referred to
-herein as a "<ins>Party</ins>" and collectively as, the "<ins>Parties</ins>".
-
-A.  The World Bank has developed that certain computer software
-    identified on Exhibit B ("<ins>Licensed Software</ins>") for use for the
-    public good and desire to make the Licensed Software available to
-    Licensee on a royalty-free basis, subject to certain other terms and
-    conditions.
-
-B.  Licensee wishes to secure certain rights to use, modify and
-    sublicense the Licensed Software.
-
-NOW, THEREFORE, in consideration of the mutual promises of the Parties
-and other good and valuable consideration, receipt of which is hereby
-acknowledged, the Parties agree as follows:
-
-1.  Definitions
-
-    1.  **"Contribution"** means any subject matter which is created by
-        any person, which subject matter has the effect of adding to,
-        deleting from, replacing, or otherwise modifying the text,
-        binary or other material in a Core Program, whether deriving
-        directly from a Core Program or from Licensed Software. A
-        Contribution may be included in the same file as material from a
-        Core Program, or in a separate file that is or can be used in
-        connection with a compilation, build or similar process to add
-        to, delete from, replace or otherwise modify material from the
-        file containing Licensed Software.
-
-    2.  **"Core Programs"** mean the Computer programs and associated
-        data originally created by or for the World Bank as part of the
-        Licensed Software and made available by the World Bank or its
-        licensees pursuant to the terms equivalent to those of this
-        Agreement.
-
-    3.  **"Covered Licensee"** has the meaning set forth in Section 2.3.
-
-    4.  **"Covered Work"** means any work that includes Licensed
-        Software and Independent Software.
-
-    5.  **"Distribute"** means, for the purpose of this Agreement, to
-        deliver or offer to deliver a copy of a work to a person other
-        than to a person controlled by, controlling or under common
-        control with the first person or a person engaged solely to
-        develop, maintain, test, or operate such work on behalf the
-        first person.
-
-    6.  **"Exploit"** means in the case of copyrightable subject matter
-        to copy, make derivative works, distribute, display, and perform
-        such subject matter and any analogous or additional rights
-        provided under the laws of any country within the Licensed
-        Territory. In the case of patentable subject matter, "Exploit"
-        includes the right to make, use, sell, offer for sale, have
-        made, import the relevant subject matter. Except as expressly
-        provided in this Agreement, the right to Exploit does not
-        include the right to authorize others to Exploit the subject
-        matter.
-
-    7.  **"Independent** **Software"** means any software that does not
-        include any Core Programs or Contributions. No software
-        contained in the same file as Licensed Software shall be deemed
-        Independent Software under the terms of this Agreement.
-
-    8.  **"Licensed Software"** means the Core Programs identified on
-        Exhibit B hereto, together with any Contributions thereto,
-        whether in Source Code or Object Code form.
-
-    9.  **"Licensed** **Territory"** has the meaning set forth in
-        Section 2.2.
-
-    10. **"Object Code"** means any version of a computer program which
-        is capable of being installed, loaded, and operated on a
-        computer without any intervening process other than a system
-        loader or linkage editor or a real-time interpreter.
-
-    11. **"Source Code"** means any version of a computer program other
-        than Object Code, including without limitation any text or
-        text-equivalent capable of being compiled or translated into
-        Object Code, and any associated documentation in existence that
-        is necessary or convenient to compile, modify, edit (including
-        without limitation any linkage edit or build process), integrate
-        and configure such computer program for installation and/or use.
-
-2.  Licenses
-
-    1.  **Basic Grant.** Subject to Licensee's compliance with all terms
-        and conditions of this Agreement, World Bank grants to Licensee
-        the royalty-free, perpetual, non-exclusive right and license to
-        Exploit the Licensed Software, whether alone or as part of a
-        Covered Work.
-
-    2.  **Territorial Limitations.** The rights granted to Licensee
-        hereunder only apply to exploitation in the member countries of
-        the World Bank ("Licensed Territory").
-
-    3.  **Rights in Contributions.** Licensee hereby grants to World
-        Bank a paid up, royalty-free, perpetual, irrevocable,
-        non-exclusive, sublicenseable right and license to Exploit any
-        Contributions created by or for Licensee, effective immediately
-        on the first Distribution of any work containing a Contribution.
-        Such Contribution shall be thereafter considered part of the
-        Licensed Software and authorized for Exploitation by any person
-        or entity who has received rights to the Core Software ("Covered
-        Licensee").
-
-    4.  **Patent Rights.** Licensee further grants to World Bank and all
-        other Covered Licensees a paid up, royalty-free, perpetual,
-        irrevocable and sublicenseable license to Exploit its
-        Contributions or any version of the Licensed Software including
-        its Contributions under any patents now or in the future owned
-        or licenseable by Licensee, solely to the extent that such
-        Exploitation is of a work consisting of Licensed Software and
-        Licensee's Contribution.
-
-    5.  **Sublicenses.** In the event that Licensee is an entity
-        chartered under the laws of a nation state within the Licensed
-        Territory, Licensee shall be permitted to grant sublicenses to
-        others to Exploit the Licensed Software pursuant to a license
-        agreement containing the provisions set forth in Exhibit A
-        hereto, as the same may be modified from time to time by the
-        World Bank in accordance with this Section. Licensee shall
-        maintain a computerized repository from which sublicensees may
-        download the Licensed Software, which repository shall require a
-        reasonable means by which the Licensee so downloading the code
-        may be identified. If practicable, each downloadable copy shall
-        be electronically watermarked so as to identify the repository
-        from which it has been downloaded. Nothing herein shall be
-        deemed to prohibit the restriction or fee-based licensing of
-        Covered Works, provided that Licensee and any sublicensees
-        comply in full with all requirements for the unrestricted
-        further distribution of Licensed Software included within such
-        Covered Work. Except as expressly provided in this Section 2.5,
-        Licensee shall not grant sublicenses of Licensed Software and/or
-        any Contribution to any person.
-
-    6.  **Revision of Sublicense Terms.** The World Bank may from time
-        to time establish different terms for sublicenses to replace the
-        terms of Exhibit A hereto. Such different terms shall apply to
-        any sublicenses granted by Licensee pursuant to Section 2.5, on
-        ten (10) days notice given to Licensee pursuant to this
-        Agreement, by which time Licensee shall have posted the revised
-        terms in print (if previously published in print) and any
-        electronically accessible location where it has previously
-        posted such terms..
-
-    7.  **No Personal Use.** Licensee represents and warrants that the
-        Licensed Software is not intended to be used and will not be
-        used or authorized for use for personal, household and/or family
-        uses.
-
-3.  Obligations of Licensee
-
-    1.  **Distribution of Source Code.** In the event that Licensee
-        Distributes any form of the Licensed Software, whether as Source
-        Code or Object Code and whether by itself or as part of a
-        Covered Work, Licensee shall promptly make available the full
-        Source Code of such Licensed Software (including any
-        Contributions by Licensee) to all persons on the terms set forth
-        in Exhibit A, either by making such Source Code accessible in a
-        commonly available online source code repository, an online
-        repository under the direct control of Licensee, or by notifying
-        such persons that such Source Code may be delivered by
-        electronic transmission to any requesting person, at no charge
-        other than a reasonable fee covering the cost of distribution to
-        the recipient.
-
-    2.  **Inclusion of Applicable License Provisions.** Licensee shall
-        assure that every copy of Licensed Software (including any such
-        copy included in a Covered Work) shall either include the full
-        text of the license required by Section 3.2 or a statement that
-        identifies a uniform resource locator which contains the
-        applicable license.
-
-    3.  **No Further Restrictions.** Licensee shall not impose any
-        restrictions on the further use, distribution or modification of
-        Licensed Software, whether distributed by itself or as part of a
-        Covered Work, provided that the License Software is made
-        available by Licensee and its sublicensee on terms specified in
-        Exhibit A hereto. Nothing herein shall prohibit Licensee from
-        imposing any conditions Licensee sees fit on the subsequent
-        distribution of Independent Software included in any Covered
-        Work.
-
-    4.  **Enforcement of Sublicenses.** By accepting this License
-        Agreement and a copy of the Licensed Software, Licensee agrees
-        that it will take action to enforce the terms of any
-        sublicenses, including without limitation seeking injunctive or
-        other equitable relief. Licensee shall not, however, name or
-        attempt to name the World Bank as an involuntary plaintiff in
-        any such action, without the prior written consent of the World
-        Bank . No enforcement action shall be required if the World Bank
-        is deemed a necessary party plaintiff or defendant and the World
-        Bank withholds consent to being so named. In the event that
-        Licensee becomes aware of breaches of any of its sublicenses, it
-        shall notify the World Bank in writing as soon as practicable
-        and, in the event Licensee determines to seek legal relief, it
-        shall so notify the World Bank of its intention to pursue such
-        legal relief.
-
-    5.  **Conditions of License.** Sections 3.1 through 3.4 above are
-        conditions of the licenses granted in Article 2 Licensee
-        specifically acknowledges that its failure to comply strictly
-        with such conditions voids all licenses granted to Licensee
-        hereunder, without further notice from World Bank. Sublicenses
-        granted by Licensee in accordance with this Agreement shall
-        continue in effect, provided that the applicable sublicensees
-        comply and continue to comply with all provisions of Exhibit A
-        hereto.
-
-    6.  **Permitted Arrangements.** Nothing herein shall prohibit
-        Licensee (or any sublicensee) from offering and charging for
-        warranty, support, indemnity, or liability obligations to one or
-        more recipients of Licensed Software or Covered Works, provided
-        that Licensee and any applicable sublicensee prominently
-        notifies any persons purchasing such additional obligations that
-        such obligations are solely the obligations of the persons
-        offering such obligations neither World Bank nor any person
-        other than the person offering such services is obligated or
-        responsible in any way with respect to the Licensed Software or
-        any portion thereof.
-
-    7.  **Attribution and Disclaimer.** All copies of Licensed Software
-        and/or Covered Works Distributed by Licensee and any sublicensee
-        deriving from Licensee shall contain a notice that certain
-        underlying work was originally developed by or for the World
-        Bank, that the World Bank is not responsible for the accuracy,
-        other functionality or performance of such Licensed Software
-        and/or Covered Work.
-
-4.  Warranties by Licensee
-
-    1.  **Non-infringement of Copyright.** Licensee hereby represents
-        and warrants to World Bank and any persons who are licensees of
-        Licensed Software deriving from Core Software that its
-        Contributions are and/or will be either its original works of
-        authorship or that it has sufficient rights in such
-        Contributions to grant the rights required to be granted in such
-        Contributions (and derivatives thereof) pursuant to this
-        Agreement.
-
-    2.  **Patent Warranties.** Licensee hereby represents that, to the
-        best of its knowledge, the combination of any Licensed Software
-        with a Contribution from Licensee does not infringe the patent
-        rights of any third party.
-
-    3.  **Disclaimer.** LICENSEE UNDERSTANDS AND AGREES THAT ITS USE
-        (INCLUDING WITHOUT LIMITATION, THE EXERCISE OF ANY RIGHTS
-        GRANTED TO IT UNDER THIS AGREEMENT) OF THE SOFTWARE IS AT
-        LICENSEE'S SOLE RISK. THE SOFTWARE IS PROVIDED ON AN "AS IS" AND
-        "AS AVAILABLE" BASIS. THE WORLD BANK DISCLAIMS ALL
-        REPRESENTATIONS AND WARRANTIES OF ANY KIND, WHETHER EXPRESS,
-        IMPLIED, OR STATUTORY, WITH RESPECT TO THE SOFTWARE (INCLUDING,
-        BUT NOT LIMITED TO, THE IMPLIED OR STATUTORY WARRANTIES OF
-        MERCHANTABILITY, FITNESS FOR A PARTICULAR USE OR PURPOSE, TITLE,
-        QUIET ENJOYMENT, AND NON-INFRINGEMENT. IN PARTICULAR, THE WORLD
-        BANK DOES NOT REPRESENT OR WARRANT THAT ANY INFORMATION OR OTHER
-        CONTENT OBTAINED OR VIEWED BY LICENSEE OR ANYONE ELSE AS A
-        RESULT OF LICENSEE'S EXPLOITATION OF THE SOFTWARE WILL BE
-        ACCURATE, COMPLETE OR RELIABLE, THAT LICENSEE'S ACCESS TO THE
-        SOFTWARE WILL BE UNINTERRUPTED, FREE OF MALICIOUS CODE OR
-        ERROR-FREE, OR THAT DEFECTS WILL BE CORRECTED. THE WORLD BANK
-        DISCLAIMS ALL LIABILITY AND RESPONSIBILITY ARISING FROM , OUT OF
-        OR IN CONNECTION WITH THE SOFTWARE OR THE USE OF, PERFORMANCE OF
-        OR OTHER DEALINGS IN THE SOFTWARE. THE WORLD BANK GROUP
-        DISCLAIMS ALL EQUITABLE INDEMNITIES.
-
-    4.  **Limitation of Liability.** THE WORLD BANK EXPRESSLY DISCLAIMS
-        AND IN NO EVENT BE LIABLE UNDER ANY THEORY OF LIABILITY WHETHER
-        BASED IN CONTRACT, TORT, STRICT LIABILITY OR OTHERWISE, FOR ANY
-        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PERSONAL
-        INJURY/WRONGFUL DEATH, PUNITIVE, OR EXEMPLARY DAMAGES (EVEN IF
-        SUCH PARTIES KNEW OF OR SHOULD HAVE KNOWN OF THE POSSIBILITY OF
-        SUCH DAMAGES), INCLUDING BUT NOT LIMITED TO AS A RESULT OF: (A)
-        LICENSEE'S USE OF OR INABILITY TO USE THE SOFTWARE OR (B) ANY
-        LOSS OF DATA. SHOULD ANY OF THEWORLD BANK BE FOUND TO BE LIABLE
-        TO YOU OR ANY THIRD PARTY NOTWITHSTANDING THE FOREGOING, SUCH
-        LIABILITY WILL NOT EXCEED \$100.00 IN THE AGGREGATE.
-
-    5.  **Indemnity by Licensee.** Licensee agrees that Licensee will
-        release, indemnify and hold harmless the World Bank and each of
-        their respective business partners, content providers, licensors
-        and service providers, and any of their respective officers,
-        directors, shareholders, employees, contractors,
-        representatives, or agents (including without limitation any
-        authors or copyright holders of the Software) (collectively, the
-        "World Bank Indemnified Parties") from and against any and all
-        claims, actions, losses, damages, costs, fees and expenses
-        (including attorneys' fees) arising out of or relating to: (i)
-        Licensee's use or Exploitation of the Licensed Software, (ii)
-        Licensee's data, (iii) Licensee's connection to the
-        Software, (iv) Licensee's violation of this Agreement, (v)
-        Licensee's violation of any rights of another, and/or (vi) the
-        Exploitation and licensing of the Licensed Software by any
-        person claiming rights by operation of any license granted by
-        Licensee to such person.
-
-    6.  **Waiver and Release.** Licensee hereby waives any rights and
-        benefits it may have or that may accrue to it under any law
-        providing that a general release does not extend to claims that
-        the creditor does not know or suspect to exist in his, her or
-        their favor at the time of executing the release, which if known
-        by him, her or them must have materially affected his settlement
-        with the debtor, or something substantially similar. The World
-        Bank reserves the right, at its own expense, to assume the
-        exclusive defense and control of any matter otherwise subject to
-        indemnification by Licensee, and Licensee shall not in any event
-        settle any matter without the written consent of the World Bank
-        Indemnified Parties.
-
-5.  Miscellaneous Provisions
-
-    1.  **Governing Law.** This Agreement and the relationship between
-        and among the Parties shall be governed by the Laws of the State
-        of New York, United States of America, without giving effect to
-        any choice or conflict of law provision or rule (whether of the
-        state of New York or any other jurisdiction). Licensee agrees
-        that regardless of any statute or law to the contrary, any claim
-        or cause of action arising out of or related to use of the
-        Software or this Agreement must be filed within one (1) year
-        after such claim or cause of action arose or be forever barred.
-
-    2.  **Remedies.** \[injunctive remedies, etc., to conform to
-        arbitration clause.\]
-
-    3.  **Arbitration.** Any controversy or claim arising out of or
-        relating to this Agreement, or that contests the validity of
-        this Agreement, shall be settled by arbitration in accordance
-        with the UNCITRAL Arbitration Rules from time to time in force.
-        The place of arbitration shall be New York, New York and the
-        arbitration shall be conducted in English. The Parties hereby
-        waive any rights under any applicable law to appeal any
-        arbitration award or to seek determination of a preliminary
-        point of law with respect to such proceedings. Notwithstanding
-        the foregoing, The World Bank shall have the right to seek
-        interim, provisional or other equitable relief, including
-        temporary or permanent injunctive relief, as necessary to
-        protect its interests.
-
-    4.  **Preservation of Immunities.** Nothing in this Agreement and no
-        submission by The World Bank to arbitration shall be construed
-        as a limitation upon or a waiver, renunciation or modification
-        of any immunities, privileges or exemptions of the World Bank
-        accorded under any of the Articles of Agreement of the
-        International Bank for Reconstruction and Development,
-        international convention or any applicable law. Such immunities,
-        privileges or exemptions are specifically reserved.
-
-    5.  **Notices.** Any notice required or permitted to be given
-        pursuant to this Agreement shall be effective if given by
-        electronic mail addressed to the applicable Party at the address
-        set forth in connection with its signature on this Agreement.
-
-    6.  **Execution.** This Agreement may be executed in duplicates or
-        counterparts and transmitted by facsimile or other imaging
-        means.
-
-IN WITNESS WHEREOF, the Parties have executed this Agreement as of the
-\_\_\_ day of \_\_\_\_\_.
-
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  International Bank for Reconstruction and Development / International Development Association   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-  ----------------------------------------------------------------------------------------------- --------------------------------------------------------------------
-  By\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\                               By \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-  its
-
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-**EXHIBIT A**
-
-**REQUIRED SUBLICENSE TERMS**
-
-A sublicense granted pursuant to the World Bank Master Community License
-Agreement shall include the following provisions:
-
-1.  A preamble as follows:
-
-By acquiring a copy of the Survey Solutions (the "Subject
-Software"), the person so acquiring such copy, for himself/herself and
-on behalf of his or her employer or principal (collectively,
-"Licensee"), acknowledges and agrees that the exploitation of the
-Subject Software is subject strictly to the terms and conditions of this
-License Agreement, that Licensee is furthermore bound to perform all
-obligations of Licensee in all material respects, and that this
-Agreement may be enforced against Licensee by Licensor and/or any other
-person or entity who holds the copyright to the Core Software, the
-Licensed Software, or any Contribution thereto, as defined below.
-
-2.  All definitions included in Article 1 of the Agreement.
-
-3. The following sections:
-
-**Basic Grant.** Subject to Licensee's compliance with all terms and
-conditions of this Agreement, Licensor grants to Licensee the
-royalty-free, perpetual, non-exclusive right and license to Exploit the
-Licensed Software, whether alone or as part of a Covered Work.
-
-**Territorial Limitations.** The rights granted to Licensee hereunder
-only apply to exploitation in the member countries of the World Bank
-("Licensed Territory").
-
-**Rights in Contributions.** Licensee hereby grants to Licensor and its
-licensors a paid up, royalty-free, perpetual, irrevocable,
-non-exclusive, sublicenseable right and license to Exploit any
-Contributions created by or for Licensee, effective immediately on the
-first Distribution of any work containing a Contribution.
-
-**Patent Rights.** Licensee further grants to Licensor and its licensors
-and their respective licensees a paid up, royalty-free, perpetual,
-irrevocable and sublicenseable license to Exploit its Contributions or
-any version of the Licensed Software including its Contributions under
-any patents now or in the future owned or licenseable by Licensee,
-solely to the extent that such Exploitation is of a work consisting of
-Licensed Software and Licensee's Contribution.
-
-**No Personal Use.** Licensee represents and warrants that the Licensed
-Software is not intended to be used and will not be used or authorized
-for use for personal, household and/or family uses.
-
-**Distribution of Source Code.** In the event that Licensee Distributes
-any form of the Licensed Software, whether as Source Code or Object Code
-and whether by itself or as part of a Covered Work, Licensee shall
-promptly make available the full Source Code of such Licensed Software
-(including any Contributions by Licensee) to all persons on the terms
-set forth in this License Agreement, either by making such Source Code
-accessible in a commonly available online source code repository, an
-online repository under the direct control of Licensee, or by notifying
-such persons that such Source Code may be delivered by electronic
-transmission to any requesting person, at no charge other than a
-reasonable fee covering the cost of distribution to the recipient.
-
-**Inclusion of Applicable License Provisions.** Licensee shall assure
-that every copy of Licensed Software (including any such copy included
-in a Covered Work) shall either include the full text of this license or
-a statement that identifies a uniform resource locator which contains
-the applicable license.
-
-**No Further Restrictions.** Licensee shall not impose any restrictions
-on the further use, distribution or modification of Licensed Software,
-whether distributed by itself or as part of a Covered Work, other than
-the terms of this License. Nothing herein shall prohibit Licensee from
-imposing any conditions Licensee sees fit on the subsequent distribution
-of Independent Software included in any Covered Work.
-
-**Non-infringement of Copyright.** Licensee hereby represents and
-warrants to Licensor Parties and any persons or entities who are
-licensees of Licensed Software that its Contributions are and/or will be
-either its original works of authorship or that it has sufficient rights
-in such Contributions to grant the rights required to be granted in such
-Contributions (and derivatives thereof) pursuant to this Agreement.
-
-**Patent Warranties.** Licensee hereby represents that, to the best of
-its knowledge, the combination of any Licensed Software with a
-Contribution from Licensee does not infringe the patent rights of any
-third party.
-
-**Disclaimer.** LICENSEE UNDERSTANDS AND AGREE THAT ITS USE (INCLUDING
-WITHOUT LIMITATION, THE EXERCISE OF ANY RIGHTS GRANTED TO IT UNDER THIS
-AGREEMENT) OF THE SOFTWARE IS AT LICENSEE'S SOLE RISK. THE SOFTWARE IS
-PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. LICENSEE, FOR ITSELF
-AND ITS LICENSORS ("COLLECTIVELY LICENSOR PARTIES") DISCLAIM ALL
-REPRESENTATIONS AND WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR
-STATUTORY, WITH RESPECT TO THE SOFTWARE (INCLUDING, BUT NOT LIMITED TO,
-THE IMPLIED OR STATUTORY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
-PARTICULAR USE OR PURPOSE, TITLE, QUIET ENJOYMENT, AND NON-INFRINGEMENT.
-IN PARTICULAR, LICENSOR PARTIES DO NOT REPRESENT OR WARRANT THAT ANY
-INFORMATION OR OTHER CONTENT OBTAINED OR VIEWED BY LICENSEE OR ANYONE
-ELSE AS A RESULT OF LICENSEE'S EXPLOITATION OF THE SOFTWARE WILL BE
-ACCURATE, COMPLETE OR RELIABLE, THAT LICENSEE'S ACCESS TO THE SOFTWARE
-WILL BE UNINTERRUPTED, FREE OF MALICIOUS CODE OR ERROR-FREE, OR THAT
-DEFECTS WILL BE CORRECTED. LICENSOR PARTIES DISCLAIM ALL LIABILITY AND
-RESPONSIBILITY ARISING FROM , OUT OF OR IN CONNECTION WITH THE SOFTWARE
-OR THE USE OF, PERFORMANCE OF OR OTHER DEALINGS IN THE SOFTWARE.
-LICENSING PARTIES DISCLAIM ALL EQUITABLE INDEMNITIES.
-
-**Limitation of Liability.** LICENSOR PARTIES EXPRESSLY DISCLAIM AND IN
-NO EVENT WILL ANY OF THEM BE LIABLE UNDER ANY THEORY OF LIABILITY
-WHETHER BASED IN CONTRACT, TORT, STRICT LIABILITY OR OTHERWISE, FOR ANY
-DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PERSONAL
-INJURY/WRONGFUL DEATH, PUNITIVE, OR EXEMPLARY DAMAGES (EVEN IF SUCH
-PARTIES KNEW OF OR SHOULD HAVE KNOWN OF THE POSSIBILITY OF SUCH
-DAMAGES), INCLUDING BUT NOT LIMITED TO AS A RESULT OF: (A) LICENSEE'S
-USE OF OR INABILITY TO USE THE SOFTWARE OR (B) ANY LOSS OF DATA. SHOULD
-THEWORLD BANK BE FOUND TO BE LIABLE TO YOU OR ANY THIRD PARTY
-NOTWITHSTANDING THE FOREGOING, SUCH LIABILITY WILL NOT EXCEED \$100.00
-IN THE AGGREGATE.
-
-**Indemnity by Licensee.** Licensee agrees that Licensee will release,
-indemnify and hold harmless Licensor Parties and each of Licensor
-Parties' respective business partners, content providers, licensors and
-service providers, and any of their respective officers, directors,
-shareholders, employees, contractors, representatives, or agents
-(including without limitation any authors or copyright holders of the
-Software) (collectively, the "Licensor Indemnified Parties") from and
-against any and all claims, actions, losses, damages, costs, fees and
-expenses (including attorneys' fees) arising out of or relating to: (i)
-Licensee's use or Exploitation of the Licensed Software, (ii) Licensee's
-data, (iii) Licensee's connection to the Software, (iv) Licensee's
-violation of this Agreement, (v) Licensee's violation of any rights of
-another, and/or (vi) the Exploitation and licensing of the Licensed
-Software by any person claiming rights by operation of any license
-granted by Licensee to such person.
-
-**Express Third Party Beneficiary.** Licensee acknowledges and agrees
-that the World Bank is an express third party beneficiary of this
-agreement and is entitled to enforce the terms of this Agreement or to
-assume the prosecution of any remedy, either in addition to or in lieu
-of enforcement undertaken by Licensor.
-
-**Governing Law.** This Agreement and the relationship between and among
-the Parties shall be governed by the Laws of the State of New York,
-United States of America, without giving effect to any choice or
-conflict of law provision or rule (whether of the state of New York or
-any other jurisdiction). Licensee agrees that regardless of any statute
-or law to the contrary, any claim or cause of action arising out of or
-related to use of the Software or this Agreement must be filed within
-one (1) year after such claim or cause of action arose or be forever
-barred.
-
-**Arbitration.** This Agreement, at the option of Licensor, or The World
-Bank so elects, The World Bank, may be enforced against Licensee in the
-state or federal courts of the State of New York, the courts of the
-country in which Licensee resides, or any other appropriate
-jurisdiction, or concurrently in more than one jurisdiction. Subject to
-the foregoing option of Licensor or The World Bank, any controversy or
-claim arising out of or relating to this Agreement, or that contests the
-validity of this Agreement, shall be settled by arbitration in
-accordance with the UNCITRAL Arbitration Rules from time to time in
-force. The place of arbitration shall be New York, New York and the
-arbitration shall be conducted in English. The Parties hereby waive any
-rights under any applicable law to appeal any arbitration award or to
-seek determination of a preliminary point of law with respect to such
-proceedings. Notwithstanding the foregoing, The World Bank shall have
-the right to seek interim, provisional or other equitable relief,
-including temporary or permanent injunctive relief, as necessary to
-protect its interests.
+Mozilla Public License Version 2.0
+==================================
+
+1. Definitions
+
+--------------
+
+1.1. "Contributor"
+    means each individual or legal entity that creates, contributes to
+    the creation of, or owns Covered Software.
+
+1.2. "Contributor Version"
+    means the combination of the Contributions of others (if any) used
+    by a Contributor and that particular Contributor's Contribution.
+
+1.3. "Contribution"
+    means Covered Software of a particular Contributor.
+
+1.4. "Covered Software"
+    means Source Code Form to which the initial Contributor has attached
+    the notice in Exhibit A, the Executable Form of such Source Code
+    Form, and Modifications of such Source Code Form, in each case
+    including portions thereof.
+
+1.5. "Incompatible With Secondary Licenses"
+    means
+
+    (a) that the initial Contributor has attached the notice described
+        in Exhibit B to the Covered Software; or
+
+    (b) that the Covered Software was made available under the terms of
+        version 1.1 or earlier of the License, but not also under the
+        terms of a Secondary License.
+
+1.6. "Executable Form"
+    means any form of the work other than Source Code Form.
+
+1.7. "Larger Work"
+    means a work that combines Covered Software with other material, in
+    a separate file or files, that is not Covered Software.
+
+1.8. "License"
+    means this document.
+
+1.9. "Licensable"
+    means having the right to grant, to the maximum extent possible,
+    whether at the time of the initial grant or subsequently, any and
+    all of the rights conveyed by this License.
+
+1.10. "Modifications"
+    means any of the following:
+
+    (a) any file in Source Code Form that results from an addition to,
+        deletion from, or modification of the contents of Covered
+        Software; or
+
+    (b) any new file in Source Code Form that contains any Covered
+        Software.
+
+1.11. "Patent Claims" of a Contributor
+    means any patent claim(s), including without limitation, method,
+    process, and apparatus claims, in any patent Licensable by such
+    Contributor that would be infringed, but for the grant of the
+    License, by the making, using, selling, offering for sale, having
+    made, import, or transfer of either its Contributions or its
+    Contributor Version.
+
+1.12. "Secondary License"
+    means either the GNU General Public License, Version 2.0, the GNU
+    Lesser General Public License, Version 2.1, the GNU Affero General
+    Public License, Version 3.0, or any later versions of those
+    licenses.
+
+1.13. "Source Code Form"
+    means the form of the work preferred for making modifications.
+
+1.14. "You" (or "Your")
+    means an individual or a legal entity exercising rights under this
+    License. For legal entities, "You" includes any entity that
+    controls, is controlled by, or is under common control with You. For
+    purposes of this definition, "control" means (a) the power, direct
+    or indirect, to cause the direction or management of such entity,
+    whether by contract or otherwise, or (b) ownership of more than
+    fifty percent (50%) of the outstanding shares or beneficial
+    ownership of such entity.
+
+2. License Grants and Conditions
+
+--------------------------------
+
+2.1. Grants
+
+Each Contributor hereby grants You a world-wide, royalty-free,
+non-exclusive license:
+
+(a) under intellectual property rights (other than patent or trademark)
+    Licensable by such Contributor to use, reproduce, make available,
+    modify, display, perform, distribute, and otherwise exploit its
+    Contributions, either on an unmodified basis, with Modifications, or
+    as part of a Larger Work; and
+
+(b) under Patent Claims of such Contributor to make, use, sell, offer
+    for sale, have made, import, and otherwise transfer either its
+    Contributions or its Contributor Version.
+
+2.2. Effective Date
+
+The licenses granted in Section 2.1 with respect to any Contribution
+become effective for each Contribution on the date the Contributor first
+distributes such Contribution.
+
+2.3. Limitations on Grant Scope
+
+The licenses granted in this Section 2 are the only rights granted under
+this License. No additional rights or licenses will be implied from the
+distribution or licensing of Covered Software under this License.
+Notwithstanding Section 2.1(b) above, no patent license is granted by a
+Contributor:
+
+(a) for any code that a Contributor has removed from Covered Software;
+    or
+
+(b) for infringements caused by: (i) Your and any other third party's
+    modifications of Covered Software, or (ii) the combination of its
+    Contributions with other software (except as part of its Contributor
+    Version); or
+
+(c) under Patent Claims infringed by Covered Software in the absence of
+    its Contributions.
+
+This License does not grant any rights in the trademarks, service marks,
+or logos of any Contributor (except as may be necessary to comply with
+the notice requirements in Section 3.4).
+
+2.4. Subsequent Licenses
+
+No Contributor makes additional grants as a result of Your choice to
+distribute the Covered Software under a subsequent version of this
+License (see Section 10.2) or under the terms of a Secondary License (if
+permitted under the terms of Section 3.3).
+
+2.5. Representation
+
+Each Contributor represents that the Contributor believes its
+Contributions are its original creation(s) or it has sufficient rights
+to grant the rights to its Contributions conveyed by this License.
+
+2.6. Fair Use
+
+This License is not intended to limit any rights You have under
+applicable copyright doctrines of fair use, fair dealing, or other
+equivalents.
+
+2.7. Conditions
+
+Sections 3.1, 3.2, 3.3, and 3.4 are conditions of the licenses granted
+in Section 2.1.
+
+3. Responsibilities
+
+-------------------
+
+3.1. Distribution of Source Form
+
+All distribution of Covered Software in Source Code Form, including any
+Modifications that You create or to which You contribute, must be under
+the terms of this License. You must inform recipients that the Source
+Code Form of the Covered Software is governed by the terms of this
+License, and how they can obtain a copy of this License. You may not
+attempt to alter or restrict the recipients' rights in the Source Code
+Form.
+
+3.2. Distribution of Executable Form
+
+If You distribute Covered Software in Executable Form then:
+
+(a) such Covered Software must also be made available in Source Code
+    Form, as described in Section 3.1, and You must inform recipients of
+    the Executable Form how they can obtain a copy of such Source Code
+    Form by reasonable means in a timely manner, at a charge no more
+    than the cost of distribution to the recipient; and
+
+(b) You may distribute such Executable Form under the terms of this
+    License, or sublicense it under different terms, provided that the
+    license for the Executable Form does not attempt to limit or alter
+    the recipients' rights in the Source Code Form under this License.
+
+3.3. Distribution of a Larger Work
+
+You may create and distribute a Larger Work under terms of Your choice,
+provided that You also comply with the requirements of this License for
+the Covered Software. If the Larger Work is a combination of Covered
+Software with a work governed by one or more Secondary Licenses, and the
+Covered Software is not Incompatible With Secondary Licenses, this
+License permits You to additionally distribute such Covered Software
+under the terms of such Secondary License(s), so that the recipient of
+the Larger Work may, at their option, further distribute the Covered
+Software under the terms of either this License or such Secondary
+License(s).
+
+3.4. Notices
+
+You may not remove or alter the substance of any license notices
+(including copyright notices, patent notices, disclaimers of warranty,
+or limitations of liability) contained within the Source Code Form of
+the Covered Software, except that You may alter any license notices to
+the extent required to remedy known factual inaccuracies.
+
+3.5. Application of Additional Terms
+
+You may choose to offer, and to charge a fee for, warranty, support,
+indemnity or liability obligations to one or more recipients of Covered
+Software. However, You may do so only on Your own behalf, and not on
+behalf of any Contributor. You must make it absolutely clear that any
+such warranty, support, indemnity, or liability obligation is offered by
+You alone, and You hereby agree to indemnify every Contributor for any
+liability incurred by such Contributor as a result of warranty, support,
+indemnity or liability terms You offer. You may include additional
+disclaimers of warranty and limitations of liability specific to any
+jurisdiction.
+
+4. Inability to Comply Due to Statute or Regulation
+
+---------------------------------------------------
+
+If it is impossible for You to comply with any of the terms of this
+License with respect to some or all of the Covered Software due to
+statute, judicial order, or regulation then You must: (a) comply with
+the terms of this License to the maximum extent possible; and (b)
+describe the limitations and the code they affect. Such description must
+be placed in a text file included with all distributions of the Covered
+Software under this License. Except to the extent prohibited by statute
+or regulation, such description must be sufficiently detailed for a
+recipient of ordinary skill to be able to understand it.
+
+5. Termination
+
+--------------
+
+5.1. The rights granted under this License will terminate automatically
+if You fail to comply with any of its terms. However, if You become
+compliant, then the rights granted under this License from a particular
+Contributor are reinstated (a) provisionally, unless and until such
+Contributor explicitly and finally terminates Your grants, and (b) on an
+ongoing basis, if such Contributor fails to notify You of the
+non-compliance by some reasonable means prior to 60 days after You have
+come back into compliance. Moreover, Your grants from a particular
+Contributor are reinstated on an ongoing basis if such Contributor
+notifies You of the non-compliance by some reasonable means, this is the
+first time You have received notice of non-compliance with this License
+from such Contributor, and You become compliant prior to 30 days after
+Your receipt of the notice.
+
+5.2. If You initiate litigation against any entity by asserting a patent
+infringement claim (excluding declaratory judgment actions,
+counter-claims, and cross-claims) alleging that a Contributor Version
+directly or indirectly infringes any patent, then the rights granted to
+You by any and all Contributors for the Covered Software under Section
+2.1 of this License shall terminate.
+
+5.3. In the event of termination under Sections 5.1 or 5.2 above, all
+end user license agreements (excluding distributors and resellers) which
+have been validly granted by You or Your distributors under this License
+prior to termination shall survive termination.
+
+************************************************************************
+
+*                                                                      *
+* 6. Disclaimer of Warranty                                           *
+* -------------------------                                           *
+*                                                                      *
+* Covered Software is provided under this License on an "as is"       *
+* basis, without warranty of any kind, either expressed, implied, or  *
+* statutory, including, without limitation, warranties that the       *
+* Covered Software is free of defects, merchantable, fit for a        *
+* particular purpose or non-infringing. The entire risk as to the     *
+* quality and performance of the Covered Software is with You.        *
+* Should any Covered Software prove defective in any respect, You     *
+* (not any Contributor) assume the cost of any necessary servicing,   *
+* repair, or correction. This disclaimer of warranty constitutes an   *
+* essential part of this License. No use of any Covered Software is   *
+* authorized under this License except under this disclaimer.         *
+*                                                                      *
+
+************************************************************************
+
+************************************************************************
+
+*                                                                      *
+* 7. Limitation of Liability                                          *
+* --------------------------                                          *
+*                                                                      *
+* Under no circumstances and under no legal theory, whether tort      *
+* (including negligence), contract, or otherwise, shall any           *
+* Contributor, or anyone who distributes Covered Software as          *
+* permitted above, be liable to You for any direct, indirect,         *
+* special, incidental, or consequential damages of any character      *
+* including, without limitation, damages for lost profits, loss of    *
+* goodwill, work stoppage, computer failure or malfunction, or any    *
+* and all other commercial damages or losses, even if such party      *
+* shall have been informed of the possibility of such damages. This   *
+* limitation of liability shall not apply to liability for death or   *
+* personal injury resulting from such party's negligence to the       *
+* extent applicable law prohibits such limitation. Some               *
+* jurisdictions do not allow the exclusion or limitation of           *
+* incidental or consequential damages, so this exclusion and          *
+* limitation may not apply to You.                                    *
+*                                                                      *
+
+************************************************************************
+
+8. Litigation
+
+-------------
+
+Any litigation relating to this License may be brought only in the
+courts of a jurisdiction where the defendant maintains its principal
+place of business and such litigation shall be governed by laws of that
+jurisdiction, without reference to its conflict-of-law provisions.
+Nothing in this Section shall prevent a party's ability to bring
+cross-claims or counter-claims.
+
+9. Miscellaneous
+
+----------------
+
+This License represents the complete agreement concerning the subject
+matter hereof. If any provision of this License is held to be
+unenforceable, such provision shall be reformed only to the extent
+necessary to make it enforceable. Any law or regulation which provides
+that the language of a contract shall be construed against the drafter
+shall not be used to construe this License against a Contributor.
+
+10. Versions of the License
+
+---------------------------
+
+10.1. New Versions
+
+Mozilla Foundation is the license steward. Except as provided in Section
+10.3, no one other than the license steward has the right to modify or
+publish new versions of this License. Each version will be given a
+distinguishing version number.
+
+10.2. Effect of New Versions
+
+You may distribute the Covered Software under the terms of the version
+of the License under which You originally received the Covered Software,
+or under the terms of any subsequent version published by the license
+steward.
+
+10.3. Modified Versions
+
+If you create software not governed by this License, and you want to
+create a new license for such software, you may create and use a
+modified version of this License if you rename the license and remove
+any references to the name of the license steward (except to note that
+such modified license differs from this License).
+
+10.4. Distributing Source Code Form that is Incompatible With Secondary
+Licenses
+
+If You choose to distribute Source Code Form that is Incompatible With
+Secondary Licenses under the terms of this version of the License, the
+notice described in Exhibit B of this License must be attached.
+
+Exhibit A - Source Code Form License Notice
+-------------------------------------------
+
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at <https://mozilla.org/MPL/2.0/>.
+
+If it is not possible or desirable to put the notice in a particular
+file, then You may include the notice in a location (such as a LICENSE
+file in a relevant directory) where a recipient would be likely to look
+for such a notice.
+
+You may add additional accurate notices of copyright ownership.
+
+Exhibit B - "Incompatible With Secondary Licenses" Notice
+---------------------------------------------------------
+
+  This Source Code Form is "Incompatible With Secondary Licenses", as
+  defined by the Mozilla Public License, v. 2.0.

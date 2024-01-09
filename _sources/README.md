@@ -8,7 +8,7 @@ Inspired by [literate programming](http://literateprogramming.com), maintained b
     > README files are important and often neglected. The files should inform anyone about the first steps to use, learn and contribute to your project.
 
 - **LICENSE**
-  > The LICENSE is a document that  determines what others can and cannot do with contents of the repository. If no license is present, no one has permission to use and/or modify your code. The <span style="color:#3EACAD">template</span> is licensed under the [**World Bank Master Community License Agreement**](LICENSE). And so will projects generated from it.
+  > The LICENSE is a document that  determines what others can and cannot do with contents of the repository. If no license is present, no one has permission to use and/or modify your code. The <span style="color:#3EACAD">template</span> is licensed under the [**Mozilla Public License**](https://www.mozilla.org/en-US/MPL/). And so will projects generated from it.
 
 - **docs/**
 
@@ -246,6 +246,10 @@ Optionally, [Jupyter Book](https://jupyterbook.org) can execute notebooks during
 [Jupyter Book Write executable content](https://jupyterbook.org/en/stable/content/executable/index.html)
 ```
 
+## Code of Conduct
+
+The <span style="color:#3EACAD">template</span> maintains a [Code of Conduct](docs/CODE_OF_CONDUCT.md) to ensure an inclusive and respectful environment for everyone. Please adhere to it in all interactions within our community.
+
 ## License
 
-The <span style="color:#3EACAD">template</span> is licensed under the [**World Bank Master Community License Agreement**](LICENSE). Remember to replace the [license](LICENSE.md) if necessary. If open source, [choose an open source license](https://choosealicense.com).
+The <span style="color:#3EACAD">template</span> is licensed under the [**Mozilla Public License**](https://www.mozilla.org/en-US/MPL). Remember to replace the [license](LICENSE) if necessary. If open source, [choose an open source license](https://choosealicense.com).
