@@ -1,2 +1,2 @@
 docutils==0.17.1
-jupyter-book==0.15.1
+jupyter-book==1.0.0
