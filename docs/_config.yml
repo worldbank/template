@@ -19,7 +19,11 @@ html:
   baseurl: https://worldbank.github.io/template
   extra_footer: |
     <div>
-        <b>All content (unless otherwise specified) is subject to the <a href="https://www.mozilla.org/en-US/MPL/">Mozilla Public License.</a></b>
+      For illustrative purposes and does not imply the expression of any opinion on the part of the World Bank, concerning the legal status of any country or territory or concerning the delimitation of frontiers or boundaries.
+    </div>
+    <br>
+    <div>
+        <b>All content (unless otherwise specified) is subject to the <a href="https://www.mozilla.org/en-US/MPL/">Mozilla Public License</a>.</b>
     </div>
   favicon: docs/images/favicon.ico
 
