@@ -2,6 +2,10 @@ format: jb-book
 root: README
 
 parts:
+  - caption: Getting Started
+    chapters:
+      - file: docs/introduction-to-data-goods
+      - file: docs/peer-review
   - caption: Data Product Examples
     numbered: True
     chapters:
@@ -15,8 +19,3 @@ parts:
         title: Drought in Morocco
       - url: https://datapartnership.github.io/morocco-earthquake-impact/notebooks/conflict-acled.html
         title: Drought and Conflict in Morocco
-  - caption: Contributing
-    chapters:
-      - file: docs/CODE_OF_CONDUCT
-      - file: docs/CONTRIBUTING
-

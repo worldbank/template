@@ -1,4 +1,4 @@
-# Data Good: Reusable Project Template
+# Data Goods: World Bank Reusable Data Products
 
 Welcome to the [Data Good World Bank Project Template](https://worldbank.github.io/data-good-template)! This template is designed to assist data enthusiasts, analysts, and developers in creating impactful reusable data products: a _Data Good_.
 
