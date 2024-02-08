@@ -6,11 +6,9 @@ parts:
     chapters:
       - file: docs/introduction-to-data-goods
       - file: docs/peer-review
-  - caption: Data Product Examples
-    numbered: True
+  - caption: Data Goods Examples
     chapters:
-      - url: https://datapartnership.github.io/gaza-israel-conflict-impact-analysis/notebooks/nighttime-lights/README.html
-        title: Nighttime Lights in Gaza
+      - file: notebooks/nighttime-lights/nighttime-lights.ipynb
       - url: https://datapartnership.github.io/lebanon-economic-monitor/notebooks/air-pollution/air-pollution.html
         title: Air Pollution in Lebanon
       - url: https://datapartnership.github.io/lebanon-economic-monitor/notebooks/population/population.html
