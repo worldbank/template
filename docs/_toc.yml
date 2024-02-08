@@ -2,27 +2,18 @@ format: jb-book
 root: README
 
 parts:
-  - caption: Examples
-    numbered: True
+  - caption: Getting Started
     chapters:
-      - file: notebooks/world-bank-api.ipynb
-      - file: notebooks/world-bank-package.ipynb
-      - file: notebooks/nasa-apod.ipynb
-      - file: notebooks/bibliography.ipynb
-  - caption: Gallery
+      - file: docs/introduction-to-data-goods
+      - file: docs/peer-review
+  - caption: Data Goods Examples
     chapters:
-      - file: docs/gallery
-  - caption: Templates
-    chapters:
-      - file: docs/CODE_OF_CONDUCT
-      - file: CONTRIBUTING
-  - caption: Additional Resources
-    chapters:
-      - url: https://datapartnership.org
-        title: Development Data Partnership
-      - url: https://wbdatalab.org
-        title: World Bank Data Lab
-      - url: https://www.worldbank.org/en/about/unit/unit-dec
-        title: World Bank DEC
-      - url: https://www.worldbank.org/en/research/dime
-        title: World Bank DIME
+      - file: notebooks/nighttime-lights/nighttime-lights.ipynb
+      - url: https://datapartnership.github.io/lebanon-economic-monitor/notebooks/air-pollution/air-pollution.html
+        title: Air Pollution in Lebanon
+      - url: https://datapartnership.github.io/lebanon-economic-monitor/notebooks/population/population.html
+        title: Population in Lebanon
+      - url: https://datapartnership.github.io/morocco-earthquake-impact/docs/drought-index.html
+        title: Drought in Morocco
+      - url: https://datapartnership.github.io/morocco-earthquake-impact/notebooks/conflict-acled.html
+        title: Drought and Conflict in Morocco
