@@ -1,0 +1,1135 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>2. Package Example</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/world-bank-package';</script>
+    <link rel="canonical" href="https://worldbank.github.io/template/notebooks/world-bank-package.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3. Securely Using API Keys" href="nasa-apod.html" />
+    <link rel="prev" title="1. Indicators Example" href="world-bank-api.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+    <meta name="docbuild:last-update" content="Feb 08, 2024"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../README.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt=" - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt=" - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="world-bank-api.html">1. Indicators Example</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Package Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nasa-apod.html">3. Securely Using API Keys</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bibliography.html">4. Including Bibliography</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Gallery</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../docs/gallery.html">Projects using the <span style="color:#3EACAD">template</span></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Templates</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../docs/CODE_OF_CONDUCT.html">Contributor Covenant Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CONTRIBUTING.html">CONTRIBUTING</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://datapartnership.org">Development Data Partnership</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://wbdatalab.org">World Bank Data Lab</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.worldbank.org/en/about/unit/unit-dec">World Bank DEC</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.worldbank.org/en/research/dime">World Bank DIME</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/worldbank/template" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/worldbank/template/edit/main/notebooks/world-bank-package.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/worldbank/template/issues/new?title=Issue%20on%20page%20%2Fnotebooks/world-bank-package.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/world-bank-package.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Package Example</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">2.1. Usage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualization">2.2. Visualization</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="package-example">
+<h1><span class="section-number">2. </span>Package Example<a class="headerlink" href="#package-example" title="Permalink to this heading">#</a></h1>
+<blockquote>
+<div><p>The following is an example of on how to use and distribute the source code of your project as a <a class="reference external" href="https://packaging.python.org">Python package</a> using the <span style="color:#3EACAD">template</span>.</p>
+</div></blockquote>
+<section id="usage">
+<h2><span class="section-number">2.1. </span>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">#</a></h2>
+<p>Unlike the <a class="reference external" href="https://worldbank.github.io/template/notebooks/world-bank-api.html">previous example</a>, where the source code was contained on the Jupyter notebok itself, we (re)use a Python package - the <a class="reference external" href="https://github.com/worldbank/template/tree/main/src/datalab">datalab</a> Python package - which will let us (re)use any attributes and methods in the following example.</p>
+<p>Let’s start by importing <code class="docutils literal notranslate"><span class="pre">WorldBankIndicatorsAPI</span></code>, a Python API wrapper class created to facilitate the usage of the <a class="reference external" href="https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation">World Bank Indicators API</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datalab.indicators</span> <span class="kn">import</span> <span class="n">WorldBankIndicatorsAPI</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s continue by creating the API object.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">api</span> <span class="o">=</span> <span class="n">WorldBankIndicatorsAPI</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">api</span></code> wrapper object is now ready to use! We will invoke its <code class="docutils literal notranslate"><span class="pre">query</span></code> method to retrieve data from the <a class="reference external" href="https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation">World Bank Indicators API</a>. To learn how to use it, such as information about  method signature, valid parameters and return value, we read <code class="docutils literal notranslate"><span class="pre">help</span></code>. Since <a class="reference external" href="https://peps.python.org/pep-0257">PEP 257</a>, Python offers <em>doctrings</em>, which are an easy and standard to create code documentation and it is a good practice adopt it. Documentating the source code is crucial to create a maintainable reliable and reproducicle code base and project.</p>
+<p>Let’s see the <code class="docutils literal notranslate"><span class="pre">query</span></code> method’s <em>docstring</em> as shown below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">api</span><span class="o">.</span><span class="n">query</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on method query in module datalab.indicators:
+
+query(indicator, country: list = &#39;all&#39;, params: dict = {}) method of datalab.indicators.WorldBankIndicatorsAPI instance
+    Retrieve a response, valid JSON response or error, from the World Bank Indicators API.
+    
+    See also:
+        https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation
+    
+    Parameters
+    ----------
+    indicator : str
+        World Bank API Indicator.
+    country : list, optional
+        List of countries. The country name is converted to ISO 3166-1 alpha-3 country code.
+    params : dict, optional
+         World Bank API Indicator Query Strings.
+    
+    Returns
+    -------
+    pandas.core.frame.DataFrame
+        Return a Pandas DataFrame obtained with response data from World Bank Indicators API.
+</pre></div>
+</div>
+</div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">query</span></code> method allows us to select an <strong>indicator</strong> (e.g, <a class="reference external" href="https://datatopics.worldbank.org/world-development-indicators">World Development Indicators</a>), a list of countries and <a class="reference external" href="https://datahelpdesk.worldbank.org/knowledgebase/articles/898581#query-strings">query parameters</a>. Note that contrary to the <a class="reference external" href="https://worldbank.github.io/template/notebooks/world-bank-api.html">previous example</a>, the method expects a list of country names and converts them to <a class="reference external" href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166-1 alpha-3</a> automatically.</p>
+<p>Let’s invoke the <code class="docutils literal notranslate"><span class="pre">query</span></code> method and retrieve the results for <code class="docutils literal notranslate"><span class="pre">SP.POP.TOTL</span></code> for the <a class="reference external" href="https://infobrics.org">BRICS</a> (as before).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">query</span><span class="p">(</span>
+    <span class="s2">&quot;SP.POP.TOTL&quot;</span><span class="p">,</span> <span class="n">country</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Brazil&quot;</span><span class="p">,</span> <span class="s2">&quot;China&quot;</span><span class="p">,</span> <span class="s2">&quot;India&quot;</span><span class="p">,</span> <span class="s2">&quot;Russia&quot;</span><span class="p">,</span> <span class="s2">&quot;South Africa&quot;</span><span class="p">]</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Voilà!</strong> We just (re)used the <a class="reference external" href="https://github.com/worldbank/template/tree/main/src/datalab">datalab</a> Python package in our example delegating the maintenance and logic, making the notebook easier to understand and reproduce.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>In addition, the <code class="docutils literal notranslate"><span class="pre">&lt;span</span> <span class="pre">style=&quot;color:#3EACAD&quot;&gt;template&lt;/span&gt;</span></code> makes any Python package automatically <a class="reference external" href="https://packaging.python.org/en/latest/tutorials/installing-packages/">pip installable</a> and acessible to <em>anyone</em> and from <em>anywhere</em>!</p>
+<p>To install from source:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pip install git+https://github.com/worldbank/template.git
+</pre></div>
+</div>
+<p>To install from version:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pip install git+https://github.com/worldbank/template.git@v0.1.0
+</pre></div>
+</div>
+<p>When distributing a project release, it is strongly recommended to adhere to release management good practices. It is recommended to create checklists, adopt versioning (e.g, <a class="reference external" href="https://semver.org/">semantic versioning</a> and to release on <a class="reference external" href="https://pypi.org/">Python Package Index</a> (instead of GitHub).</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The <span style="color:#3EACAD">template</span> will automatically find and install any local <code class="docutils literal notranslate"><span class="pre">src</span></code> packages as long as the <code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code> file is up-to-date.</p>
+</div>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">datalab</span></code> Python package shoudl be used for demonstration purposes only. For support, please see the <a class="reference external" href="https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation">World Bank Indicators API Documentation</a>.</p>
+</div>
+<p>Finally, let’s take a look at the retrieved data.</p>
+<div class="cell tag_output_scroll docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>country.value</th>
+      <th>Brazil</th>
+      <th>China</th>
+      <th>India</th>
+      <th>Russian Federation</th>
+      <th>South Africa</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1960</th>
+      <td>73092515</td>
+      <td>667070000</td>
+      <td>445954579</td>
+      <td>119897000</td>
+      <td>16520441</td>
+    </tr>
+    <tr>
+      <th>1961</th>
+      <td>75330008</td>
+      <td>660330000</td>
+      <td>456351876</td>
+      <td>121236000</td>
+      <td>16989464</td>
+    </tr>
+    <tr>
+      <th>1962</th>
+      <td>77599218</td>
+      <td>665770000</td>
+      <td>467024193</td>
+      <td>122591000</td>
+      <td>17503133</td>
+    </tr>
+    <tr>
+      <th>1963</th>
+      <td>79915555</td>
+      <td>682335000</td>
+      <td>477933619</td>
+      <td>123960000</td>
+      <td>18042215</td>
+    </tr>
+    <tr>
+      <th>1964</th>
+      <td>82262794</td>
+      <td>698355000</td>
+      <td>489059309</td>
+      <td>125345000</td>
+      <td>18603097</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2017</th>
+      <td>208504960</td>
+      <td>1396215000</td>
+      <td>1354195680</td>
+      <td>144496739</td>
+      <td>56641209</td>
+    </tr>
+    <tr>
+      <th>2018</th>
+      <td>210166592</td>
+      <td>1402760000</td>
+      <td>1369003306</td>
+      <td>144477859</td>
+      <td>57339635</td>
+    </tr>
+    <tr>
+      <th>2019</th>
+      <td>211782878</td>
+      <td>1407745000</td>
+      <td>1383112050</td>
+      <td>144406261</td>
+      <td>58087055</td>
+    </tr>
+    <tr>
+      <th>2020</th>
+      <td>213196304</td>
+      <td>1411100000</td>
+      <td>1396387127</td>
+      <td>144073139</td>
+      <td>58801927</td>
+    </tr>
+    <tr>
+      <th>2021</th>
+      <td>214326223</td>
+      <td>1412360000</td>
+      <td>1407563842</td>
+      <td>143449286</td>
+      <td>59392255</td>
+    </tr>
+  </tbody>
+</table>
+<p>62 rows × 5 columns</p>
+</div></div></div>
+</div>
+</section>
+<section id="visualization">
+<h2><span class="section-number">2.2. </span>Visualization<a class="headerlink" href="#visualization" title="Permalink to this heading">#</a></h2>
+<p>As before, let’s now plot the data as a time series using <a class="reference external" href="https://docs.bokeh.org">Bokeh</a>.</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">itertools</span>
+
+<span class="kn">import</span> <span class="nn">bokeh</span>
+<span class="kn">from</span> <span class="nn">bokeh.palettes</span> <span class="kn">import</span> <span class="n">Spectral6</span>
+<span class="kn">from</span> <span class="nn">bokeh.plotting</span> <span class="kn">import</span> <span class="n">figure</span><span class="p">,</span> <span class="n">output_notebook</span><span class="p">,</span> <span class="n">show</span>
+
+<span class="n">output_notebook</span><span class="p">()</span>
+
+<span class="c1"># instantiating the figure object</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">figure</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Population, total (World Bank)&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+
+<span class="c1"># colors</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="n">itertools</span><span class="o">.</span><span class="n">cycle</span><span class="p">(</span><span class="n">Spectral6</span><span class="p">)</span>
+
+<span class="c1"># plotting the line graph</span>
+<span class="k">for</span> <span class="n">column</span><span class="p">,</span> <span class="n">color</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">colors</span><span class="p">):</span>
+    <span class="n">p</span><span class="o">.</span><span class="n">line</span><span class="p">(</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+        <span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">],</span>
+        <span class="n">legend_label</span><span class="o">=</span><span class="n">column</span><span class="p">,</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">,</span>
+        <span class="n">line_width</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="p">)</span>
+
+<span class="n">p</span><span class="o">.</span><span class="n">legend</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="s2">&quot;right&quot;</span>
+<span class="n">p</span><span class="o">.</span><span class="n">legend</span><span class="o">.</span><span class="n">click_policy</span> <span class="o">=</span> <span class="s2">&quot;mute&quot;</span>
+<span class="n">p</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">text_font_size</span> <span class="o">=</span> <span class="s2">&quot;12pt&quot;</span>
+
+<span class="n">p</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">axis_label</span> <span class="o">=</span> <span class="s2">&quot;Year&quot;</span>
+<span class="n">p</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">axis_label</span> <span class="o">=</span> <span class="s2">&quot;Population, total (in millions)&quot;</span>
+
+<span class="n">show</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output text_html"><div class="bk-root">
+        <a href="https://bokeh.org" target="_blank" class="bk-logo bk-logo-small bk-logo-notebook"></a>
+        <span id="1002">Loading BokehJS ...</span>
+    </div>
+</div><script type="application/javascript">(function(root) {
+  function now() {
+    return new Date();
+  }
+
+  const force = true;
+
+  if (typeof root._bokeh_onload_callbacks === "undefined" || force === true) {
+    root._bokeh_onload_callbacks = [];
+    root._bokeh_is_loading = undefined;
+  }
+
+const JS_MIME_TYPE = 'application/javascript';
+  const HTML_MIME_TYPE = 'text/html';
+  const EXEC_MIME_TYPE = 'application/vnd.bokehjs_exec.v0+json';
+  const CLASS_NAME = 'output_bokeh rendered_html';
+
+  /**
+   * Render data to the DOM node
+   */
+  function render(props, node) {
+    const script = document.createElement("script");
+    node.appendChild(script);
+  }
+
+  /**
+   * Handle when an output is cleared or removed
+   */
+  function handleClearOutput(event, handle) {
+    const cell = handle.cell;
+
+    const id = cell.output_area._bokeh_element_id;
+    const server_id = cell.output_area._bokeh_server_id;
+    // Clean up Bokeh references
+    if (id != null && id in Bokeh.index) {
+      Bokeh.index[id].model.document.clear();
+      delete Bokeh.index[id];
+    }
+
+    if (server_id !== undefined) {
+      // Clean up Bokeh references
+      const cmd_clean = "from bokeh.io.state import curstate; print(curstate().uuid_to_server['" + server_id + "'].get_sessions()[0].document.roots[0]._id)";
+      cell.notebook.kernel.execute(cmd_clean, {
+        iopub: {
+          output: function(msg) {
+            const id = msg.content.text.trim();
+            if (id in Bokeh.index) {
+              Bokeh.index[id].model.document.clear();
+              delete Bokeh.index[id];
+            }
+          }
+        }
+      });
+      // Destroy server and session
+      const cmd_destroy = "import bokeh.io.notebook as ion; ion.destroy_server('" + server_id + "')";
+      cell.notebook.kernel.execute(cmd_destroy);
+    }
+  }
+
+  /**
+   * Handle when a new output is added
+   */
+  function handleAddOutput(event, handle) {
+    const output_area = handle.output_area;
+    const output = handle.output;
+
+    // limit handleAddOutput to display_data with EXEC_MIME_TYPE content only
+    if ((output.output_type != "display_data") || (!Object.prototype.hasOwnProperty.call(output.data, EXEC_MIME_TYPE))) {
+      return
+    }
+
+    const toinsert = output_area.element.find("." + CLASS_NAME.split(' ')[0]);
+
+    if (output.metadata[EXEC_MIME_TYPE]["id"] !== undefined) {
+      toinsert[toinsert.length - 1].firstChild.textContent = output.data[JS_MIME_TYPE];
+      // store reference to embed id on output_area
+      output_area._bokeh_element_id = output.metadata[EXEC_MIME_TYPE]["id"];
+    }
+    if (output.metadata[EXEC_MIME_TYPE]["server_id"] !== undefined) {
+      const bk_div = document.createElement("div");
+      bk_div.innerHTML = output.data[HTML_MIME_TYPE];
+      const script_attrs = bk_div.children[0].attributes;
+      for (let i = 0; i < script_attrs.length; i++) {
+        toinsert[toinsert.length - 1].firstChild.setAttribute(script_attrs[i].name, script_attrs[i].value);
+        toinsert[toinsert.length - 1].firstChild.textContent = bk_div.children[0].textContent
+      }
+      // store reference to server id on output_area
+      output_area._bokeh_server_id = output.metadata[EXEC_MIME_TYPE]["server_id"];
+    }
+  }
+
+  function register_renderer(events, OutputArea) {
+
+    function append_mime(data, metadata, element) {
+      // create a DOM node to render to
+      const toinsert = this.create_output_subarea(
+        metadata,
+        CLASS_NAME,
+        EXEC_MIME_TYPE
+      );
+      this.keyboard_manager.register_events(toinsert);
+      // Render to node
+      const props = {data: data, metadata: metadata[EXEC_MIME_TYPE]};
+      render(props, toinsert[toinsert.length - 1]);
+      element.append(toinsert);
+      return toinsert
+    }
+
+    /* Handle when an output is cleared or removed */
+    events.on('clear_output.CodeCell', handleClearOutput);
+    events.on('delete.Cell', handleClearOutput);
+
+    /* Handle when a new output is added */
+    events.on('output_added.OutputArea', handleAddOutput);
+
+    /**
+     * Register the mime type and append_mime function with output_area
+     */
+    OutputArea.prototype.register_mime_type(EXEC_MIME_TYPE, append_mime, {
+      /* Is output safe? */
+      safe: true,
+      /* Index of renderer in `output_area.display_order` */
+      index: 0
+    });
+  }
+
+  // register the mime type if in Jupyter Notebook environment and previously unregistered
+  if (root.Jupyter !== undefined) {
+    const events = require('base/js/events');
+    const OutputArea = require('notebook/js/outputarea').OutputArea;
+
+    if (OutputArea.prototype.mime_types().indexOf(EXEC_MIME_TYPE) == -1) {
+      register_renderer(events, OutputArea);
+    }
+  }
+  if (typeof (root._bokeh_timeout) === "undefined" || force === true) {
+    root._bokeh_timeout = Date.now() + 5000;
+    root._bokeh_failed_load = false;
+  }
+
+  const NB_LOAD_WARNING = {'data': {'text/html':
+     "<div style='background-color: #fdd'>\n"+
+     "<p>\n"+
+     "BokehJS does not appear to have successfully loaded. If loading BokehJS from CDN, this \n"+
+     "may be due to a slow or bad network connection. Possible fixes:\n"+
+     "</p>\n"+
+     "<ul>\n"+
+     "<li>re-rerun `output_notebook()` to attempt to load from CDN again, or</li>\n"+
+     "<li>use INLINE resources instead, as so:</li>\n"+
+     "</ul>\n"+
+     "<code>\n"+
+     "from bokeh.resources import INLINE\n"+
+     "output_notebook(resources=INLINE)\n"+
+     "</code>\n"+
+     "</div>"}};
+
+  function display_loaded() {
+    const el = document.getElementById("1002");
+    if (el != null) {
+      el.textContent = "BokehJS is loading...";
+    }
+    if (root.Bokeh !== undefined) {
+      if (el != null) {
+        el.textContent = "BokehJS " + root.Bokeh.version + " successfully loaded.";
+      }
+    } else if (Date.now() < root._bokeh_timeout) {
+      setTimeout(display_loaded, 100)
+    }
+  }
+
+  function run_callbacks() {
+    try {
+      root._bokeh_onload_callbacks.forEach(function(callback) {
+        if (callback != null)
+          callback();
+      });
+    } finally {
+      delete root._bokeh_onload_callbacks
+    }
+    console.debug("Bokeh: all callbacks have finished");
+  }
+
+  function load_libs(css_urls, js_urls, callback) {
+    if (css_urls == null) css_urls = [];
+    if (js_urls == null) js_urls = [];
+
+    root._bokeh_onload_callbacks.push(callback);
+    if (root._bokeh_is_loading > 0) {
+      console.debug("Bokeh: BokehJS is being loaded, scheduling callback at", now());
+      return null;
+    }
+    if (js_urls == null || js_urls.length === 0) {
+      run_callbacks();
+      return null;
+    }
+    console.debug("Bokeh: BokehJS not loaded, scheduling load and callback at", now());
+    root._bokeh_is_loading = css_urls.length + js_urls.length;
+
+    function on_load() {
+      root._bokeh_is_loading--;
+      if (root._bokeh_is_loading === 0) {
+        console.debug("Bokeh: all BokehJS libraries/stylesheets loaded");
+        run_callbacks()
+      }
+    }
+
+    function on_error(url) {
+      console.error("failed to load " + url);
+    }
+
+    for (let i = 0; i < css_urls.length; i++) {
+      const url = css_urls[i];
+      const element = document.createElement("link");
+      element.onload = on_load;
+      element.onerror = on_error.bind(null, url);
+      element.rel = "stylesheet";
+      element.type = "text/css";
+      element.href = url;
+      console.debug("Bokeh: injecting link tag for BokehJS stylesheet: ", url);
+      document.body.appendChild(element);
+    }
+
+    for (let i = 0; i < js_urls.length; i++) {
+      const url = js_urls[i];
+      const element = document.createElement('script');
+      element.onload = on_load;
+      element.onerror = on_error.bind(null, url);
+      element.async = false;
+      element.src = url;
+      console.debug("Bokeh: injecting script tag for BokehJS library: ", url);
+      document.head.appendChild(element);
+    }
+  };
+
+  function inject_raw_css(css) {
+    const element = document.createElement("style");
+    element.appendChild(document.createTextNode(css));
+    document.body.appendChild(element);
+  }
+
+  const js_urls = ["https://cdn.bokeh.org/bokeh/release/bokeh-2.4.3.min.js", "https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.4.3.min.js", "https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.3.min.js", "https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.3.min.js", "https://cdn.bokeh.org/bokeh/release/bokeh-mathjax-2.4.3.min.js"];
+  const css_urls = [];
+
+  const inline_js = [    function(Bokeh) {
+      Bokeh.set_log_level("info");
+    },
+function(Bokeh) {
+    }
+  ];
+
+  function run_inline_js() {
+    if (root.Bokeh !== undefined || force === true) {
+          for (let i = 0; i < inline_js.length; i++) {
+      inline_js[i].call(root, root.Bokeh);
+    }
+if (force === true) {
+        display_loaded();
+      }} else if (Date.now() < root._bokeh_timeout) {
+      setTimeout(run_inline_js, 100);
+    } else if (!root._bokeh_failed_load) {
+      console.log("Bokeh: BokehJS failed to load within specified timeout.");
+      root._bokeh_failed_load = true;
+    } else if (force !== true) {
+      const cell = $(document.getElementById("1002")).parents('.cell').data().cell;
+      cell.output_area.append_execute_result(NB_LOAD_WARNING)
+    }
+  }
+
+  if (root._bokeh_is_loading === 0) {
+    console.debug("Bokeh: BokehJS loaded, going straight to plotting");
+    run_inline_js();
+  } else {
+    load_libs(css_urls, js_urls, function() {
+      console.debug("Bokeh: BokehJS plotting callback run at", now());
+      run_inline_js();
+    });
+  }
+}(window));</script><div class="output text_html">
+  <div class="bk-root" id="756bcecf-5d05-4b33-b3f9-817acf206cf6" data-root-id="1003"></div>
+</div><script type="application/javascript">(function(root) {
+  function embed_document(root) {
+  const docs_json = {"27a5602b-a100-49a8-be71-4c1a30cbf69c":{"defs":[],"roots":{"references":[{"attributes":{"below":[{"id":"1014"}],"center":[{"id":"1017"},{"id":"1021"},{"id":"1052"}],"left":[{"id":"1018"}],"renderers":[{"id":"1040"},{"id":"1058"},{"id":"1077"},{"id":"1098"},{"id":"1121"}],"title":{"id":"1004"},"toolbar":{"id":"1029"},"width":700,"x_range":{"id":"1006"},"x_scale":{"id":"1010"},"y_range":{"id":"1008"},"y_scale":{"id":"1012"}},"id":"1003","subtype":"Figure","type":"Plot"},{"attributes":{"line_alpha":0.1,"line_color":"#fc8d59","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"1119","type":"Line"},{"attributes":{},"id":"1113","type":"UnionRenderers"},{"attributes":{"coordinates":null,"group":null,"text":"Population, total (World Bank)","text_font_size":"12pt"},"id":"1004","type":"Title"},{"attributes":{"line_alpha":0.2,"line_color":"#fee08b","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"1097","type":"Line"},{"attributes":{"axis":{"id":"1014"},"coordinates":null,"group":null,"ticker":null},"id":"1017","type":"Grid"},{"attributes":{},"id":"1114","type":"Selection"},{"attributes":{"coordinates":null,"data_source":{"id":"1094"},"glyph":{"id":"1095"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"1097"},"nonselection_glyph":{"id":"1096"},"view":{"id":"1099"}},"id":"1098","type":"GlyphRenderer"},{"attributes":{"line_alpha":0.1,"line_color":"#99d594","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"1056","type":"Line"},{"attributes":{},"id":"1138","type":"UnionRenderers"},{"attributes":{"label":{"value":"Russian Federation"},"renderers":[{"id":"1098"}]},"id":"1116","type":"LegendItem"},{"attributes":{},"id":"1139","type":"Selection"},{"attributes":{},"id":"1027","type":"HelpTool"},{"attributes":{},"id":"1070","type":"Selection"},{"attributes":{"label":{"value":"Brazil"},"renderers":[{"id":"1040"}]},"id":"1053","type":"LegendItem"},{"attributes":{},"id":"1069","type":"UnionRenderers"},{"attributes":{"line_alpha":0.2,"line_color":"#99d594","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"1057","type":"Line"},{"attributes":{},"id":"1090","type":"UnionRenderers"},{"attributes":{"axis":{"id":"1018"},"coordinates":null,"dimension":1,"group":null,"ticker":null},"id":"1021","type":"Grid"},{"attributes":{"label":{"value":"South Africa"},"renderers":[{"id":"1121"}]},"id":"1141","type":"LegendItem"},{"attributes":{},"id":"1019","type":"BasicTicker"},{"attributes":{"line_alpha":0.1,"line_color":"#e6f598","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"1075","type":"Line"},{"attributes":{},"id":"1023","type":"WheelZoomTool"},{"attributes":{"tools":[{"id":"1022"},{"id":"1023"},{"id":"1024"},{"id":"1025"},{"id":"1026"},{"id":"1027"}]},"id":"1029","type":"Toolbar"},{"attributes":{"line_color":"#99d594","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"1055","type":"Line"},{"attributes":{},"id":"1022","type":"PanTool"},{"attributes":{},"id":"1045","type":"AllLabels"},{"attributes":{"overlay":{"id":"1028"}},"id":"1024","type":"BoxZoomTool"},{"attributes":{},"id":"1025","type":"SaveTool"},{"attributes":{},"id":"1026","type":"ResetTool"},{"attributes":{"label":{"value":"India"},"renderers":[{"id":"1077"}]},"id":"1093","type":"LegendItem"},{"attributes":{},"id":"1047","type":"BasicTickFormatter"},{"attributes":{"data":{"x":["1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021"],"y":[119897000,121236000,122591000,123960000,125345000,126745000,127468000,128196000,128928000,129664000,130404000,131155000,131909000,132669000,133432000,134200000,135147000,136100000,137060000,138027000,139010000,139941000,140823000,141668000,142745000,143858000,144894000,145908000,146857000,147721000,147969407,148394216,148538197,148458777,148407912,148375787,148160129,147915361,147670784,147214776,146596869,145976482,145306497,144648618,144067316,143518814,143049637,142805114,142742366,142785349,142849468,142960908,143201721,143506995,143819667,144096870,144342397,144496739,144477859,144406261,144073139,143449286]},"selected":{"id":"1114"},"selection_policy":{"id":"1113"}},"id":"1094","type":"ColumnDataSource"},{"attributes":{},"id":"1049","type":"UnionRenderers"},{"attributes":{"source":{"id":"1073"}},"id":"1078","type":"CDSView"},{"attributes":{},"id":"1050","type":"Selection"},{"attributes":{},"id":"1091","type":"Selection"},{"attributes":{},"id":"1048","type":"AllLabels"},{"attributes":{},"id":"1044","type":"BasicTickFormatter"},{"attributes":{"line_alpha":0.2,"line_color":"#e6f598","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"1076","type":"Line"},{"attributes":{"bottom_units":"screen","coordinates":null,"fill_alpha":0.5,"fill_color":"lightgrey","group":null,"left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"1028","type":"BoxAnnotation"},{"attributes":{"source":{"id":"1054"}},"id":"1059","type":"CDSView"},{"attributes":{"line_alpha":0.1,"line_color":"#fee08b","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"1096","type":"Line"},{"attributes":{"coordinates":null,"data_source":{"id":"1073"},"glyph":{"id":"1074"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"1076"},"nonselection_glyph":{"id":"1075"},"view":{"id":"1078"}},"id":"1077","type":"GlyphRenderer"},{"attributes":{"data":{"x":["1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021"],"y":[16520441,16989464,17503133,18042215,18603097,19187194,19789771,20410677,21050540,21704214,22368306,23031441,23698507,24382513,25077016,25777964,26480300,27199838,27943445,28697014,29463549,30232561,31022417,31865176,32768207,33752964,34877834,36119333,37393853,38668684,39877570,40910959,41760755,42525440,43267982,43986084,44661603,45285048,45852166,46364681,46813266,47229714,47661514,48104048,48556071,49017147,49491756,49996094,50565812,51170779,51784921,52443325,53145033,53873616,54729551,55876504,56422274,56641209,57339635,58087055,58801927,59392255]},"selected":{"id":"1139"},"selection_policy":{"id":"1138"}},"id":"1117","type":"ColumnDataSource"},{"attributes":{"source":{"id":"1094"}},"id":"1099","type":"CDSView"},{"attributes":{"line_color":"#fc8d59","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"1118","type":"Line"},{"attributes":{"data":{"x":["1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021"],"y":[73092515,75330008,77599218,79915555,82262794,84623747,86979283,89323288,91659246,94000381,96369875,98766288,101194394,103666904,106167372,108700515,111286504,113939886,116664382,119447303,122288383,125168060,128065095,130977370,133888775,136783180,139643355,142466264,145253973,148003411,150706446,153336445,155900790,158440875,160980472,163515328,166037122,168546707,171039804,173486281,175873720,178211881,180476685,182629278,184722043,186797334,188820682,190779453,192672317,194517549,196353492,198185302,199977707,201721767,203459650,205188205,206859578,208504960,210166592,211782878,213196304,214326223]},"selected":{"id":"1050"},"selection_policy":{"id":"1049"}},"id":"1036","type":"ColumnDataSource"},{"attributes":{"line_color":"#e6f598","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"1074","type":"Line"},{"attributes":{"line_color":"#fee08b","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"1095","type":"Line"},{"attributes":{"line_alpha":0.2,"line_color":"#fc8d59","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"1120","type":"Line"},{"attributes":{"coordinates":null,"data_source":{"id":"1054"},"glyph":{"id":"1055"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"1057"},"nonselection_glyph":{"id":"1056"},"view":{"id":"1059"}},"id":"1058","type":"GlyphRenderer"},{"attributes":{"data":{"x":["1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021"],"y":[445954579,456351876,467024193,477933619,489059309,500114346,510992617,521987069,533431909,545314670,557501301,569999178,582837973,596107483,609721951,623524219,637451448,651685628,666267760,681248383,696828385,712869298,729169466,745826546,762895156,780242084,797878993,815716125,833729681,852012673,870452165,888941756,907574049,926351297,945261958,964279129,983281218,1002335230,1021434576,1040500054,1059633675,1078970907,1098313039,1117415123,1136264583,1154638713,1172373788,1189691809,1206734806,1223640160,1240613620,1257621191,1274487215,1291132063,1307246509,1322866505,1338636340,1354195680,1369003306,1383112050,1396387127,1407563842]},"selected":{"id":"1091"},"selection_policy":{"id":"1090"}},"id":"1073","type":"ColumnDataSource"},{"attributes":{},"id":"1008","type":"DataRange1d"},{"attributes":{"source":{"id":"1036"}},"id":"1041","type":"CDSView"},{"attributes":{"line_alpha":0.1,"line_color":"#3288bd","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"1038","type":"Line"},{"attributes":{"axis_label":"Population, total (in millions)","coordinates":null,"formatter":{"id":"1044"},"group":null,"major_label_policy":{"id":"1045"},"ticker":{"id":"1019"}},"id":"1018","type":"LinearAxis"},{"attributes":{"line_alpha":0.2,"line_color":"#3288bd","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"1039","type":"Line"},{"attributes":{"source":{"id":"1117"}},"id":"1122","type":"CDSView"},{"attributes":{},"id":"1010","type":"LinearScale"},{"attributes":{"coordinates":null,"data_source":{"id":"1036"},"glyph":{"id":"1037"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"1039"},"nonselection_glyph":{"id":"1038"},"view":{"id":"1041"}},"id":"1040","type":"GlyphRenderer"},{"attributes":{"coordinates":null,"data_source":{"id":"1117"},"glyph":{"id":"1118"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"1120"},"nonselection_glyph":{"id":"1119"},"view":{"id":"1122"}},"id":"1121","type":"GlyphRenderer"},{"attributes":{"click_policy":"mute","coordinates":null,"group":null,"items":[{"id":"1053"},{"id":"1072"},{"id":"1093"},{"id":"1116"},{"id":"1141"}],"location":"right"},"id":"1052","type":"Legend"},{"attributes":{"axis_label":"Year","coordinates":null,"formatter":{"id":"1047"},"group":null,"major_label_policy":{"id":"1048"},"ticker":{"id":"1015"}},"id":"1014","type":"LinearAxis"},{"attributes":{"data":{"x":["1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021"],"y":[667070000,660330000,665770000,682335000,698355000,715185000,735400000,754550000,774510000,796025000,818315000,841105000,862030000,881940000,900350000,916395000,930685000,943455000,956165000,969005000,981235000,993885000,1008630000,1023310000,1036825000,1051040000,1066790000,1084035000,1101630000,1118650000,1135185000,1150780000,1164970000,1178440000,1191835000,1204855000,1217550000,1230075000,1241935000,1252735000,1262645000,1271850000,1280400000,1288400000,1296075000,1303720000,1311020000,1317885000,1324655000,1331260000,1337705000,1345035000,1354190000,1363240000,1371860000,1379860000,1387790000,1396215000,1402760000,1407745000,1411100000,1412360000]},"selected":{"id":"1070"},"selection_policy":{"id":"1069"}},"id":"1054","type":"ColumnDataSource"},{"attributes":{"line_color":"#3288bd","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"1037","type":"Line"},{"attributes":{"label":{"value":"China"},"renderers":[{"id":"1058"}]},"id":"1072","type":"LegendItem"},{"attributes":{},"id":"1012","type":"LinearScale"},{"attributes":{},"id":"1006","type":"DataRange1d"},{"attributes":{},"id":"1015","type":"BasicTicker"}],"root_ids":["1003"]},"title":"Bokeh Application","version":"2.4.3"}};
+  const render_items = [{"docid":"27a5602b-a100-49a8-be71-4c1a30cbf69c","root_ids":["1003"],"roots":{"1003":"756bcecf-5d05-4b33-b3f9-817acf206cf6"}}];
+  root.Bokeh.embed.embed_items_notebook(docs_json, render_items);
+  }
+  if (root.Bokeh !== undefined) {
+    embed_document(root);
+  } else {
+    let attempts = 0;
+    const timer = setInterval(function(root) {
+      if (root.Bokeh !== undefined) {
+        clearInterval(timer);
+        embed_document(root);
+      } else {
+        attempts++;
+        if (attempts > 100) {
+          clearInterval(timer);
+          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+        }
+      }
+    }, 10, root)
+  }
+})(window);</script></div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="world-bank-api.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Indicators Example</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="nasa-apod.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Securely Using API Keys</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">2.1. Usage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualization">2.2. Visualization</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Development Data Group
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    <p class="last-updated">
+  Last updated on Feb 08, 2024.
+  <br/>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div>
+  For illustrative purposes and does not imply the expression of any opinion on the part of the World Bank, concerning the legal status of any country or territory or concerning the delimitation of frontiers or boundaries.
+</div>
+<br>
+<div>
+    <b>All content (unless otherwise specified) is subject to the <a href="https://www.mozilla.org/en-US/MPL/">Mozilla Public License</a>.</b>
+</div>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
