@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datalab"
+dynamic = ["version"]
+description = "An Python exampe package from the World Bank Data Lab"
+readme = { file = "README.md", content-type = "text/markdown" }
+license = { file = "LICENSE" }
+keywords = ["template", "reproducible research"]
+authors = [{ name = "Development Data Group", email = "datalab@worldbank.org" }]
+maintainers = [
+	{ name = "Gabriel Stefanini Vicente", email = "gvicente@worldbank.org" },
+]
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3.7",
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11",
+	"Programming Language :: Python :: 3 :: Only",
+	"Development Status :: 3 - Alpha",
+	"Intended Audience :: Developers",
+	"Operating System :: OS Independent",
+]
+requires-python = ">=3.7"
+dependencies = ["requests>=2.28.1", "pycountry>=22.3.5"]
+[project.optional-dependencies]
+docs = [
+	"docutils==0.17.1",                  # https://jupyterbook.org/en/stable/content/citations.html?highlight=docutils#citations-and-bibliographies
+	"jupyter-book >=1,<2",
+]
+notebook = ["notebook>=6.5.2"]
+
+[project.urls]
+"Homepage" = "https://github.com/worldbank/template"
+"Bug Reports" = "https://github.com/worldbank/template/issues"
+"Source" = "https://github.com/worldbank/template"
+
+[tool.setuptools.dynamic]
+version = { attr = "datalab.__version__" }
