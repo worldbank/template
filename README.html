@@ -68,7 +68,7 @@
     <link rel="next" title="1. Indicators Example" href="notebooks/world-bank-api.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Feb 08, 2024"/>
+    <meta name="docbuild:last-update" content="Feb 09, 2024"/>
   </head>
   
   
@@ -185,11 +185,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Gallery</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="docs/gallery.html">Projects using the <span style="color:#3EACAD">template</span></a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Templates</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="docs/CODE_OF_CONDUCT.html">Contributor Covenant Code of Conduct</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CONTRIBUTING.html">CONTRIBUTING</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -438,7 +433,7 @@ document.write(`
 <p>The <span style="color:#3EACAD">template</span> is a standardized, but flexible <em>project</em> and <em>documentation</em> structure of folders and files for sharing your data science work.</p>
 <p>Inspired by <a class="reference external" href="http://literateprogramming.com">literate programming</a>, maintained by the <a class="reference external" href="https://www.worldbank.org/en/about/unit/unit-dec/dev">Development Data Group</a> and built as <a class="reference external" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template">GitHub template repository</a>, the <span style="color:#3EACAD">template</span> contains:</p>
 <ul>
-<li><p><a class="reference internal" href="#"><span class="doc std std-doc"><strong>README</strong></span></a>, <a class="reference internal" href="docs/CODE_OF_CONDUCT.html"><span class="std std-doc"><strong>CODE_OF_CONDUCT</strong></span></a>, <a class="reference internal" href="CONTRIBUTING.html"><span class="std std-doc"><strong>CONTRIBUTING</strong></span></a> templates</p>
+<li><p><a class="reference internal" href="#"><span class="doc std std-doc"><strong>README</strong></span></a>, <a class="reference internal" href="docs/CODE_OF_CONDUCT.html"><span class="std std-doc"><strong>CODE_OF_CONDUCT</strong></span></a>, <a class="reference internal" href="docs/CONTRIBUTING.html"><span class="std std-doc"><strong>CONTRIBUTING</strong></span></a> templates</p>
 <blockquote>
 <div><p>README files are important and often neglected. The files should inform anyone about the first steps to use, learn and contribute to your project.</p>
 </div></blockquote>
@@ -450,7 +445,7 @@ document.write(`
 </li>
 <li><p><strong>docs/</strong></p>
 <blockquote>
-<div><p>Documentation is often never priotized until last minute. The <span style="color:#3EACAD">template</span> aims to revert the malpractice by setting up the documentation as an integral part, inspired by <a class="reference external" href="http://literateprogramming.com">literate programming</a>. With the power of <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a>, data practioners have a way to share <a class="reference external" href="https://jupyter.org">Jupyter notebooks</a> on <a class="reference external" href="https://pages.github.com">GitHub Pages</a> in a standardized and effortless way.</p>
+<div><p>Documentation is often never prioritized until last minute. The <span style="color:#3EACAD">template</span> aims to revert the malpractice by setting up the documentation as an integral part, inspired by <a class="reference external" href="http://literateprogramming.com">literate programming</a>. With the power of <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a>, data practitioners have a way to share <a class="reference external" href="https://jupyter.org">Jupyter notebooks</a> on <a class="reference external" href="https://pages.github.com">GitHub Pages</a> in a standardized and effortless way.</p>
 </div></blockquote>
 </li>
 <li><p><strong>docs/bibliography.bib</strong></p>
@@ -548,9 +543,9 @@ document.write(`
 </li>
 <li><p><strong>Update configurations</strong></p>
 <p>The <span style="color:#3EACAD">template</span> comes with a default <code class="docutils literal notranslate"><span class="pre">docs/_config.yml</span></code> Jupyter Book configuration file. Remember to update it to reflect your project’s name and details.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">repository</span><span class="p">:</span>
-<span class="n">url</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">worldbank</span><span class="o">/</span><span class="n">template</span>
-<span class="n">branch</span><span class="p">:</span> <span class="n">main</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">repository</span><span class="p">:</span>
+<span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/worldbank/template</span>
+<span class="nt">branch</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
 </pre></div>
 </div>
 <div class="admonition seealso">
@@ -574,7 +569,7 @@ document.write(`
 </div>
 </li>
 <li><p><strong>Choose a license</strong></p>
-<p>The <span style="color:#3EACAD">template</span> is licensed under the <a class="reference download internal" download="" href="_downloads/9879d6db96fd29134fc802214163b95a/LICENSE"><span class="xref download myst"><strong>World Bank Master Community License Agreement</strong></span></a>. A LICENSE is the document that guarantees the repository can be shared, modified and receive contributions. Otherwise, if no license is present, all rights are reserved.</p>
+<p>The <span style="color:#3EACAD">template</span> is licensed under the <a class="reference external" href="https://www.mozilla.org/en-US/MPL"><strong>Mozilla Public License</strong></a>. A LICENSE is the document that guarantees the repository can be shared, modified and receive contributions. Otherwise, if no license is present, all rights are reserved.</p>
 </li>
 </ol>
 <hr>
@@ -594,25 +589,23 @@ document.write(`
 <h4>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this heading">#</a></h4>
 <p>When ready to publish the <em>documentation</em> on <a class="reference external" href="https://pages.github.com/">GitHub Pages</a>, all you need to do is edit the <a class="reference internal" href="#table-of-contents"><span class="xref myst">table of contents</span></a> and add and/or update content you would like to display. <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> supports content written as <a class="reference external" href="https://daringfireball.net/projects/markdown/">Markdown</a>, <a class="reference external" href="https://jupyter.org">Jupyter</a> notebooks and <a class="reference external" href="https://docutils.sourceforge.io/rst.html">reStructuredText</a> files and the <code class="docutils literal notranslate"><span class="pre">docs/_toc.yml</span></code> file controls the <a class="reference internal" href="#table-of-contents"><span class="xref myst">table of contents</span></a> of your book.</p>
 <p>The <span style="color:#3EACAD">template</span> comes with the <a class="reference internal" href="#table-of-contents"><span class="xref myst">table of contents</span></a> below as an example.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-<span class="nb">format</span><span class="p">:</span> <span class="n">jb</span><span class="o">-</span><span class="n">book</span>
-<span class="n">root</span><span class="p">:</span> <span class="n">README</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">jb-book</span>
+<span class="nt">root</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">README</span>
 
-<span class="n">parts</span><span class="p">:</span>
+<span class="nt">parts</span><span class="p">:</span>
 
-<span class="o">-</span> <span class="n">caption</span><span class="p">:</span> <span class="n">Documentation</span>
-    <span class="n">numbered</span><span class="p">:</span> <span class="kc">True</span>
-    <span class="n">chapters</span><span class="p">:</span>
-  <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">notebooks</span><span class="o">/</span><span class="n">world</span><span class="o">-</span><span class="n">bank</span><span class="o">-</span><span class="n">api</span><span class="o">.</span><span class="n">ipynb</span>
-<span class="o">-</span> <span class="n">caption</span><span class="p">:</span> <span class="n">Additional</span> <span class="n">Resources</span>
-    <span class="n">chapters</span><span class="p">:</span>
-  <span class="o">-</span> <span class="n">url</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">datapartnership</span><span class="o">.</span><span class="n">org</span><span class="o">&gt;</span>
-        <span class="n">title</span><span class="p">:</span> <span class="n">Development</span> <span class="n">Data</span> <span class="n">Partnership</span>
-  <span class="o">-</span> <span class="n">url</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">worldbank</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">en</span><span class="o">/</span><span class="n">about</span><span class="o">/</span><span class="n">unit</span><span class="o">/</span><span class="n">unit</span><span class="o">-</span><span class="n">dec</span><span class="o">&gt;</span>
-        <span class="n">title</span><span class="p">:</span> <span class="n">World</span> <span class="n">Bank</span> <span class="n">DEC</span>
-  <span class="o">-</span> <span class="n">url</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">worldbank</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">en</span><span class="o">/</span><span class="n">research</span><span class="o">/</span><span class="n">dime</span><span class="o">&gt;</span>
-        <span class="n">title</span><span class="p">:</span> <span class="n">World</span> <span class="n">Bank</span> <span class="n">DIME</span>
-
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">caption</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Documentation</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">numbered</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">True</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">chapters</span><span class="p p-Indicator">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">notebooks/world-bank-api.ipynb</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">caption</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Additional Resources</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">chapters</span><span class="p p-Indicator">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;https://datapartnership.org&gt;</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Development Data Partnership</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;https://www.worldbank.org/en/about/unit/unit-dec&gt;</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">World Bank DEC</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;https://www.worldbank.org/en/research/dime&gt;</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">World Bank DIME</span>
 </pre></div>
 </div>
 <div class="admonition seealso">
@@ -622,23 +615,23 @@ document.write(`
 </section>
 <section id="dependencies">
 <h4>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this heading">#</a></h4>
-<p>The next step is ensure your code is maintainable, realiable and reproducible by including
-any dependencies and requirements, such as packages, configurations, secrets (template) and addtional instructions.</p>
+<p>The next step is ensure your code is maintainable, reliable and reproducible by including
+any dependencies and requirements, such as packages, configurations, secrets (template) and additional instructions.</p>
 <p>The <span style="color:#3EACAD">template</span> suggests to use <a class="reference external" href="https://docs.conda.io/">conda</a> (or <a class="reference external" href="https://mamba.readthedocs.io/en/latest/">mamba</a>) as environment manager and, as <a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">conventional</a>, the environment is controlled by the <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file is where you specify any packages available on the <a class="reference external" href="https://anaconda.org">Anaconda repository</a> as well as from the Anaconda Cloud (including <a class="reference external" href="https://conda-forge.org">conda-forge</a>) to install for your project. Ensure to include the pinned version of packages required by your project (including by Jupyter notebooks).</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">channels</span><span class="p">:</span>
-  <span class="o">-</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
-  <span class="o">-</span> <span class="n">defaults</span>
-<span class="n">dependencies</span><span class="p">:</span>
-  <span class="o">-</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.9</span>
-  <span class="o">-</span> <span class="n">bokeh</span><span class="o">=</span><span class="mf">2.4.3</span>
-  <span class="o">-</span> <span class="n">pandas</span><span class="o">=</span><span class="mf">1.4.3</span>
-  <span class="o">-</span> <span class="n">pip</span><span class="p">:</span>
-    <span class="o">-</span> <span class="n">requests</span><span class="o">==</span><span class="mf">2.28.1</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">channels</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">conda-forge</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">defaults</span>
+<span class="nt">dependencies</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python=3.9</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bokeh=2.4.3</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pandas=1.4.3</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pip</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">requests==2.28.1</span>
 </pre></div>
 </div>
 <p>To (re)create the environment on your installation of <a class="reference external" href="https://conda.io">conda</a> via <a class="reference external" href="https://docs.anaconda.com/anaconda/install/">anaconda</a>, <a class="reference external" href="https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/">miniconda</a> or preferably <a class="reference external" href="https://github.com/conda-forge/miniforge">miniforge</a>, you only need to pass the <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file, which will install requirements and guarantee that whoever uses your code has the necessary packages (and correct versions). By default, the <span style="color:#3EACAD">template</span> uses <a class="reference external" href="https://www.python.org">Python 3.9</a>.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="o">&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">environment</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">f</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>&lt;your-environment-name&gt;<span class="w"> </span>-f<span class="w"> </span>environment.yml
 </pre></div>
 </div>
 <p>In case your project uses Python, it is <em>strongly</em> recommended to distribute it as a <a class="reference external" href="https://packaging.python.org/">package</a>.</p>
@@ -673,8 +666,6 @@ any dependencies and requirements, such as packages, configurations, secrets (te
 <h2>License<a class="headerlink" href="#license" title="Permalink to this heading">#</a></h2>
 <p>The <span style="color:#3EACAD">template</span> is licensed under the <a class="reference external" href="https://www.mozilla.org/en-US/MPL"><strong>Mozilla Public License</strong></a>. Remember to replace the <a class="reference download internal" download="" href="_downloads/9879d6db96fd29134fc802214163b95a/LICENSE"><span class="xref download myst">license</span></a> if necessary. If open source, <a class="reference external" href="https://choosealicense.com">choose an open source license</a>.</p>
 </section>
-<div class="toctree-wrapper compound">
-</div>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -777,7 +768,7 @@ By Development Data Group
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Feb 08, 2024.
+  Last updated on Feb 09, 2024.
   <br/>
 </p>
   </div>
@@ -786,11 +777,10 @@ By Development Data Group
     
 <div class="extra_footer">
   <div>
-  For illustrative purposes and does not imply the expression of any opinion on the part of the World Bank, concerning the legal status of any country or territory or concerning the delimitation of frontiers or boundaries.
+ Country borders or names do not necessarily reflect the World Bank Group’s official position. All maps are for illustrative purposes and do not imply the expression of any opinion on the part of the World Bank, concerning the legal status of any country or territory or concerning the delimitation of frontiers or boundaries
 </div>
-<br>
 <div>
-    <b>All content (unless otherwise specified) is subject to the <a href="https://www.mozilla.org/en-US/MPL/">Mozilla Public License</a>.</b>
+    <b>All content (unless otherwise specified) is subject to the <a href="https://www.mozilla.org/en-US/MPL">Mozilla Public License.</a></b>
 </div>
 
 </div>
