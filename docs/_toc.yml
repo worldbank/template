@@ -12,10 +12,6 @@ parts:
   - caption: Gallery
     chapters:
       - file: docs/gallery
-  - caption: Templates
-    chapters:
-      - file: docs/CODE_OF_CONDUCT
-      - file: CONTRIBUTING
   - caption: Additional Resources
     chapters:
       - url: https://datapartnership.org

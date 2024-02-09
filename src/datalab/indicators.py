@@ -4,7 +4,6 @@ import requests
 
 
 class WorldBankIndicatorsAPI:
-
     URL = "https://api.worldbank.org/v2/country"
 
     def _get_country_code(self, country):

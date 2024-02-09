@@ -4,4 +4,3 @@ updates:
     directory: "/docs"
     schedule:
       interval: "weekly"
-

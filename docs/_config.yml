@@ -2,7 +2,7 @@
 title:
 author: Development Data Group
 logo: docs/images/logo.png
-only_build_toc_files: true
+only_build_toc_files: false
 
 repository:
   url: https://github.com/worldbank/template
@@ -19,18 +19,17 @@ html:
   baseurl: https://worldbank.github.io/template
   extra_footer: |
     <div>
-      For illustrative purposes and does not imply the expression of any opinion on the part of the World Bank, concerning the legal status of any country or territory or concerning the delimitation of frontiers or boundaries.
+     Country borders or names do not necessarily reflect the World Bank Group’s official position. All maps are for illustrative purposes and do not imply the expression of any opinion on the part of the World Bank, concerning the legal status of any country or territory or concerning the delimitation of frontiers or boundaries
     </div>
-    <br>
     <div>
-        <b>All content (unless otherwise specified) is subject to the <a href="https://www.mozilla.org/en-US/MPL/">Mozilla Public License</a>.</b>
+        <b>All content (unless otherwise specified) is subject to the <a href="https://www.mozilla.org/en-US/MPL">Mozilla Public License.</a></b>
     </div>
   favicon: docs/images/favicon.ico
 
 #######################################################################################
 # Execution settings
 execute:
-  execute_notebooks: "off"
+  execute_notebooks: off
 
 #######################################################################################
 # Bibliography settings

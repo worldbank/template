@@ -1,4 +1,4 @@
-## Projects using the <span style="color:#3EACAD">template</span>
+# Projects using the <span style="color:#3EACAD">template</span>
 
 > A curated list of projects/repositories using the <span style="color:#3EACAD">template</span>.
 
