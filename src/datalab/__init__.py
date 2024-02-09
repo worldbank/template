@@ -1,3 +1,7 @@
-from pathlib import Path
+from importlib.metadata import version, PackageNotFoundError
 
-__version__ = (Path(__file__).parent / "VERSION").read_text().strip()
+try:
+    __version__ = version("datalab")
+except PackageNotFoundError:
+    # package is not installed
+    pass

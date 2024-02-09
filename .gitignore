@@ -90,3 +90,6 @@ _build/
 
 # python-dotenv
 .env
+
+# setuptools-scm/
+src/*/_version.py
