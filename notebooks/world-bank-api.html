@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>1. Indicators Example</title>
+    <title>1. World Bank Indicators API Example</title>
   
   
   
@@ -65,7 +65,7 @@
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="2. Package Example" href="world-bank-package.html" />
+    <link rel="next" title="2. template Package Example" href="world-bank-package.html" />
     <link rel="prev" title="Project Template" href="../README.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -176,8 +176,8 @@
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Examples</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Indicators Example</a></li>
-<li class="toctree-l1"><a class="reference internal" href="world-bank-package.html">2. Package Example</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. World Bank Indicators API Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="world-bank-package.html">2. <code class="docutils literal notranslate"><span class="pre">template</span></code> Package Example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nasa-apod.html">3. Securely Using API Keys</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bibliography.html">4. Including Bibliography</a></li>
 </ul>
@@ -393,7 +393,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Indicators Example</h1>
+    <h1>World Bank Indicators API Example</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -404,7 +404,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">1.1. Requirements</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#retrieve-data">1.2. Retrieve Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-retrieval">1.2. Data Retrieval</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualization">1.3. Visualization</a></li>
 </ul>
             </nav>
@@ -417,8 +417,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="indicators-example">
-<h1><span class="section-number">1. </span>Indicators Example<a class="headerlink" href="#indicators-example" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="world-bank-indicators-api-example">
+<h1><span class="section-number">1. </span>World Bank Indicators API Example<a class="headerlink" href="#world-bank-indicators-api-example" title="Permalink to this heading">#</a></h1>
 <blockquote>
 <div><p>The following is an example of a <a class="reference external" href="https://jupyter.org">Jupyter notebook</a> - a tutorial of how to retrieve data from the <a class="reference external" href="https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation">World Bank Indicators API</a> - that illustrates how to use computational content with the <a class="reference external" href="https://worldbank.github.io/template">template</a>.</p>
 </div></blockquote>
@@ -437,10 +437,8 @@ document.write(`
 </div>
 </div>
 </section>
-<section id="retrieve-data">
-<h2><span class="section-number">1.2. </span>Retrieve Data<a class="headerlink" href="#retrieve-data" title="Permalink to this heading">#</a></h2>
-<p><a class="reference external" href="https://data.worldbank.org/indicator">https://data.worldbank.org/indicator</a></p>
-<p><a class="reference external" href="https://databank.worldbank.org/reports.aspx?source=World-Development-Indicators">https://databank.worldbank.org/reports.aspx?source=World-Development-Indicators</a></p>
+<section id="data-retrieval">
+<h2><span class="section-number">1.2. </span>Data Retrieval<a class="headerlink" href="#data-retrieval" title="Permalink to this heading">#</a></h2>
 <p>In this example, we retrieve <strong>Population, total</strong> (<code class="docutils literal notranslate"><span class="pre">SP.POP.TOTL</span></code>) from the <a class="reference external" href="https://data.worldbank.org/indicator">World Bank Indicators</a> for <a class="reference external" href="https://infobrics.org">BRICS</a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1000,7 +998,7 @@ if (force === true) {
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>Package Example</p>
+        <p class="prev-next-title"><span class="section-number">2. </span><code class="docutils literal notranslate"><span class="pre">template</span></code> Package Example</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1021,7 +1019,7 @@ if (force === true) {
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">1.1. Requirements</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#retrieve-data">1.2. Retrieve Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-retrieval">1.2. Data Retrieval</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualization">1.3. Visualization</a></li>
 </ul>
   </nav></div>
