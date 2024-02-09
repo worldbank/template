@@ -4,7 +4,7 @@ The <span style="color:#3EACAD">template</span> is a standardized, but flexible 
 
 Inspired by [literate programming](http://literateprogramming.com), maintained by the [Development Data Group](https://www.worldbank.org/en/about/unit/unit-dec/dev) and built as [GitHub template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template), the <span style="color:#3EACAD">template</span> contains:
 
-- [**README**](README), [**CODE_OF_CONDUCT**](docs/CODE_OF_CONDUCT.md), [**CONTRIBUTING**](CONTRIBUTING.md) templates
+- [**README**](README), [**CODE_OF_CONDUCT**](docs/CODE_OF_CONDUCT.md), [**CONTRIBUTING**](docs/CONTRIBUTING.md) templates
     > README files are important and often neglected. The files should inform anyone about the first steps to use, learn and contribute to your project.
 
 - **LICENSE**
@@ -12,7 +12,7 @@ Inspired by [literate programming](http://literateprogramming.com), maintained b
 
 - **docs/**
 
-    > Documentation is often never priotized until last minute. The <span style="color:#3EACAD">template</span> aims to revert the malpractice by setting up the documentation as an integral part, inspired by [literate programming](http://literateprogramming.com). With the power of [Jupyter Book](https://jupyterbook.org), data practioners have a way to share [Jupyter notebooks](https://jupyter.org) on [GitHub Pages](https://pages.github.com) in a standardized and effortless way.
+    > Documentation is often never prioritized until last minute. The <span style="color:#3EACAD">template</span> aims to revert the malpractice by setting up the documentation as an integral part, inspired by [literate programming](http://literateprogramming.com). With the power of [Jupyter Book](https://jupyterbook.org), data practitioners have a way to share [Jupyter notebooks](https://jupyter.org) on [GitHub Pages](https://pages.github.com) in a standardized and effortless way.
 
 - **docs/bibliography.bib**
     > A `bibliography` using the [BibTeX](https://www.bibtex.org/Format/) format.
@@ -124,7 +124,7 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
 
     The <span style="color:#3EACAD">template</span> comes with a default `docs/_config.yml` Jupyter Book configuration file. Remember to update it to reflect your project's name and details.
 
-      ```
+      ```yaml
       repository:
       url: https://github.com/worldbank/template
       branch: main
@@ -149,7 +149,7 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
 
 5. **Choose a license**
 
-    The <span style="color:#3EACAD">template</span> is licensed under the [**World Bank Master Community License Agreement**](LICENSE). A LICENSE is the document that guarantees the repository can be shared, modified and receive contributions. Otherwise, if no license is present, all rights are reserved.
+    The <span style="color:#3EACAD">template</span> is licensed under the [**Mozilla Public License**](https://www.mozilla.org/en-US/MPL). A LICENSE is the document that guarantees the repository can be shared, modified and receive contributions. Otherwise, if no license is present, all rights are reserved.
 
 <hr>
 
@@ -171,7 +171,7 @@ When ready to publish the *documentation* on [GitHub Pages](https://pages.github
 
 The <span style="color:#3EACAD">template</span> comes with the [table of contents](#table-of-contents) below as an example.
 
-```
+```yaml
 
 format: jb-book
 root: README
@@ -199,14 +199,14 @@ parts:
 
 #### Dependencies
 
-The next step is ensure your code is maintainable, realiable and reproducible by including
-any dependencies and requirements, such as packages, configurations, secrets (template) and addtional instructions.
+The next step is ensure your code is maintainable, reliable and reproducible by including
+any dependencies and requirements, such as packages, configurations, secrets (template) and additional instructions.
 
 The <span style="color:#3EACAD">template</span> suggests to use [conda](https://docs.conda.io/) (or [mamba](https://mamba.readthedocs.io/en/latest/)) as environment manager and, as [conventional](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html), the environment is controlled by the `environment.yml` file.
 
 The `environment.yml` file is where you specify any packages available on the [Anaconda repository](https://anaconda.org) as well as from the Anaconda Cloud (including [conda-forge](https://conda-forge.org)) to install for your project. Ensure to include the pinned version of packages required by your project (including by Jupyter notebooks).
 
-```
+```yaml
 channels:
   - conda-forge
   - defaults
@@ -220,7 +220,7 @@ dependencies:
 
 To (re)create the environment on your installation of [conda](https://conda.io) via [anaconda](https://docs.anaconda.com/anaconda/install/), [miniconda](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/) or preferably [miniforge](https://github.com/conda-forge/miniforge), you only need to pass the `environment.yml` file, which will install requirements and guarantee that whoever uses your code has the necessary packages (and correct versions). By default, the <span style="color:#3EACAD">template</span> uses [Python 3.9](https://www.python.org).
 
-```
+```shell
 conda env create -n <your-environment-name> -f environment.yml
 ```
 
