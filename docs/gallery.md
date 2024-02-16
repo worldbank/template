@@ -57,7 +57,7 @@ This python package provides a wrapper function to request temporal and zonal st
 :::
 
 :::{grid-item-card} [Geospatial Operations Support Team (GOST)](https://worldbank.github.io/GOST)
-We document important resources, methods, and sources in real time via this live wiki. This repository is the evolving, growing workspace where GOST stores libraries and scripts for operationalizing the many initatives urrenctly on going in the geospatial realm within the World Bank Group.
+We document important resources, methods, and sources in real time via this live wiki. This repository is the evolving, growing workspace where GOST stores libraries and scripts for operationalizing the many initiatives currently going on in the geospatial realm within the World Bank Group.
 :::
 ::::
 
