@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Country borders or names do not necessarily reflect the World Bank Group’s official position. All maps are for illustrative purposes and do not imply the expression of any opinion on the part of the World Bank, concerning the legal status of any country or territory or concerning the delimitation of frontiers or boundaries."
+title: "World Bank Data Lab Project Template"
+authors:
+  - affiliation: World Bank
+    family-names: Stefanini Vicente
+    given-names: Gabriel
+    orcid: https://orcid.org/0000-0001-6530-3780
+keywords:
+  - Open Science
+repository-code: https://github.com/worldbank/template/tree/main
