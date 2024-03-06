@@ -1,6 +1,6 @@
 version: 2
 updates:
   - package-ecosystem: "pip"
-    directory: "/docs"
+    directory: "/"
     schedule:
       interval: "weekly"
