@@ -21,8 +21,8 @@ Inspired by [literate programming](http://literateprogramming.com), maintained b
 
     > Documentation is often never prioritized until last minute. The <span style="color:#3EACAD">template</span> aims to revert the malpractice by setting up the documentation as an integral part, inspired by [literate programming](http://literateprogramming.com). With the power of [Jupyter Book](https://jupyterbook.org), data practitioners have a way to share [Jupyter notebooks](https://jupyter.org) on [GitHub Pages](https://pages.github.com) in a standardized and effortless way.
 
-- **docs/bibliography.bib**
-    > A `bibliography` using the [BibTeX](https://www.bibtex.org/Format/) format.
+- [**docs/bibliography.bib**](/docs/bibliography.bib)
+    > A `bibliography` using the [BibTeX](https://www.bibtex.org/Format/) format. Use this file to include and cite your project's bibliography. See also [Citations and bibliographies](https://jupyterbook.org/en/stable/content/citations.html).
 
 - **data/**
     > Placeholder folder for data. Data is immutable. By default, the data folder is present but ignored from version control, in order to prevent files of being mistakenly versioned in the code repository.
@@ -32,6 +32,9 @@ Inspired by [literate programming](http://literateprogramming.com), maintained b
 
 - **notebooks/**
     > Placeholder folder for [Jupyter notebooks](https://jupyter.org). Markdown files and Jupyter notebooks can be added to `docs/_toc.yml` (Table of Contents) to compose the *documentation*.
+
+- **.pre-commit-config.yml**
+    > Using [pre-commit](https://pre-commit.com) offers a significant advantage in streamlining the development process by enforcing code standards and reducing errors before code reaches the review stage or is committed to the repository. It automates the execution of various checks, such as syntax errors, code formatting, and ensuring compliance with coding standards, which saves time and improves code quality.
 
 - [GitHub Actions](https://github.com/features/actions) and [Dependabot](https://docs.github.com/en/code-security/dependabot)
     > [GitHub Actions](https://github.com/features/actions) and [Dependabot](https://docs.github.com/en/code-security/dependabot) are two powerful features provided by [GitHub](https://github.com) to automate and secure software development workflows, making it easier for developers to maintain high-quality and safe codebases.
