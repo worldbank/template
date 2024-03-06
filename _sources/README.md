@@ -33,7 +33,10 @@ Inspired by [literate programming](http://literateprogramming.com), maintained b
 - **notebooks/**
     > Placeholder folder for [Jupyter notebooks](https://jupyter.org). Markdown files and Jupyter notebooks can be added to `docs/_toc.yml` (Table of Contents) to compose the *documentation*.
 
-- [Issues and Pull Requests GitHub templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository)
+- [GitHub Actions](https://github.com/features/actions) and [Dependabot](https://docs.github.com/en/code-security/dependabot)
+    > [GitHub Actions](https://github.com/features/actions) and [Dependabot](https://docs.github.com/en/code-security/dependabot) are two powerful features provided by [GitHub](https://github.com) to automate and secure software development workflows, making it easier for developers to maintain high-quality and safe codebases.
+
+- [GitHub Issues and Pull Requests GitHub](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository)
     > GitHub allows to customize how issues and pull requests are presented to the public. Custom templates encourage collaboration and maintainability.
 
 ```{important}
