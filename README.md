@@ -137,11 +137,11 @@ The *documentation* can be published from either *public* and *private* reposito
 
 The <span style="color:#3EACAD">template</span> comes with a default `docs/_config.yml` Jupyter Book configuration file. Remember to update it to reflect your project's name and details.
 
-    ```yaml
-    repository:
-    url: https://github.com/worldbank/template
-    branch: main
-    ```
+```yaml
+repository:
+url: https://github.com/worldbank/template
+branch: main
+```
 
 ```{seealso}
 [Jupyter Book Configuration Reference](https://jupyterbook.org/en/stable/customize/config.html)

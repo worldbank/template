@@ -28,8 +28,8 @@ requires-python = ">=3.7"
 dependencies = ["requests>=2.28.1", "pandas>=2", "pycountry>=22.3.5"]
 [project.optional-dependencies]
 docs = [
-	"docutils==0.17.1",    # https://jupyterbook.org/en/stable/content/citations.html?highlight=docutils#citations-and-bibliographies
-	"jupyter-book >=1,<2",
+	"docutils==0.17.1", # pinned to docutils==0.17.1 due to https://github.com/worldbank/template/issues/60. See also: https://jupyterbook.org/en/stable/content/citations.html?highlight=docutils#citations-and-bibliographies
+	"jupyter-book>=1,<2",
 ]
 
 [project.urls]
