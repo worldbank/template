@@ -91,7 +91,7 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
     ---
     ```
 
-    Now, give your repository a name, choose the **visibility** (Public or Private) and click **Create repository from template**.
+    Now, give your repository a name, select **include all branches**, choose the **visibility** (Public or Private) and click **Create repository from template**.
 
     ```{figure} docs/images/github-template-create.png
     ---
