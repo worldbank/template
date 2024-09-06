@@ -42,12 +42,6 @@ Inspired by [literate programming](http://literateprogramming.com), maintained b
 - [GitHub Issues and Pull Requests GitHub](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository)
     > GitHub allows to customize how issues and pull requests are presented to the public. Custom templates encourage collaboration and maintainability.
 
-```{important}
-*With flexibility comes great responsibility*. The <span style="color:#3EACAD">template</span> makes a few opiniated choices for the structure and code/documentation management of a project for what we envision to be most cases. However, even the best of the templates would never be perfect for the universe of cases out there. All in all, the <span style="color:#3EACAD">template</span> aims to encourage teams to start thinking and assimilate **collaborative coding**, **documentation**​, **enginerring**, **reproducibility​** and **best practices** as an integral part of the project. *In a standardized way*.
-
-In this spirit, if the <span style="color:#3EACAD">template</span> is not for you or in case you have feedback, please consider [opening an issue](https://github.com/worldbank/template/issues) or [submitting a pull request](https://github.com/worldbank/template/pulls) to share your ideas and suggestions. Your contributions would be appreciated immensely.
-```
-
 ## Benefits
 
 Project templates on GitHub are essential for streamlining the data science and collaboration processes, and they offer several key benefits:
@@ -72,6 +66,12 @@ Project templates on GitHub are essential for streamlining the data science and 
 
 In summary, GitHub project templates are valuable resources that enhance project management, development practices, and collaboration. They promote consistency, efficiency, and quality in software development, whether for individual projects, open-source contributions, or within organizational contexts.
 
+```{important}
+*With flexibility comes great responsibility*. The <span style="color:#3EACAD">template</span> makes a few opiniated choices for the structure and code/documentation management of a project for what we envision to be most cases. However, even the best of the templates would never be perfect for the universe of cases out there. All in all, the <span style="color:#3EACAD">template</span> aims to encourage teams to start thinking and assimilate **collaborative coding**, **documentation**​, **enginerring**, **reproducibility​** and **best practices** as an integral part of the project. *In a standardized way*.
+
+In this spirit, if the <span style="color:#3EACAD">template</span> is not for you or in case you have feedback, please consider [opening an issue](https://github.com/worldbank/template/issues) or [submitting a pull request](https://github.com/worldbank/template/pulls) to share your ideas and suggestions. Your contributions would be appreciated immensely.
+```
+
 ## Usage
 
 ### Getting Started
@@ -80,89 +80,89 @@ In summary, GitHub project templates are valuable resources that enhance project
 Please ensure you are logged in on [GitHub](https://github.com) and have permissions to create a repository.
 ```
 
-1. **Create new repository from template**
+#### 1. **Create new repository from template**
 
-    The <span style="color:#3EACAD">template</span> is a [GitHub template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template); in other words, you can generate a new GitHub repository with the same files and folders to use as the starting point for your project.
+The <span style="color:#3EACAD">template</span> is a [GitHub template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template); in other words, you can generate a new GitHub repository with the same files and folders to use as the starting point for your project.
 
-    > 🌟 [Create new repository from **template**](https://github.com/worldbank/template/generate)
+> 🌟 [Create new repository from **template**](https://github.com/worldbank/template/generate)
 
-    ```{figure} docs/images/github-template.png
+```{figure} docs/images/github-template.png
+---
+---
+```
+
+Now, give your repository a name, select **include all branches**, choose the **visibility** (Public or Private) and click **Create repository from template**.
+
+```{figure} docs/images/github-template-create.png
+---
+---
+```
+
+*Voilà!* The repository has been created with the same files and folders of the <span style="color:#3EACAD">template</span>.
+
+```{seealso}
+For additional information, see the [GitHub documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
+```
+
+#### 2. **Enable [GitHub Actions](https://github.com/features/actions) and [GitHub Pages](https://pages.github.com)**
+
+After creating the repository from the <span style="color:#3EACAD">template</span>, you will have to enable [GitHub Actions](https://github.com/features/actions) and [GitHub Pages](https://pages.github.com) to allow the [Jupyter Book](https://jupyterbook.org) to be built and published.
+
+To activate the workflow, please enable [GitHub Actions](https://github.com/features/actions) by going to the repository's settings (`Settings > Actions > General`), and selecting **read and write permissions** as shown below.
+
+```{figure} docs/images/github-template-action-enable.png
     ---
     ---
+```
+
+To publish, please enable [GitHub Pages](https://pages.github.com) by going to the repository's settings (`Settings > Pages`), and selecting to deploy from the **GitHub Actions** option.
+
+```{figure} docs/images/github-template-pages.png
+---
+---
+```
+
+On the next push to `main`, the [Jupyter Book](https://jupyterbook.org) will be automatically built and published. You can check the progress on the `Actions` tab.
+
+```{figure} docs/images/github-template-action.png
+---
+---
+```
+
+```{caution}
+The *documentation* can be published from either *public* and *private* repositories. If publishing private content, please remember to carefully select the content to be made public and to abide by your organization's Data Privacy Policy.
+```
+
+#### 3. **Update configurations**
+
+The <span style="color:#3EACAD">template</span> comes with a default `docs/_config.yml` Jupyter Book configuration file. Remember to update it to reflect your project's name and details.
+
+    ```yaml
+    repository:
+    url: https://github.com/worldbank/template
+    branch: main
     ```
 
-    Now, give your repository a name, select **include all branches**, choose the **visibility** (Public or Private) and click **Create repository from template**.
+```{seealso}
+[Jupyter Book Configuration Reference](https://jupyterbook.org/en/stable/customize/config.html)
+```
 
-    ```{figure} docs/images/github-template-create.png
-    ---
-    ---
-    ```
+#### 4. **Review and update README files**
 
-    *Voilà!* The repository has been created with the same files and folders of the <span style="color:#3EACAD">template</span>.
+The <span style="color:#3EACAD">template</span> comes with README files - including [this **README**](README) - that should provide anyone with the information about the first steps to use, learn and contribute to your project. Please **replace** and/or **repurpose** the files with instructions and detailed information about your project.
 
-    ```{seealso}
-    For additional information, see the [GitHub documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
-    ```
+> - **CODE_OF_CONDUCT**
+> - **CONTRIBUTING**
+> - **README**
+> - Issues and Pull Requests GitHub templates
 
-2. **Enable [GitHub Actions](https://github.com/features/actions) and [GitHub Pages](https://pages.github.com)**
+```{seealso}
+[Awesome README](https://github.com/matiassingers/awesome-readme)
+```
 
-    After creating the repository from the <span style="color:#3EACAD">template</span>, you will have to enable [GitHub Actions](https://github.com/features/actions) and [GitHub Pages](https://pages.github.com) to allow the [Jupyter Book](https://jupyterbook.org) to be built and published.
+#### 5. **Choose a license**
 
-    To activate the workflow, please enable [GitHub Actions](https://github.com/features/actions) by going to the repository's settings (`Settings > Actions > General`), and selecting **read and write permissions** as shown below.
-
-    ```{figure} docs/images/github-template-action-enable.png
-      ---
-      ---
-    ```
-
-    To publish, please enable [GitHub Pages](https://pages.github.com) by going to the repository's settings (`Settings > Pages`), and selecting to deploy from the `gh-pages` branch.
-
-    ```{figure} docs/images/github-template-pages.png
-    ---
-    ---
-    ```
-
-    On the next push to `main`, the [Jupyter Book](https://jupyterbook.org) will be automatically built and published. You can check the progress on the  `Actions` tab.
-
-    ```{figure} docs/images/github-template-action.png
-    ---
-    ---
-    ```
-
-    ```{caution}
-    The *documentation* can be published from either *public* and *private* repositories. If publishing private content, please remember to carefully select the content to be made public and to abide by your organization's Data Privacy Policy.
-    ```
-
-3. **Update configurations**
-
-    The <span style="color:#3EACAD">template</span> comes with a default `docs/_config.yml` Jupyter Book configuration file. Remember to update it to reflect your project's name and details.
-
-      ```yaml
-      repository:
-      url: https://github.com/worldbank/template
-      branch: main
-      ```
-
-   ```{seealso}
-    [Jupyter Book Configuration Reference](https://jupyterbook.org/en/stable/customize/config.html)
-    ```
-
-4. **Review and update README files**
-
-    The <span style="color:#3EACAD">template</span> comes with README files - including [this **README**](README) - that should provide anyone with the information about the first steps to use, learn and contribute to your project. Please **replace** and/or **repurpose** the files with instructions and detailed information about your project.
-
-    > - **CODE_OF_CONDUCT**
-    > - **CONTRIBUTING**
-    > - **README**
-    > - Issues and Pull Requests GitHub templates
-
-    ```{seealso}
-    [Awesome README](https://github.com/matiassingers/awesome-readme)
-    ```
-
-5. **Choose a license**
-
-    The <span style="color:#3EACAD">template</span> is licensed under the [**Mozilla Public License**](https://www.mozilla.org/en-US/MPL). A LICENSE is the document that guarantees the repository can be shared, modified and receive contributions. Otherwise, if no license is present, all rights are reserved.
+The <span style="color:#3EACAD">template</span> is licensed under the [**Mozilla Public License**](https://www.mozilla.org/en-US/MPL). A LICENSE is the document that guarantees the repository can be shared, modified and receive contributions. Otherwise, if no license is present, all rights are reserved.
 
 <hr>
 
