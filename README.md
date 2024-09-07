@@ -91,7 +91,7 @@ The <span style="color:#3EACAD">template</span> is a [GitHub template repository
 ---
 ```
 
-Now, give your repository a name, select **include all branches**, choose the **visibility** (Public or Private) and click **Create repository from template**.
+Now, give your repository a name, choose the **visibility** (Public or Private) and click **Create repository from template**. Do not select **include all branches**.
 
 ```{figure} docs/images/github-template-create.png
 ---
