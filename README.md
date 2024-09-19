@@ -15,7 +15,7 @@ Inspired by [literate programming](http://literateprogramming.com), maintained b
   > Embracing [CFF](https://citation-file-format.github.io) aligns with best practices for reproducible research and software development. By adhering to established standards for documenting project dependencies and citations, we demonstrate our commitment to quality, transparency, and integrity in our work.
 
 - [**LICENSE**](LICENSE)
-  > The LICENSE is a document that  determines what others can and cannot do with contents of the repository. If no license is present, no one has permission to use and/or modify your code. The <span style="color:#3EACAD">template</span> is licensed under the [**Mozilla Public License**](https://www.mozilla.org/en-US/MPL/). And so will projects generated from it.
+  > The LICENSE is a document that  determines what others can and cannot do with contents of the repository. If no license is present, no one has permission to use and/or modify your code. The <span style="color:#3EACAD">template</span> is licensed under the [**Mozilla Public License**](https://www.mozilla.org/en-US/MPL/). And so will projects generated from it. For further information, see also [this discussion](https://github.com/orgs/worldbank/discussions/4).
 
 - **docs/**
 
