@@ -243,7 +243,9 @@ By default, Jupyter notebooks are **not** executed. However, you can configure[J
 
 #### Distributing Your Project as a Python Package
 
-If your project uses [Python](https://python.org), it’s highly recommended to distribute it as a [package](https://packaging.python.org/en/latest/tutorials/packaging-projects/). By including a `pyproject.toml` file, the packaging process becomes more streamlined. Additionally:
+If your project uses [Python](https://python.org), it’s highly recommended to distribute it as a [package](https://packaging.python.org/en/latest/tutorials/packaging-projects/). By including a `pyproject.toml` file, the packaging process becomes more streamlined - *trust me [things can get intense](https://imgs.xkcd.com/comics/python_environment.png)*.
+
+Additionally:
 
 ```{tip}
 - Using `pyproject.toml` future-proofs your setup by aligning with modern packaging standards.
@@ -337,7 +339,7 @@ This `pyproject.toml` file specifies the dependencies and other metadata for you
 
   To install a Python package directly from a [GitHub](https://github.com) repository using [pip](https://pip.pypa.io/en/stable/installation/), you can use the command pip install `git+https://github.com/<username>/<repository>.git`. This allows you to install the latest version of the package from the repository. You can also specify a particular branch or release tag by adding `@<branch_or_tag>` at the end of the URL This is particularly useful when you want to access features or fixes that haven’t been published on PyPI yet, or to get the latest updates from the repository.
 
-  If you want to install the latest release, you should typically specify the tag associated with that release. For instance:
+  If you want to install the latest release, you should specify the tag associated with that release. For instance:
 
   ```shell
     pip install git+https://github.com/<username>/<repository>.git@<latest_release_tag>
