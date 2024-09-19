@@ -197,9 +197,9 @@ execute:
 
 #### Update table of contents
 
-When ready to publish the *documentation* on [GitHub Pages](https://pages.github.com/), all you need to do is edit the [table of contents](#table-of-contents) and add and/or update content you would like to display. [Jupyter Book](https://jupyterbook.org) supports content written as [Markdown](https://daringfireball.net/projects/markdown/), [Jupyter](https://jupyter.org) notebooks and [reStructuredText](https://docutils.sourceforge.io/rst.html) files and the `docs/_toc.yml` file controls the [table of contents](#table-of-contents) of your book.
+When ready to publish the *documentation* on [GitHub Pages](https://pages.github.com/), all you need to do is edit the [table of contents](https://github.com/worldbank/template/blob/main/docs/_toc.yml) and add and/or update content you would like to display. [Jupyter Book](https://jupyterbook.org) supports content written as [Markdown](https://daringfireball.net/projects/markdown/), [Jupyter](https://jupyter.org) notebooks and [reStructuredText](https://docutils.sourceforge.io/rst.html) files and the `docs/_toc.yml` file controls the [table of contents](https://github.com/worldbank/template/blob/main/docs/_toc.yml) of your book.
 
-The <span style="color:#3EACAD">template</span> comes with the [table of contents](#table-of-contents) below as an example.
+The <span style="color:#3EACAD">template</span> comes with the [table of contents](https://github.com/worldbank/template/blob/main/docs/_toc.yml) below as an example.
 
 ```yaml
 
@@ -223,7 +223,7 @@ parts:
 
 #### Add executable content
 
-[Jupyter Notebooks](https://jupyter.org) can be beautifully rendered and downloaded from your book. By default, the <span style="color:#3EACAD">template</span> will render any files listed on the [table of contents](#table-of-contents) that have a notebook structure. The <span style="color:#3EACAD">template</span> comes with a Jupyter notebook example, `notebooks/world-bank-api.ipynb`, to illustrate.
+[Jupyter Notebooks](https://jupyter.org) can be beautifully rendered and downloaded from your book. By default, the <span style="color:#3EACAD">template</span> will render any files listed on the [table of contents](#update-table-of-contents) that have a notebook structure. The <span style="color:#3EACAD">template</span> comes with a Jupyter notebook example, `notebooks/world-bank-api.ipynb`, to illustrate.
 
 ```{important}
 
