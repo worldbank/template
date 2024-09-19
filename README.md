@@ -91,7 +91,7 @@ The <span style="color:#3EACAD">template</span> is a [GitHub template repository
 ---
 ```
 
-Now, give your repository a name, choose the **visibility** (Public or Private) and click **Create repository from template**. Do not select **include all branches**.
+Now, give your repository a name, choose the **visibility** (Public or Private) and click **Create repository from template**.
 
 ```{figure} docs/images/github-template-create.png
 ---
@@ -174,11 +174,28 @@ For example, see this <span style="color:#3EACAD">template</span> as a live demo
 
 > 🌟 [worldbank.github.io/template](http://worldbank.github.io/template) (Live Demo)
 
-### Adding Content
+### Add content
 
 The <span style="color:#3EACAD">template</span> is created as a [Jupyter Book](https://jupyterbook.org/intro.html) - an open-source project to build beautiful, publication-quality books and documents from computational content. Let's see below how to add, execute and publish new content for your project.
 
-#### Table of Contents
+#### Updating the Jupyter Book `_config.yml` metadata
+
+To configure your Jupyter Book for your project, you’ll need to update the `_config.yml` file. This file controls various aspects of the Jupyter Book, including the project title, description, and relevant URLs. Below is a template to update this file to reflect the project’s details.
+
+```yaml
+# Book settings
+title: <your-project-title>
+author: <your-team>
+
+repository:
+url: https://github.com/<your-organization>/<your-project>
+
+# Jupyter Book options
+execute:
+  execute_notebooks: "auto"  #  Automatically execute notebooks during the build process
+```
+
+#### Update table of contents
 
 When ready to publish the *documentation* on [GitHub Pages](https://pages.github.com/), all you need to do is edit the [table of contents](#table-of-contents) and add and/or update content you would like to display. [Jupyter Book](https://jupyterbook.org) supports content written as [Markdown](https://daringfireball.net/projects/markdown/), [Jupyter](https://jupyter.org) notebooks and [reStructuredText](https://docutils.sourceforge.io/rst.html) files and the `docs/_toc.yml` file controls the [table of contents](#table-of-contents) of your book.
 
@@ -191,72 +208,127 @@ root: README
 
 parts:
 
-- caption: Documentation
+  - caption: Examples
     numbered: True
     chapters:
-  - file: notebooks/world-bank-api.ipynb
-- caption: Additional Resources
-    chapters:
-  - url: <https://datapartnership.org>
-        title: Development Data Partnership
-  - url: <https://www.worldbank.org/en/about/unit/unit-dec>
-        title: World Bank DEC
-  - url: <https://www.worldbank.org/en/research/dime>
-        title: World Bank DIME
-
+      - file: notebooks/world-bank-api.ipynb
+      - file: notebooks/world-bank-package.ipynb
+      - file: notebooks/nasa-apod.ipynb
+      - file: notebooks/bibliography.ipynb
 ```
 
 ```{seealso}
 [Jupyter Book Structure and organize content](https://jupyterbook.org/en/stable/basics/organize.html)
 ```
 
-#### Dependencies
-
-The next step is ensure your code is maintainable, reliable and reproducible by including
-any dependencies and requirements, such as packages, configurations, secrets (template) and additional instructions.
-
-The <span style="color:#3EACAD">template</span> suggests to use [conda](https://docs.conda.io/) (or [mamba](https://mamba.readthedocs.io/en/latest/)) as environment manager and, as [conventional](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html), the environment is controlled by the `environment.yml` file.
-
-The `environment.yml` file is where you specify any packages available on the [Anaconda repository](https://anaconda.org) as well as from the Anaconda Cloud (including [conda-forge](https://conda-forge.org)) to install for your project. Ensure to include the pinned version of packages required by your project (including by Jupyter notebooks).
-
-```yaml
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - python=3.9
-  - bokeh=2.4.3
-  - pandas=1.4.3
-  - pip:
-    - requests==2.28.1
-```
-
-To (re)create the environment on your installation of [conda](https://conda.io) via [anaconda](https://docs.anaconda.com/anaconda/install/), [miniconda](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/) or preferably [miniforge](https://github.com/conda-forge/miniforge), you only need to pass the `environment.yml` file, which will install requirements and guarantee that whoever uses your code has the necessary packages (and correct versions). By default, the <span style="color:#3EACAD">template</span> uses [Python 3.9](https://www.python.org).
-
-```shell
-conda env create -n <your-environment-name> -f environment.yml
-```
-
-In case your project uses Python, it is *strongly* recommended to distribute it as a [package](https://packaging.python.org/).
-
-```{important}
-The <span style="color:#3EACAD">template</span> contains an example - the [datalab](https://github.com/worldbank/template/tree/main/src/datalab) Python package - and will automatically find and install any `src` packages as long as `pyproject.yml` is kept up-to-date.
-```
-
-```{seealso}
-[Conda Managing Environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
-```
-
-#### Jupyter Notebooks
+#### Add executable content
 
 [Jupyter Notebooks](https://jupyter.org) can be beautifully rendered and downloaded from your book. By default, the <span style="color:#3EACAD">template</span> will render any files listed on the [table of contents](#table-of-contents) that have a notebook structure. The <span style="color:#3EACAD">template</span> comes with a Jupyter notebook example, `notebooks/world-bank-api.ipynb`, to illustrate.
 
 ```{important}
-Optionally, [Jupyter Book](https://jupyterbook.org) can execute notebooks during the build (on GitHub) and display **code outputs** and **interactive visualizations** as part of the *documentation* on the fly. In this case, Jupyter notebooks will be executed by [GitHub Actions](https://github.com/features/actions) during build on each commit to the `main` branch. Thus, it is important to include all [requirements and dependencies](#dependencies) in the repository. In case you would like to ignore a notebook, you can [exclude files from execution](https://jupyterbook.org/en/stable/content/execute.html#exclude-files-from-execution).
+
+By default, Jupyter notebooks are **not** executed. However, you can configure[Jupyter Book](https://jupyterbook.org) to run notebooks during the build process (on GitHub), allowing **code outputs** and **interactive visualizations** to be generated and included in the *documentation* automatically. When enabled, Jupyter notebooks are executed by [GitHub Actions](https://github.com/features/actions) each time a commit is made to the `main` branch. For this to work, it’s crucial to ensure that all necessary [dependencies](##use-pyproject-toml-for-python-package-management) are included in the repository. If you want to prevent a specific notebook from being executed, you can [exclude it from execution](https://jupyterbook.org/en/stable/content/execute.html#exclude-files-from-execution).
 ```
 
 ```{seealso}
 [Jupyter Book Write executable content](https://jupyterbook.org/en/stable/content/executable/index.html)
+```
+
+### Use `pyproject.toml` for Python Package Management
+
+While the <span style="color:#3EACAD">template</span> recommends using [Conda](https://conda.io/projects/conda/en/latest/index.html) (or [Mamba](https://github.com/mamba-org/mamba)) as the environment manager and managing dependencies through an `environment.yml` file, there is an alternative approach that leverages `pyproject.toml`. This can be particularly advantageous if your project is a Python package or if you want to simplify and standardize the management of Python-specific dependencies.
+
+#### Why use `pyproject.toml`?
+
+The next step is ensure your code is maintainable, reliable and reproducible by including
+any dependencies and requirements, such as packages, configurations, secrets (template) and additional instructions.
+
+1. **Standardization**: `pyproject.toml` is a modern, standardized format defined by [PEP 518](https://peps.python.org/pep-0518/) and [PEP 621](https://peps.python.org/pep-0621/) that centralizes project configuration in Python projects, including build requirements and dependencies.
+
+2. **Python Packaging**: If your project is to be distributed as a package, `pyproject.toml` is the preferred way to define build tools (like `setuptools` or `poetry`) and metadata for your package (like name, version, dependencies, etc.). It allows tools like `pip` and `build` to install and package your project more effectively.
+
+3. **Compatibility with Tools**: The `pyproject.toml` file is compatible with multiple Python packaging and dependency management tools such as `poetry` and `pip`. This allows for smoother integration with CI/CD pipelines, PyPI, and other environments.
+
+4. **Separation of Concerns**: While Conda manages both system-level and Python-specific packages, using `pyproject.toml` helps isolate Python dependencies. This is useful if your project uses primarily Python packages and you want finer control over Python versioning and dependency resolution.
+
+#### Example: Using `pyproject.toml`
+
+This `pyproject.toml` file specifies the dependencies and other metadata for your Python package. You can install these packages using `pip`, ensuring that your Python environment is properly managed. You can still use Conda for system-level packages (such as `libc`, `gdal`, etc.), while using `pyproject.toml` for Python package management.
+
+1. **`pyproject.toml` Example**:
+
+    ```toml
+    [build-system]
+    requires = ["hatchling>=1.21.0", "hatch-vcs>=0.3.0"]
+    build-backend = "hatchling.build"
+
+    [project]
+    name = "template"
+    description = "A data science project"
+    readme = { file = "README.md", content-type = "text/markdown" }
+    license = { file = "LICENSE" }
+    authors = [
+      { name = "Your Name", email = "your.email@example.com" }
+    ]
+    dynamic = ["version"]
+    
+    python = ">=3.9"
+    dependencies = [
+      "pandas>=1.4.3,<2",
+    ]
+    [project.optional-dependencies]
+    docs = [
+        "docutils==0.17.1", 
+        "jupyter-book>=1,<2",
+    ]
+
+    [tool.hatch.build.targets.sdist]
+    include = [
+        "src/**/*"
+    ]
+
+    [tool.hatch.version]
+    source = "vcs"
+    ```
+
+2. **Keep the Conda Environment for System-level Packages**:
+    You can continue to use `environment.yml` to specify non-Python dependencies or packages not available on PyPI, such as `mamba` or `gdal`.
+
+    ```yaml
+    channels:
+      - conda-forge
+    dependencies:
+      - python=3.9
+      - mamba
+      - gdal
+    ```
+
+3. **Installation**:
+    To create an environment, you would first install the Conda dependencies and then use `pip` to install Python-specific dependencies from `pyproject.toml`. Alternatively, you can skip Conda and use `pip` for the entire setup.
+
+    ```shell
+    # Create Conda environment
+    conda env create -f environment.yml -n <your-environment-name>
+
+    # Activate the environment
+    conda activate <your-environment-name>
+
+    # Install Python dependencies
+    pip install .
+    ```
+
+#### Distributing Your Project as a Python Package
+
+If your project uses [Python](https://python.org), it’s highly recommended to distribute it as a [package](https://packaging.python.org/en/latest/tutorials/packaging-projects/). By including a `pyproject.toml` file, the packaging process becomes more streamlined. Additionally:
+
+- The `pyproject.toml` file acts as a single source of truth for your Python dependencies and project metadata.
+- Any packages in the `src/` folder will be automatically discovered and installed.
+- Using `pyproject.toml` future-proofs your setup by aligning with modern packaging standards.
+-You can combine Conda for system-level dependencies with `pyproject.toml` for Python dependencies, using Conda for environments and Pip/Poetry for Python packages.
+
+```{seealso}
+- [Writing your pyproject.toml](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/)
+- [Conda Managing Environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 ```
 
 ## Code of Conduct

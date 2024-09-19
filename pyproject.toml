@@ -42,8 +42,10 @@ skip = 'docs/_build,docs/references.bib,*.png,*.gz,*.whl'
 ignore-regex = '^\s*"image\/png":\s.*'
 ignore-words-list = "gost,"
 
-[tool.hatch.build.targets.wheel]
-packages = ["src/*"]
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/**/*"
+]
 
 [tool.hatch.version]
 source = "vcs"
