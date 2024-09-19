@@ -271,14 +271,14 @@ This `pyproject.toml` file specifies the dependencies and other metadata for you
       { name = "Your Name", email = "your.email@example.com" }
     ]
     dynamic = ["version"]
-    
+
     python = ">=3.9"
     dependencies = [
       "pandas>=1.4.3,<2",
     ]
     [project.optional-dependencies]
     docs = [
-        "docutils==0.17.1", 
+        "docutils==0.17.1",
         "jupyter-book>=1,<2",
     ]
 
