@@ -33,7 +33,7 @@ Inspired by [literate programming](http://literateprogramming.com), maintained b
 - **notebooks/**
     > Placeholder folder for [Jupyter notebooks](https://jupyter.org). Markdown files and Jupyter notebooks can be added to `docs/_toc.yml` (Table of Contents) to compose the *documentation*.
 
-- **.pre-commit-config.yml**
+- [**.pre-commit-config.yml**](https://github.com/worldbank/template/blob/main/.pre-commit-config.yaml)
     > Using [pre-commit](https://pre-commit.com) offers a significant advantage in streamlining the development process by enforcing code standards and reducing errors before code reaches the review stage or is committed to the repository. It automates the execution of various checks, such as syntax errors, code formatting, and ensuring compliance with coding standards, which saves time and improves code quality.
 
 - [GitHub Actions](https://github.com/features/actions) and [Dependabot](https://docs.github.com/en/code-security/dependabot)
@@ -170,9 +170,16 @@ The <span style="color:#3EACAD">template</span> is licensed under the [**Mozilla
 
 > 🌟 `https://<your-github-username>.github.io/<your-project-name>`
 
-For example, see this <span style="color:#3EACAD">template</span> as a live demo.
+````{note}
+For example, you can view [this live demo](http://worldbank.github.io/template) using the following link:
 
-> 🌟 [worldbank.github.io/template](http://worldbank.github.io/template) (Live Demo)
+> 🌟 [Live Demo - worldbank.github.io/template](http://worldbank.github.io/template)
+
+You can also install the latest version directly from the main branch:
+
+```bash
+pip install git+https://github.com/worldbank/template
+````
 
 ### Add content
 
@@ -234,18 +241,31 @@ By default, Jupyter notebooks are **not** executed. However, you can configure[J
 [Jupyter Book Write executable content](https://jupyterbook.org/en/stable/content/executable/index.html)
 ```
 
-### Use `pyproject.toml` for Python Package Management
+#### Distributing Your Project as a Python Package
+
+If your project uses [Python](https://python.org), it’s highly recommended to distribute it as a [package](https://packaging.python.org/en/latest/tutorials/packaging-projects/). By including a `pyproject.toml` file, the packaging process becomes more streamlined - *trust me [things can get intense](https://imgs.xkcd.com/comics/python_environment.png)*.
+
+Additionally:
+
+```{tip}
+- Using `pyproject.toml` future-proofs your setup by aligning with modern packaging standards.
+- The `pyproject.toml` file acts as a single source of truth for your Python dependencies and project metadata.
+- You can combine Conda for system-level dependencies with `pyproject.toml` for Python dependencies, using Conda for environments and pip/poetry for Python packages.
+- Any packages in the `src/` folder will be automatically discovered and installed.
+```
+
+##### Use `pyproject.toml` for Python Package Management
 
 While the <span style="color:#3EACAD">template</span> recommends using [Conda](https://conda.io/projects/conda/en/latest/index.html) (or [Mamba](https://github.com/mamba-org/mamba)) as the environment manager and managing dependencies through an `environment.yml` file, there is an alternative approach that leverages `pyproject.toml`. This can be particularly advantageous if your project is a Python package or if you want to simplify and standardize the management of Python-specific dependencies.
 
-#### Why use `pyproject.toml`?
+##### Why use `pyproject.toml`?
 
 The next step is ensure your code is maintainable, reliable and reproducible by including
 any dependencies and requirements, such as packages, configurations, secrets (template) and additional instructions.
 
 1. **Standardization**: `pyproject.toml` is a modern, standardized format defined by [PEP 518](https://peps.python.org/pep-0518/) and [PEP 621](https://peps.python.org/pep-0621/) that centralizes project configuration in Python projects, including build requirements and dependencies.
 
-2. **Python Packaging**: If your project is to be distributed as a package, `pyproject.toml` is the preferred way to define build tools (like `setuptools` or `poetry`) and metadata for your package (like name, version, dependencies, etc.). It allows tools like `pip` and `build` to install and package your project more effectively.
+2. **Python Packaging**: If your project is to be distributed as a package, `pyproject.toml` is the preferred way to define build tools (like [hatch](https://hatch.pypa.io/latest/config/dependency/) or [poetry](https://python-poetry.org)) and metadata for your package (like name, version, dependencies, etc.). It allows tools like `pip` and `build` to install and package your project more effectively.
 
 3. **Compatibility with Tools**: The `pyproject.toml` file is compatible with multiple Python packaging and dependency management tools such as `poetry` and `pip`. This allows for smoother integration with CI/CD pipelines, PyPI, and other environments.
 
@@ -304,7 +324,7 @@ This `pyproject.toml` file specifies the dependencies and other metadata for you
     ```
 
 3. **Installation**:
-    To create an environment, you would first install the Conda dependencies and then use `pip` to install Python-specific dependencies from `pyproject.toml`. Alternatively, you can skip Conda and use `pip` for the entire setup.
+  To create an environment, you would first install the Conda dependencies and then use `pip` to install Python-specific dependencies from `pyproject.toml`. Alternatively, you can skip Conda and use `pip` for the entire setup.
 
     ```shell
     # Create Conda environment
@@ -317,19 +337,37 @@ This `pyproject.toml` file specifies the dependencies and other metadata for you
     pip install .
     ```
 
-#### Distributing Your Project as a Python Package
+  To install a Python package directly from a [GitHub](https://github.com) repository using [pip](https://pip.pypa.io/en/stable/installation/), you can use the command pip install `git+https://github.com/<username>/<repository>.git`. This allows you to install the latest version of the package from the repository. You can also specify a particular branch or release tag by adding `@<branch_or_tag>` at the end of the URL This is particularly useful when you want to access features or fixes that haven’t been published on PyPI yet, or to get the latest updates from the repository.
 
-If your project uses [Python](https://python.org), it’s highly recommended to distribute it as a [package](https://packaging.python.org/en/latest/tutorials/packaging-projects/). By including a `pyproject.toml` file, the packaging process becomes more streamlined. Additionally:
+  If you want to install the latest release, you should specify the tag associated with that release. For instance:
 
-- The `pyproject.toml` file acts as a single source of truth for your Python dependencies and project metadata.
-- Any packages in the `src/` folder will be automatically discovered and installed.
-- Using `pyproject.toml` future-proofs your setup by aligning with modern packaging standards.
--You can combine Conda for system-level dependencies with `pyproject.toml` for Python dependencies, using Conda for environments and Pip/Poetry for Python packages.
+  ```shell
+    pip install git+https://github.com/<username>/<repository>.git@<latest_release_tag>
+  ```
 
 ```{seealso}
+- [Packaging Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
 - [Writing your pyproject.toml](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/)
 - [Conda Managing Environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 ```
+
+#### Building Documentation Locally
+
+To build the documentation locally, please follow these steps:
+
+- Install the package with documentation dependencies:
+
+  ```shell
+    pip install -e .[docs]
+  ```
+
+- Build the documentation:
+
+  ```shell
+   jupyter-book build . --config docs/_config.yml --toc docs/_toc.yml
+  ```
+
+The generated documentation will be available in the `_build/html` directory. Open the `index.html` file in a web browser to view it.
 
 ## Code of Conduct
 
