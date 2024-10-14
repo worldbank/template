@@ -360,6 +360,10 @@ To build the documentation locally, please follow these steps:
   ```shell
     pip install -e .[docs]
   ```
+  in some environments (e.g., on Mac OS), try this instead to scape the brackets:
+   ```shell
+    pip install -e .\[docs]\
+  ```
 
 - Build the documentation:
 
