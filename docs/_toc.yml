@@ -12,6 +12,11 @@ parts:
   - caption: Gallery
     chapters:
       - file: docs/gallery
+  - caption: Recommended Workflows
+    chapters:
+      - file: docs/good-practices
+      - file: docs/general-guide
+      - file: docs/git-workflows
   - caption: Additional Resources
     chapters:
       - url: https://datapartnership.org
