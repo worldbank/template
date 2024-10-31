@@ -12,7 +12,7 @@ parts:
   - caption: Gallery
     chapters:
       - file: docs/gallery
-  - caption: Recommended Workflows
+  - caption: Recommended Workflows for Data Science Project
     chapters:
       - file: docs/good-practices
       - file: docs/general-guide
