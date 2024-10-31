@@ -6,4 +6,3 @@ In the following series of documents, we share what we consider as best practice
 2.**Communicating with Clients/Audiences**
 
 3.**Documenting Analytics and Notebook Styling**
-
