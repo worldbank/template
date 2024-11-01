@@ -23,15 +23,3 @@ We recognize that this approach may create some duplication and additional effor
 ## Programming Environments
 - **Python virtual environments.** We recommend using ```.venv``` for virtual environments. This allows for automatic detection by tools and editors like VS Code, simplifies setup, and keeps the folder hidden in most operating systems, reducing clutter. It also promotes consistency across projects, making it easier for others to understand and navigate your setup. because this keeps the folder tree clean among other advantages.
 - **Environment file for secrets and credentials**. In the project folder, you will find a file ```.env.example```, rename that file to ```.env```. This is what you will to keep API keys and other secrets. Again, refer to [this part](https://worldbank.github.io/template/README.html) of the documentation for details. 
-
-
-
-
-
-
-
-
-
-
-
-

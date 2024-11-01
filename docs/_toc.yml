@@ -11,9 +11,9 @@ parts:
       - file: notebooks/bibliography.ipynb
   - caption: Recommended Workflows
     chapters:
-      - file: docs/good-practices
-      - file: docs/general-guide
+      - file: docs/folders-and-naming
       - file: docs/git-workflows
+      - file: docs/notebook-workflows
   - caption: Gallery
     chapters:
       - file: docs/gallery

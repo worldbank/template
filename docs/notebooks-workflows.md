@@ -4,7 +4,3 @@ This section provides best practices for structuring analytical notebooks to enh
 - **Structure**. In all the Data Lab projects, please follow [this analytics structure](https://github.com/worldbank/sudan-poverty-monitoring/blob/main/docs/2-analytics.md).
 - **Editing _toc.yml** 
 - **Removing/hiding cell blocks** All notebooks will be rendered in Jupyter Book. To enhance readability, ensure code cells are hidden or removed using cell tags. In some cases, you may use the hide-input cell tag.
-
-
-
-
