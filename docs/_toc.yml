@@ -14,6 +14,7 @@ parts:
       - file: docs/folders-and-naming
       - file: docs/git-workflows
       - file: docs/notebooks-workflows
+      - file: docs/presenting-results
   - caption: Gallery
     chapters:
       - file: docs/gallery
