@@ -13,7 +13,7 @@ parts:
     chapters:
       - file: docs/folders-and-naming
       - file: docs/git-workflows
-      - file: docs/notebook-workflows
+      - file: docs/notebooks-workflows
   - caption: Gallery
     chapters:
       - file: docs/gallery
