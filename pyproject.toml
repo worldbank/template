@@ -33,7 +33,7 @@ dependencies = [
 ]
 [project.optional-dependencies]
 docs = [
-	"docutils==0.17.1", # pinned to docutils==0.17.1 due to https://github.com/worldbank/template/issues/60. See also: https://jupyterbook.org/en/stable/content/citations.html?highlight=docutils#citations-and-bibliographies
+	"docutils==0.22", # pinned to docutils==0.22 due to https://github.com/worldbank/template/issues/60. See also: https://jupyterbook.org/en/stable/content/citations.html?highlight=docutils#citations-and-bibliographies
 	"jupyter-book>=1,<2",
 ]
 
