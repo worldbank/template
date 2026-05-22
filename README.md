@@ -15,7 +15,7 @@ Inspired by [literate programming](http://literateprogramming.com), maintained b
   > Embracing [CFF](https://citation-file-format.github.io) aligns with best practices for reproducible research and software development. By adhering to established standards for documenting project dependencies and citations, we demonstrate our commitment to quality, transparency, and integrity in our work.
 
 - [**LICENSE**](LICENSE)
-  > The LICENSE is a document that determines what others can and cannot do with contents of the repository. If no license is present, no one has permission to use and/or modify your code. The <span style="color:#3EACAD">template</span> is licensed under the [**MIT License**](https://opensource.org/licenses/MIT) together with the [World Bank IGO Rider](https://github.com/worldbank/.github/blob/main/WB-IGO-RIDER.md). The Rider is purely procedural: it reserves all privileges and immunities enjoyed by the World Bank, without adding restrictions to the MIT permissions. Please review both files before using, distributing or contributing.
+  > The LICENSE is a document that determines what others can and cannot do with contents of the repository. If no license is present, no one has permission to use and/or modify your code. The <span style="color:#3EACAD">template</span> is licensed under the [**MIT License**](https://opensource.org/licenses/MIT) together with the [World Bank IGO Rider](https://github.com/worldbank/template/blob/main/WB-IGO-RIDER.md). The Rider is purely procedural: it reserves all privileges and immunities enjoyed by the World Bank, without adding restrictions to the MIT permissions. Please review both files before using, distributing or contributing.
 
 - **docs/**
 
@@ -379,4 +379,4 @@ The <span style="color:#3EACAD">template</span> maintains a [Code of Conduct](do
 
 ## License
 
-The <span style="color:#3EACAD">template</span> is licensed under the [**MIT License**](https://opensource.org/licenses/MIT) together with the [World Bank IGO Rider](https://github.com/worldbank/.github/blob/main/WB-IGO-RIDER.md). The Rider is purely procedural: it reserves all privileges and immunities enjoyed by the World Bank, without adding restrictions to the MIT permissions. Please review both files before using, distributing or contributing.
+The <span style="color:#3EACAD">template</span> is licensed under the [**MIT License**](https://opensource.org/licenses/MIT) together with the [World Bank IGO Rider](https://github.com/worldbank/template/blob/main/WB-IGO-RIDER.md). The Rider is purely procedural: it reserves all privileges and immunities enjoyed by the World Bank, without adding restrictions to the MIT permissions. Please review both files before using, distributing or contributing.
